@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE data [
+<!ELEMENT data (users,friends,reads,comments,shares,subscriptions) >
+<!ELEMENT users (user*) >
+<!ELEMENT user (email, password, nickname, city, country, avatar, biography?, subscribeDate) >
+<!ELEMENT friends (friend*) >
+<!ELEMENT friend (email, email, date, accepted) >
+<!ELEMENT reads (read*) >
+<!ELEMENT read (email, date, feed, item) >
+<!ELEMENT comments (comment*) >
+<!ELEMENT comment (email, text, feed, item, date) >
+<!ELEMENT shares (share*) >
+<!ELEMENT share (feed, item, date, email, text?) >
+<!ELEMENT subscriptions (subscription*) >
+<!ELEMENT subscription (email, feed, date) >
+
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT avatar (#PCDATA)>
+<!ELEMENT biography (#PCDATA)>
+<!ELEMENT subscribeDate (#PCDATA)>
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT accepted (#PCDATA) >
+<!ELEMENT feed (#PCDATA) >
+<!ELEMENT text (#PCDATA) >
+<!ELEMENT item (#PCDATA) >
+
+]>

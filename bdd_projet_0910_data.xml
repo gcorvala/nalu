@@ -1,0 +1,441 @@
+
+<data>
+  <users>
+    <user>
+      <email>boris.verhaegen@gmail.com</email>
+      <password>abcd</password>
+      <nickname>Boris</nickname>
+      <city>Bruxelles</city>
+      <country>Belgique</country>
+      <avatar>boris.png</avatar>
+      <biography>Emmerdeur profesionnel</biography>
+      <subscribeDate>Mon, 28 Sep 2009 10:00:00 -0000</subscribeDate>
+    </user>
+    <user>
+      <email>frederic.servais@gmail.com</email>
+      <password>abcd</password>
+      <nickname>FreD</nickname>
+      <city>Bruxelles</city>
+      <country>Belgique</country>
+      <avatar>fred.png</avatar>
+      <biography>Mathématicien reconverti</biography>
+      <subscribeDate>Mon, 28 Sep 2009 10:00:00 -0000</subscribeDate>
+    </user>
+    <user>
+      <email>francois@example.com</email>
+      <password>abcd</password>
+      <nickname>François</nickname>
+      <city>Charleroi</city>
+      <country>Belgique</country>
+      <avatar>francois.png</avatar>
+      <biography>Over Geek</biography>
+      <subscribeDate>Mon, 28 Sep 2009 10:00:00 -0000</subscribeDate>
+    </user>
+    <user>
+      <email>ezimanyi@ulb.ac.be</email>
+      <password>abcd</password>
+      <nickname>Maître Jedi</nickname>
+      <city>Tatooine</city>
+      <country>Costa Rica</country>
+      <avatar>yoda.png</avatar>
+      <subscribeDate>Mon, 28 Sep 2009 10:00:00 -0000</subscribeDate>
+    </user>
+  </users>
+  <friends>
+    <friend>
+      <email>boris.verhaegen@gmail.com</email>
+      <email>frederic.servais@gmail.com</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>True</accepted>
+    </friend>
+    <friend>
+      <email>ezimanyi@ulb.ac.be</email>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>True</accepted>
+    </friend>
+    <friend>
+      <email>frederic.servais@gmail.com</email>
+      <email>francois@example.com</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>True</accepted>
+    </friend>
+    <friend>
+      <email>francois@example.com</email>
+      <email>frederic.servais@gmail.com</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>True</accepted>
+    </friend>
+    <friend>
+      <email>frederic.servais@gmail.com</email>
+      <email>ezimanyi@ulb.ac.be</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>True</accepted>
+    </friend>
+    <friend>
+      <email>francois@example.com</email>
+      <email>ezimanyi@ulb.ac.be</email>
+      <date>Mon, 28 Sep 2009 11:00:00 -0000</date>
+      <accepted>False</accepted>
+    </friend>
+  </friends>
+  <reads>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/657/</item>
+    </read>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/656/</item>
+    </read>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/655/</item>
+    </read>
+    <read>
+      <email>francois@example.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/657/</item>
+    </read>
+    <read>
+      <email>francois@example.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/656/</item>
+    </read>
+    <read>
+      <email>francois@example.com</email>
+      <date>Tue, 03 Nov 2009 10:00:00 -0000</date>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/655/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeBoris/</feed>
+      <item>http://xkcd.com/657/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeBoris/</feed>
+      <item>http://xkcd.com/656/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeBoris/</feed>
+      <item>http://xkcd.com/655/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeFrancois/</feed>
+      <item>http://xkcd.com/657/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeFrancois/</feed>
+      <item>http://xkcd.com/656/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 10:00:00 -0000</date>
+      <feed>http://example.com/feedDeFrancois/</feed>
+      <item>http://xkcd.com/655/</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Tue, 03 Nov 2009 11:32:00 -0000</date>
+      <feed>http://example.com/feedDeEsteban/</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+    </read>
+    <read>
+      <email>ezimanyi@ulb.ac.be</email>
+      <date>Mon, 02 Nov 2009 11:00:00 -0000</date>
+      <feed>http://sboucher.blogspot.com/feeds/posts/default</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+    </read>
+    <read>
+      <email>ezimanyi@ulb.ac.be</email>
+      <date>Mon, 02 Nov 2009 10:00:00 -0000</date>
+      <feed>http://sboucher.blogspot.com/feeds/posts/default</feed>
+      <item>http://sboucher.blogspot.com/2009/08/just-in-tasty-food-keeps-you-thin.html</item>
+    </read>
+    <read>
+      <email>francois@example.com</email>
+      <date>Wed, 04 Nov 2009 11:42:00 -0000</date>
+      <feed>http://example.com/feedDeFred/</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 20:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/belgique/2009-11-03/van-rompuy-bonne-chose-europe-perte-belgique-selon-marianne-thyssen-736123.shtml</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 21:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>[http://www.lesoir.be/actualite/france/2009-11-03/sarkozy-mannequin-lessive-bonux-736087.shtml]</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Tue, 03 Nov 2009 21:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/penurie-pieces-1-2-cents-736023.shtml</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Tue, 03 Nov 2009 21:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/culture/air_du_temps/2009-11-03/gastronomie-bling-bling-fini-736072.shtml</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Tue, 03 Nov 2009 19:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/panthere-noire-vue-malmedy-736027.shtml</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Wed, 04 Nov 2009 12:00:00 -0000</date>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <item>http://www.lalibre.be/actu/belgique/article/540129/la-moitie-du-belang-en-a-marre-du-cordon.html</item>
+    </read>
+    <read>
+      <email>frederic.servais@gmail.com</email>
+      <date>Tue, 03 Nov 2009 21:00:00 -0000</date>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <item>http://www.lalibre.be/actu/belgique/article/540314/les-agriculteurs-wallons-opposes-aux-hormones.html</item>
+    </read>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Wed, 04 Nov 2009 12:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>[http://www.lesoir.be/actualite/france/2009-11-03/sarkozy-mannequin-lessive-bonux-736087.shtml]</item>
+    </read>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Wed, 04 Nov 2009 12:30:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/culture/air_du_temps/2009-11-03/gastronomie-bling-bling-fini-736072.shtml</item>
+    </read>
+    <read>
+      <email>boris.verhaegen@gmail.com</email>
+      <date>Tue, 03 Nov 2009 21:00:00 -0000</date>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/panthere-noire-vue-malmedy-736027.shtml</item>
+    </read>
+  </reads>
+  <comments>
+    <comment>
+      <email>frederic.servais@gmail.com</email>
+      <text>Ahahah !</text>
+      <feed>http://example.com/feedDeEsteban/</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+      <date>Tue, 03 Nov 2009 11:34:00 -0000</date>
+    </comment>
+    <comment>
+      <email>francois@example.com</email>
+      <text>C'est null !</text>
+      <feed>http://example.com/feedDeFred/</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+      <date>Wed, 04 Nov 2009 11:43:00 -0000</date>
+    </comment>
+  </comments>
+  <shares>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/657/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+      <text>Excellent !</text>
+    </share>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/657/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>francois@example.com</email>
+    </share>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/656/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+      <text>Mouhaha !</text>
+    </share>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/656/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>francois@example.com</email>
+      <text>:):):) !</text>
+    </share>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/655/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+    </share>
+    <share>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <item>http://xkcd.com/655/</item>
+      <date>Tue, 03 Nov 2009 11:00:00 -0000</date>
+      <email>francois@example.com</email>
+    </share>
+    <share>
+      <feed>http://sboucher.blogspot.com/feeds/posts/default</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+      <date>Mon, 02 Nov 2009 11:30:00 -0000</date>
+      <email>ezimanyi@ulb.ac.be</email>
+    </share>
+    <share>
+      <feed>http://example.com/feedDeEsteban/</feed>
+      <item>http://sboucher.blogspot.com/2009/09/everyday-tech-tends-to-stick-around.html</item>
+      <date>Tue, 03 Nov 2009 11:40:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/belgique/2009-11-03/van-rompuy-bonne-chose-europe-perte-belgique-selon-marianne-thyssen-736123.shtml</item>
+      <date>Thu, 05 Nov 2009 11:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>[http://www.lesoir.be/actualite/france/2009-11-03/sarkozy-mannequin-lessive-bonux-736087.shtml]</item>
+      <date>Thu, 05 Nov 2009 11:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/penurie-pieces-1-2-cents-736023.shtml</item>
+      <date>Wed, 04 Nov 2009 11:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/culture/air_du_temps/2009-11-03/gastronomie-bling-bling-fini-736072.shtml</item>
+      <date>Tue, 03 Nov 2009 23:30:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/panthere-noire-vue-malmedy-736027.shtml</item>
+      <date>Tue, 03 Nov 2009 23:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <item>http://www.lalibre.be/actu/belgique/article/540129/la-moitie-du-belang-en-a-marre-du-cordon.html</item>
+      <date>Wed, 04 Nov 2009 12:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <item>http://www.lalibre.be/actu/belgique/article/540314/les-agriculteurs-wallons-opposes-aux-hormones.html</item>
+      <date>Tue, 03 Nov 2009 22:00:00 -0000</date>
+      <email>frederic.servais@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>[http://www.lesoir.be/actualite/france/2009-11-03/sarkozy-mannequin-lessive-bonux-736087.shtml]</item>
+      <date>Thu, 05 Nov 2009 09:00:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/culture/air_du_temps/2009-11-03/gastronomie-bling-bling-fini-736072.shtml</item>
+      <date>Thu, 05 Nov 2009 12:30:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+      <text/>
+    </share>
+    <share>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <item>http://www.lesoir.be/actualite/economie/2009-11-03/panthere-noire-vue-malmedy-736027.shtml</item>
+      <date>Tue, 03 Nov 2009 23:00:00 -0000</date>
+      <email>boris.verhaegen@gmail.com</email>
+      <text/>
+    </share>
+  </shares>
+  <subscriptions>
+    <subscription>
+      <email>boris.verhaegen@gmail.com</email>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>boris.verhaegen@gmail.com</email>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>boris.verhaegen@gmail.com</email>
+      <feed>http://valves.bepolytech.be/valves_ba3.rss</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>boris.verhaegen@gmail.com</email>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>frederic.servais@gmail.com</email>
+      <feed>http://www.lesoir.be/services/rss/la_une/index.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>frederic.servais@gmail.com</email>
+      <feed>http://www.lalibre.be/rss/index.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>frederic.servais@gmail.com</email>
+      <feed>http://failblog.wordpress.com/feed/</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>francois@example.com</email>
+      <feed>http://syndication.thedailywtf.com/TheDailyWtf</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>francois@example.com</email>
+      <feed>http://valves.bepolytech.be/valves_ba3.rss</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>francois@example.com</email>
+      <feed>http://xkcd.com/rss.xml</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>ezimanyi@ulb.ac.be</email>
+      <feed>http://sboucher.blogspot.com/feeds/posts/default</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+    <subscription>
+      <email>ezimanyi@ulb.ac.be</email>
+      <feed>http://www.ulb.ac.be/actulb/rss/lastnews.rss</feed>
+      <date>Tue, 29 Sep 2009 10:00:00 -0000</date>
+    </subscription>
+  </subscriptions>
+</data>
