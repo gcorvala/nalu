@@ -283,4 +283,9 @@ class importer {
 		echo "end";
 	}
 }
+
+$importer = new Importer ();
+$importer->connection ();
+$importer->from_xml ("bdd_projet_0910_data.xml");
+echo "lol";
 ?>
