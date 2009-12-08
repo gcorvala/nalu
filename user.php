@@ -9,9 +9,18 @@ class User {
 	private $biography;
 	private $subscribeDate;
 
-	public function __construct () {}
+	public function __construct ($email, $password, $nickname, $city, $country, $avatar, $biography, $subscribeDate) {
+		$this->email = $email;
+		$this->password = $password;
+		$this->nickname = $nickname;
+		$this->city = $city;
+		$this->country = $country;
+		$this->avatar = $avatar;
+		$this->biography = $biography;
+		$this->subscribeDate = $subscribeDate;
+	}
 	
-	public function login ($email, $password) {
+	/*public function login ($email, $password) {
 		$this->email = $email;
 		$this->password = $password;
 		
@@ -31,9 +40,9 @@ class User {
 		$this->avatar = $line['Avatar'];
 		$this->biography = $line['Biography'];
 		$this->subscribeDate = $line['SubscribeDate'];
-	}
+	}*/
 
-	public function create ($email, $password, $nickname, $city, $country, $avatar, $biography) {
+	/*public function create ($email, $password, $nickname, $city, $country, $avatar, $biography) {
 		if (empty ($email) or empty ($password) or empty ($nickname) or empty ($city) or empty ($country) or empty ($avatar))
 			throw new Exception ("User create : email, password, nickname, city, country or avatar are empty !");
 
@@ -53,7 +62,7 @@ class User {
 		
 		if ($result == false)
 			throw new Exception ("User create : Error during MYSQL request : " . mysql_error ());
-	}
+	}*/
 	
 	public function get_email () { return $this->email; }
 	public function get_password () { return $this->password; }
