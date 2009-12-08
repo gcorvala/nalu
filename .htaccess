@@ -1,0 +1,3 @@
+<Files config.ini>
+Deny from All
+</Files>
