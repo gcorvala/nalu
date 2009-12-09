@@ -14,16 +14,9 @@ class RSSFeed {
 		if (empty ($url))
 			throw new Exception ("RSSFeed : url are not defined !");
 		$this->url = $url;
-
+		// TODO : si user_feed et pas dans la db -> Exception
 		if (ereg("^user://", $this->url))
 			$user_feed = true;
-
-		if ($user_feed == true) {
-			echo "FEED FROM DB<br>";
-		}
-		else
-			echo "FEED FROM XML<br>";
-
 		$data = Data::create ();
 		$req = "SELECT * FROM Feeds WHERE URL LIKE '$this->url'";
 		$result = $data->request ($req);
@@ -40,7 +33,6 @@ class RSSFeed {
 			$this->name = $title;
 			$this->description = $description;
 			$this->link = $link;
-
 			$req = "INSERT INTO Feeds (URL, Name, Description, Link)";
 			$req .= " VALUES ('$this->url', '$this->name', '$this->description', '$this->link')";
 			$result = $data->request ($req);
