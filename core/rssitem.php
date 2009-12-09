@@ -11,7 +11,7 @@ class RSSItem {
 		$data = Data::create ();
 		if (!isset ($title)) {
 			// search in db
-			$req = "SELECT * INTO Items WHERE URL LIKE '$url'";
+			$req = "SELECT * FROM Items WHERE URL LIKE '$url'";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0)
 				throw new Exception ("Item $url not found !");
@@ -39,9 +39,5 @@ class RSSItem {
 	public function get_title () { return $this->title; }
 	public function get_date () { return $this->date; }
 	public function get_description () { return $this->description; }
-
-	public function get_content () {
-		
-	}
 }
 ?>

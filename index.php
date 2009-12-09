@@ -8,6 +8,7 @@ require_once ("core/user.php");
 
 try {
 	$auth = new Auth ();
+	echo "<tt>";
 	if ($_GET['action'] == "disconnect")
 		$auth->disconnect ();
 	$config = new Config ();
@@ -64,12 +65,13 @@ try {
 		echo "Feeds :<br>";
 		$feeds = $user->get_feeds ();
 		foreach ($feeds as $feed) {
-			echo $feed->get_url () . "<br>";
-			//$feed->update_items ();
+			echo "<div id=\"gallery\">+--" . $feed->get_url () . "<br>";
+			$feed->update_items ();
 			$items = $feed->get_items ();
 			foreach ($items as $item) {
-				echo "lol";
-				echo $item->get_title () . "<br>";
+				echo "| <a href=\"" . $item->get_url () . "\">" . $item->get_title () . "</a><br>";
+				//echo $item->get_description () . "<br><br><br><br><br>";
+				//echo "<hr>";
 			}
 		}
 		echo "<hr>";
@@ -90,8 +92,7 @@ try {
 		echo "<hr>";
 		echo "<a href=\"?action=disconnect\">Disconnect</a><br>";
 		if (isset ($_GET['action'])) {
-			$action = $_GET['action'];
-			switch ($action) {
+			switch ($_GET['action']) {
 				case "addrss":
 					$user->subscribe_to_feed ($_GET['url']);
 					break;

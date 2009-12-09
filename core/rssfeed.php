@@ -52,6 +52,7 @@ class RSSFeed {
 	
 	public function get_items () {
 		$data = Data::create ();
+		$items = array ();
 		$req = "SELECT * FROM FeedItems WHERE URLFeed LIKE '$this->url'";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
@@ -79,8 +80,12 @@ class RSSFeed {
 			}
 			$req = "SELECT * FROM Items WHERE URL LIKE '$link'";
 			$result = $data->request ($req);
-			if (mysql_num_rows ($result) == 0);
+			if (mysql_num_rows ($result) == 0) {
 				$items[] = new RSSItem ($link, $title, $pubDate, $description);
+				$req = "INSERT INTO FeedItems (URLFeed, URLItem)";
+				$req .= " VALUES ('$this->url', '$link')";
+				$data->request ($req);
+			}
 		}
 	}
 }
