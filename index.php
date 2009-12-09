@@ -1,50 +1,38 @@
 <?php
-
-require_once ("auth.php");
-require_once ("rssfeed.php");
-require_once ("rssitem.php");
-require_once ("importer.php");
-require_once ("user.php");
+require_once ("core/config.php");
+require_once ("core/data.php");
+require_once ("core/auth.php");
 
 try {
-	$mysql_link = mysql_connect ("localhost:8889", "root", "root")
-		or die ("Mysql connection failed! : " . mysql_error ());
-	mysql_select_db ("db_projet", $mysql_link)
-		or die ("Mysql database selection failed! : " . mysql_error ());
 	$auth = new Auth ();
-	$user = $auth->get_user ();
-	echo $user->get_email () . "<br>";
-	echo $user->get_nickname () . "<br>";
-	echo $user->get_city () . "<br>";
-	echo $user->get_country () . "<br>";
-	echo $user->get_avatar () . "<br>";
-	echo $user->get_biography () . "<br>";
-	echo $user->get_subscribe_date () . "<br>";
-	
-	
-	echo "<tt>";
-	//$feed = new RSSFeed ("http://xkcd.com/rss.xml");
-	//$items = $feed->get_items ();
-	$feed = new RSSFeed ("lalibre.xml");
-	$items = $feed->get_items ();
-	//$feed = new RSSFeed ("http://www.ulb.ac.be/actulb/rss/lastnews.rss");
-	$feed = new RSSFeed ("ulb.xml");
-	//$feed = new RSSFeed ("user://gcorvala");
+	if ($_GET['action'] == "disconnect")
+		$auth->disconnect ();
+	$config = new Config ();
+	$data = Data::create ();
+	if ($auth->is_anonymous ()) {
+		echo "<center>Not connected!</center>";
+		echo "<div><form method=\"post\" action=\".\">";
+		echo "email : <input type\"text\" name=\"email\"></br>";
+		echo "pass : <input type=\"password\" name=\"password\" align=\"right\"></br>";
+		echo "<input type=\"submit\">";
+		echo "</form></div>";
+	}
+	else {
+		$user = $auth->get_user ();
+		echo $user->get_email () . "<br>";
+		echo $user->get_nickname () . "<br>";
+		echo $user->get_city () . "<br>";
+		echo $user->get_country () . "<br>";
+		echo $user->get_avatar () . "<br>";
+		echo $user->get_biography () . "<br>";
+		echo $user->get_subscribe_date () . "<br>";
+		echo "<a href=\"?action=disconnect\">Disconnect</a><br>";
+	}
 
-	
-	/*$user = new User ();
-	if (isset ($_GET['email']) and isset ($_GET['password'])) {
-		$user->login ($_GET['email'], $_GET['password']);
-		$user->get_friends ();
-	}*/
-	//else
-		//$user->create ("gcorvala", "abcd", "gab", "bruxelles", "belgique", "gab.png");
+	echo "<a href=\"index.php\">link</a><br>";
+	echo "end<br>";
 }
 catch (Exception $e) {
 	echo "Exception catched : ". $e->getMessage (). "<br>";
 }
-
-//$importer = new importer ();
-//$importer->from_xml ("bdd_projet_0910_data.xml");
-//mysql_close ();
 ?>

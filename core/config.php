@@ -9,7 +9,7 @@ class Config {
 	private $site_url;
 
 	public function __construct () {
-		$ini = parse_ini_file ("../config.ini", true);
+		$ini = parse_ini_file (getcwd () . "/config.ini", true);
 		$mysql = $ini['mysql'];
 		$this->mysql_srv_addr = $mysql['srv_addr'];
 		$this->mysql_srv_port = $mysql['srv_port'];

@@ -2,7 +2,7 @@
 require_once ("config.php");
 
 class Data {
-	private $instance;
+	private static $instance;
 	private $link;
 
 	private function __construct () {
@@ -25,7 +25,7 @@ class Data {
 	}
 	
 	public function request ($req) {
-		$result = mysql_query (req);
+		$result = mysql_query ($req, $this->link);
 		if ($result == false)
 			throw new Exception ("Mysql request failed! : " . mysql_error ());
 		return $result;
