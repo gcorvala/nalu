@@ -1,4 +1,7 @@
 <?
+require_once ("core/data.php");
+require_once ("core/rssfeed.php");
+
 class User {
 	private $email;
 	private $password;
@@ -75,26 +78,24 @@ class User {
 
 	public function get_friends () {
 		$friends = array ();
-		if (empty ($this->nickname))
-			throw new Exception ("User get_friends : It seems that the user is not connected !");
-		
-		$mysql_req = "SELECT * FROM Friends WHERE (EmailA = '$this->email' OR EmailB = '$this->email') AND Accepted = 1";
-		
-		$result = mysql_query ($mysql_req);
-		if ($result == false)
-			throw new Exception ("User get_friends : Error during MYSQL request : " . mysql_error ());
-		
+		$data = Data::create ();
+		$req = "SELECT * FROM Friends WHERE (EmailA = '$this->email' OR EmailB = '$this->email') AND Accepted = 1";
+		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
 			if ($line['EmailA'] == $this->email)
 				$friends[] = $line['EmailB'];
 			else
 				$friends[] = $line['EmailA'];
 		}
-		
-		echo "<tt>+-Friends<br>";
-		foreach ($friends as $friend) {
-			echo "| $friend<br>";
-		}
+		return $friends;
+	}
+
+	public function subscribe_to_feed ($url) {
+		$feed = new RSSFeed ($url);
+		$data = Data::create ();
+		$req = "INSERT INTO FeedSubscriptions (Email, URL, Date)";
+		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '" . date_format (date_create (), "c") . "')";
+		$result = $data->request ($req);
 	}
 
 	public function get_feeds () {}
