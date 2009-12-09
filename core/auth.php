@@ -12,7 +12,7 @@ class Auth {
 			session_start ();
 			$data = Data::create ();
 			extract ($_SESSION, EXTR_PREFIX_ALL, "auth");
-			$req = "SELECT * FROM Users WHERE (Email = '$auth_email' AND Password = '$auth_password')";
+			$req = "SELECT Email,Password FROM Users WHERE (Email = '$auth_email' AND Password = '$auth_password')";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0) {
 				session_destroy ();
@@ -21,14 +21,14 @@ class Auth {
 			$line = mysql_fetch_array ($result);
 			$_SESSION['email'] = $line['Email'];
 			$_SESSION['password'] = $line['Password'];
-			$this->user = new User ($line['Email'], $line['Password'], $line['Nickname'], $line['City'], $line['Country'], $line['Avatar'], $line['Biography'], $line['SubscribeDate']);
+			$this->user = new User ($line['Email']);
 			$this->anonymous = false;
 		}
 		
-		else if (isset ($_POST) && !empty ($_POST['email']) && !empty($_POST['password'])) {
+		else if (isset ($_POST['action']) && $_POST['action'] == "login") {
 			$data = Data::create ();
 			extract ($_POST, EXTR_PREFIX_ALL, "auth");
-			$req = "SELECT * FROM Users WHERE (Email = '$auth_email' AND Password = '$auth_password')";
+			$req = "SELECT Email,Password FROM Users WHERE (Email = '$auth_email' AND Password = '$auth_password')";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0) {
 				session_destroy ();
@@ -37,7 +37,7 @@ class Auth {
 			$line = mysql_fetch_array ($result);
 			$_SESSION['email'] = $line['Email'];
 			$_SESSION['password'] = $line['Password'];
-			$this->user = new User ($line['Email'], $line['Password'], $line['Nickname'], $line['City'], $line['Country'], $line['Avatar'], $line['Biography'], $line['SubscribeDate']);
+			$this->user = new User ($line['Email']);
 			$this->anonymous = false;
 		}
 		else

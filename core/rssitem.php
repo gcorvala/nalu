@@ -1,4 +1,6 @@
 <?
+require_once ("core/data.php");
+
 class RSSItem {
 	private $url;
 	private $title;
@@ -6,27 +8,40 @@ class RSSItem {
 	private $description;
 	
 	public function __construct ($url, $title, $date, $description) {
-		if (empty ($url) or empty ($title) or empty ($description))
-			throw new Exception ("RSSItem : url, title or description are empty !");
-
-		$this->url = $url;
-		$this->title = $title;
-		$this->description = $description;
-
-		if (empty ($date))
-			$this->date = date_format (date_create (), "c");
-		else
-			$this->date = $date;
-		echo "<tt>+-Item<br>";
-		echo "| URL : $this->url<br>";
-		echo "| Title : $this->title<br>";
-		echo "| Date : $this->date<br>";
-		echo "| Description : $this->description<br></tt>";
+		$data = Data::create ();
+		if (!isset ($title)) {
+			// search in db
+			$req = "SELECT * INTO Items WHERE URL LIKE '$url'";
+			$result = $data->request ($req);
+			if (mysql_num_rows ($result) == 0)
+				throw new Exception ("Item $url not found !");
+			$line = mysql_fetch_array ($result);
+			$this->url = $line['URL'];
+			$this->title = $line['Title'];
+			$this->date = $line['Date'];
+			$this->description = $line['Description'];
+		}
+		else {
+			$this->url = addslashes ($url);
+			$this->title = addslashes ($title);
+			$this->description = addslashes ($description);
+			if (empty ($date))
+				$this->date = date_format (date_create (), "c");
+			else
+				$this->date = $date;
+			$req = "INSERT INTO Items (URL, Title, Date, Description)";
+			$req .= " VALUES ('$this->url', '$this->title', '$this->date', '$this->description')";
+			$data->request ($req);
+		}
 	}
 	
 	public function get_url () { return $this->url; }
 	public function get_title () { return $this->title; }
 	public function get_date () { return $this->date; }
 	public function get_description () { return $this->description; }
+
+	public function get_content () {
+		
+	}
 }
 ?>
