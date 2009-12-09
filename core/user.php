@@ -98,7 +98,15 @@ class User {
 		$result = $data->request ($req);
 	}
 
-	public function get_feeds () {}
+	public function get_feeds () {
+		$feeds = array ();
+		$data = Data::create ();
+		$req = "SELECT URL FROM FeedSubscriptions WHERE Email LIKE '$this->email'";
+		$result = $data->request ($req);
+		while ($line = mysql_fetch_array ($result))
+			$feeds[] = new RSSFeed ($line['URL']);
+		return $feeds;
+	}
 	public function get_own_feed () {}
 	public function get_items_readed () {}
 }
