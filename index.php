@@ -68,11 +68,14 @@ try {
 			echo "<div id=\"gallery\">+--" . $feed->get_url () . "<br>";
 			$feed->update_items ();
 			$items = $feed->get_items ();
+			echo "<table width=\"100%\">";
 			foreach ($items as $item) {
-				echo "| <a href=\"" . $item->get_url () . "\">" . $item->get_title () . "</a><br>";
-				//echo $item->get_description () . "<br><br><br><br><br>";
-				//echo "<hr>";
+				echo "<tr>";
+				echo "<td width=10><input type=\"checkbox\"></td>";
+				echo "<td><b><a href=\"" . $item->get_url () . "\" target=\"blank\">" . $item->get_title () . "</a></b></td>";
+				echo "</tr>";
 			}
+			echo "</table>";
 		}
 		echo "<hr>";
 
