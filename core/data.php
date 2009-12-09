@@ -1,5 +1,5 @@
 <?
-require_once ("config.php");
+require_once ("core/config.php");
 
 class Data {
 	private static $instance;
@@ -11,9 +11,9 @@ class Data {
 									$config->get_mysql_srv_user (),
 									$config->get_mysql_srv_pass ());
 		if ($this->link == false)
-			throw new Exception ("Mysql connection failed! : " . mysql_error ());
+			throw new Exception ("Mysql connection failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 		if (mysql_select_db ($config->get_mysql_db_name (), $this->link) == false)
-			throw new Exception ("Mysql database selection failed! : " . mysql_error ());
+			throw new Exception ("Mysql database selection failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 	}
 	
 	public static function create () {
@@ -27,13 +27,13 @@ class Data {
 	public function request ($req) {
 		$result = mysql_query ($req, $this->link);
 		if ($result == false)
-			throw new Exception ("Mysql request failed! : " . mysql_error ());
+			throw new Exception ("Mysql request failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 		return $result;
 	}
 	
 	public function __destruct () {
 		if (mysql_close ($this->link) == false)
-			throw new Exception ("Mysql disconnection failed! : " . mysql_error ());
+			throw new Exception ("Mysql disconnection failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 	}
 }
 ?>
