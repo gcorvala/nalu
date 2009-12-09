@@ -1,6 +1,5 @@
 <?php
 require_once ("core/config.php");
-require_once ("core/data.php");
 require_once ("core/auth.php");
 require_once ("core/rssfeed.php");
 require_once ("core/rssitem.php");
@@ -8,12 +7,14 @@ require_once ("core/user.php");
 
 try {
 	$auth = new Auth ();
-	echo "<tt>";
-	if ($_GET['action'] == "disconnect")
-		$auth->disconnect ();
 	$config = new Config ();
-	$data = Data::create ();
+	//$page = file_get_contents ("themes/" . $config->get_site_theme () . "/page.inc");
+	//$page = str_replace ("@SITE_NAME@", $config->get_site_name (), $page);
+	if ($_GET['action'] == "logout")
+		$auth->disconnect ();
 	if ($auth->is_anonymous ()) {
+		//$register = file_get_contents ("themes/" . $config->get_site_theme () . "/register.inc");
+		//$page = str_replace ("@PAGE_CONTENT@", $register, $page);
 		echo "<div><form method=\"post\" action=\".\">";
 		echo "Connection :<br>";
 		echo "<input type=\"hidden\" name=\"action\" value=\"login\">";
@@ -53,16 +54,22 @@ try {
 	}
 	else {
 		$user = $auth->get_user ();
-		echo $user->get_email () . "<br>";
+		if ($_GET['action'] == "read") {
+			$item = new RSSItem ($_GET['item']);
+			$user->read ($item);
+			header ('Location: ' . $item->get_url ());
+		}
+		include ("themes/" . $config->get_site_theme () . "/page.inc");
+		/*echo $user->get_email () . "<br>";
 		echo $user->get_nickname () . "<br>";
 		echo $user->get_city () . "<br>";
 		echo $user->get_country () . "<br>";
 		echo $user->get_avatar () . "<br>";
 		echo $user->get_biography () . "<br>";
 		echo $user->get_subscribe_date () . "<br>";
-		echo "<hr>";
+		echo "<hr>";*/
 
-		echo "Feeds :<br>";
+/*		echo "Feeds :<br>";
 		$feeds = $user->get_feeds ();
 		foreach ($feeds as $feed) {
 			echo "<div id=\"gallery\">+--" . $feed->get_url () . "<br>";
@@ -72,14 +79,14 @@ try {
 			foreach ($items as $item) {
 				echo "<tr>";
 				echo "<td width=10><input type=\"checkbox\"></td>";
-				echo "<td><b><a href=\"" . $item->get_url () . "\" target=\"blank\">" . $item->get_title () . "</a></b></td>";
+				echo "<td><b><a href=\"?action=read&item=" . $item->get_url () . "\" target=\"blank\">" . $item->get_title () . "</a></b></td>";
 				echo "</tr>";
 			}
 			echo "</table>";
 		}
-		echo "<hr>";
+		echo "<hr>";*/
 
-		echo "Friends :<br>";
+		/*echo "Friends :<br>";
 		$friends = $user->get_friends ();
 		foreach ($friends as $friend)
 			echo $friend . "<br>";
@@ -100,11 +107,8 @@ try {
 					$user->subscribe_to_feed ($_GET['url']);
 					break;
 			}
-		}
+		}*/
 	}
-
-	echo "<a href=\"index.php\">link</a><br>";
-	echo "end<br>";
 }
 catch (Exception $e) {
 	echo "Exception catched : ". $e->getMessage (). "<br>";

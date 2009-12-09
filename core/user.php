@@ -1,6 +1,7 @@
 <?
 require_once ("core/data.php");
 require_once ("core/rssfeed.php");
+require_once ("core/rssitem.php");
 
 class User {
 	private $email;
@@ -60,9 +61,9 @@ class User {
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
 			if ($line['EmailA'] == $this->email)
-				$friends[] = $line['EmailB'];
+				$friends[] = new User ($line['EmailB']);
 			else
-				$friends[] = $line['EmailA'];
+				$friends[] = new User ($line['EmailA']);
 		}
 		return $friends;
 	}
@@ -87,6 +88,15 @@ class User {
 
 	public function get_own_feed () {
 		return new RSSFeed ("user://" . $this->email);
+	}
+
+	public function read ($item) {
+		$data = Data::create ();
+		$item_url = $item->get_url ();
+		$read_date = date_format (date_create (), "c");
+		$req = "INSERT INTO ItemsReaded (Email, URL, Date)";
+		$req .= " VALUES ('$this->email', '$item_url', '$read_date')";
+		$data->request ($req);
 	}
 
 	public function get_items_readed () {}
