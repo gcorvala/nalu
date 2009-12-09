@@ -30,9 +30,9 @@ class RSSFeed {
 				$node = $child->nodeName;
 				$$node = $child->nodeValue;
 			}
-			$this->name = $title;
-			$this->description = $description;
-			$this->link = $link;
+			$this->name = utf8_decode ($title);
+			$this->description = utf8_decode ($description);
+			$this->link = utf8_decode ($link);
 			$req = "INSERT INTO Feeds (URL, Name, Description, Link)";
 			$req .= " VALUES ('$this->url', '$this->name', '$this->description', '$this->link')";
 			$result = $data->request ($req);
