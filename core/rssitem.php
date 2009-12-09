@@ -10,7 +10,6 @@ class RSSItem {
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
 		if (!isset ($title)) {
-			// search in db
 			$req = "SELECT * FROM Items WHERE URL LIKE '$url'";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0)
@@ -22,9 +21,9 @@ class RSSItem {
 			$this->description = $line['Description'];
 		}
 		else {
-			$this->url = addslashes ($url);
-			$this->title = addslashes ($title);
-			$this->description = addslashes ($description);
+			$this->url = utf8_decode (addslashes ($url));
+			$this->title = utf8_decode (addslashes ($title));
+			$this->description = utf8_decode (addslashes ($description));
 			if (empty ($date))
 				$this->date = date_format (date_create (), "c");
 			else
