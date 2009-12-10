@@ -1,4 +1,4 @@
-<?
+<?php
 class Config {
 	private $mysql_srv_addr;
 	private $mysql_srv_port;

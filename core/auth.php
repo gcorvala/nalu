@@ -1,4 +1,4 @@
-<?
+<?php
 require_once ("core/user.php");
 
 class Auth {

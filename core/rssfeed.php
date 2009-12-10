@@ -1,4 +1,4 @@
-<?
+<?php
 require_once ("core/data.php");
 require_once ("core/rssitem.php");
 

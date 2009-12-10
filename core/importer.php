@@ -1,4 +1,4 @@
-<?
+<?php
 class importer {
 	private $mysql_connection;
 	

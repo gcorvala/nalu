@@ -30,9 +30,13 @@ try {
 		}
 	}
 	else {
+		$user = $auth->get_user ();
+		$feeds = $user->get_feeds ();
+		foreach ($feeds as $feed) {
+			$user->unsubscribe_to_feed ($feed);
+		}
 		if ($action == "login")
 			$action == "home";
-		$user = $auth->get_user ();
 		if ($action == "read") {
 			$item = new RSSItem ($_GET['item']);
 			$user->read ($item);
