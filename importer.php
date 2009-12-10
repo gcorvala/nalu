@@ -8,6 +8,8 @@ class Importer {
 	public function __construct ($xml) {
 		$doc = new DOMDocument ();
 		$xml_content = file_get_contents ($xml);
+		if ($xml_content == false)
+			throw new Exception ("Error loading : $xml");
 		$doc->loadXML ($xml_content);
 		$users = $doc->getElementsByTagName ("user");
 		$this->parse_users ($users);
