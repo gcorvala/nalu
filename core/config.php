@@ -31,5 +31,6 @@ class Config {
 	public function get_site_name () { return $this->site_name; }
 	public function get_site_url () { return $this->site_url; }
 	public function get_site_theme () { return $this->site_theme; }
+	public function get_site_theme_folder () { return "themes/" . $this->site_theme; }
 }
 ?>
