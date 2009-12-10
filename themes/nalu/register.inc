@@ -21,5 +21,4 @@
 </fieldset>
 <label for="submit"></label>
 	<input type="submit" value="Send" id="submit" tabindex="8"> <INPUT type="reset" id="reset" tabindex="9">
-</fieldset>
 </form>

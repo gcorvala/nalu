@@ -22,6 +22,7 @@ class RSSFeed {
 		$result = $data->request ($req);
 		if (mysql_num_rows ($result) == 0) {
 			$this->dom = new DOMDocument ();
+			$xml = file_get_contents('http://www.dpreview.com/feeds/news.xml');
 			if ($this->dom->load ($this->url) == false)
 				throw new Exception ("RSSFeed : url cannot be fetched ! : $this->url");
 			$channel = $this->dom->getElementsByTagName ("channel");
