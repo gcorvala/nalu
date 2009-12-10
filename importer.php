@@ -19,9 +19,9 @@ class Importer {
 		$this->parse_subscriptions ($subscriptions);
 		$reads = $doc->getElementsByTagName ("read");
 		$this->parse_reads ($reads);
-		/*$comments = $doc->getElementsByTagName ("comment");
+		$comments = $doc->getElementsByTagName ("comment");
 		$this->parse_comments ($comments);
-		$shares = $doc->getElementsByTagName ("share");
+		/*$shares = $doc->getElementsByTagName ("share");
 		$this->parse_shares ($shares);
 		*/
 	}
@@ -73,8 +73,9 @@ class Importer {
 				}
 			}
 			try {
-				$user = new User ($email[0]);
-				$user->add_friend ($email[1]);
+				$userA = new User ($email[0]);
+				$userB = new User ($email[1]);
+				$userA->add_friend ($userB);
 			}
 			catch (Exception $e) {
 				echo "PARSE_FRIENDS Exception catched : ". $e->getMessage (). "<br>";
@@ -100,7 +101,7 @@ class Importer {
 			}
 			try {
 				$user = new User ($email);
-				$user->set_item_readed ($item, $date);
+				$user->set_item_readed ($feed, $item, $date);
 			}
 			catch (Exception $e) {
 				echo "PARSE_READS Exception catched : ". $e->getMessage (). "<br>";
@@ -126,6 +127,79 @@ class Importer {
 			try {
 				$user = new User ($email);
 				$user->subscribe_to_feed ($feed, $date);
+			}
+			catch (Exception $e) {
+				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";
+			}
+		}
+	}
+
+	private function parse_comments ($comments) {
+		foreach ($comments as $comment) {
+			foreach ($comment->childNodes as $child) {
+				switch ($child->nodeName) {
+					case "email":
+					case "text":
+					case "feed":
+					case "item":
+						$varname = $child->nodeName;
+						$$varname = $child->nodeValue;
+						break;
+					case "date":
+						$datetime = new DateTime ($child->nodeValue); 
+						$date = $datetime->format ("c");
+						break;
+				}
+			}
+			try {
+				$user = new User ($email);
+				$feed = new RSSFeed ($feed);
+				$item = new RSSItem ($item);
+				$user->add_comment ($feed, $item, $text, $date);
+			}
+			catch (Exception $e) {
+				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";
+			}
+		}
+	}
+
+	private function parse_shares ($shares) {
+		foreach ($shares as $share) {
+			foreach ($share->childNodes as $child) {
+				switch ($child->nodeName) {
+					case "feed":
+					case "item":
+					case "email":
+					case "text":
+						$varname = $child->nodeName;
+						$$varname = $child->nodeValue;
+						break;
+					case "date":
+						$datetime = new DateTime ($child->nodeValue); 
+						$date = $datetime->format ("c");
+						break;
+				}
+			}
+			
+			$mysql_req = "INSERT INTO shares (feed, item, email, text, date)";
+			$mysql_req .= " VALUES ('$feed', '$item', '$email', '$text', '$date')";
+			
+			$string = "<p><tt>";
+			$string .= "+-New Share-------------------------------<br>";
+			$string .= "| feed  : $feed<br>";
+			$string .= "| item  : $item<br>";
+			$string .= "| email : $email<br>";
+			$string .= "| text  : $text<br>";
+			$string .= "| date  : $date<br>";
+			$string .= "| MYSQL : $mysql_req<br>";
+			$string .= "</tt></p>";
+			$string = str_replace (" ", "&nbsp;", $string);
+			echo $string;
+			try {
+				$user = new User ($email);
+				$feed = new RSSFeed ($feed);
+				$item = new RSSItem ($item);
+				$user->share ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {
 				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";

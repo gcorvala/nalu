@@ -97,14 +97,26 @@ class User {
 		$result = $data->request ($req);
 	}
 
-	public function set_item_readed ($item, $date) {
+	public function set_item_readed ($feed, $item, $date) {
 		$data = Data::create ();
 		if (!isset ($date))
 			$read_date = date_format (date_create (), "c");
 		else
 			$read_date = $date;
-		$req = "INSERT INTO ItemsReaded (Email, URL, Date)";
-		$req .= " VALUES ('$this->email', '$item', '$read_date')";
+		$req = "INSERT INTO ItemsReaded (Email, URLFeed, URLItem, Date)";
+		$req .= " VALUES ('$this->email', '$feed', '$item', '$read_date')";
+		$data->request ($req);
+	}
+
+	public function add_comment ($feed, $item, $text, $date) {
+		echo "comm";
+		$data = Data::create ();
+		if (!isset ($date))
+			$comment_date = date_format (date_create (), "c");
+		else
+			$comment_date = $date;
+		$req = "INSERT INTO Comments (Email, Text, URLFeed, URLItem, Date)";
+		$req .= " VALUES ('$this->email', '$text', '" . $feed->get_url () . "', '" . $item->get_url () . "', '$comment_date')";
 		$data->request ($req);
 	}
 
@@ -128,11 +140,30 @@ class User {
 	public function set_item_not_readed () {}
 	public function get_items_readed () {}
 	public function get_items_not_readed () {}
-	public function set_item_shared ($item, $comment) {}
+	public function set_item_shared ($feed, $item, $text, $date) {
+		
+	}
 	public function unset_item_shared () {}
-	public function add_comment () { echo "add_comment TODO<br>"; }
 	public function remove_comment () {}
-	public function add_friend () { echo "add_friend TODO<br>"; }
+
+	public function add_friend ($user, $date) {
+		$data = Data::create ();
+		$req = "SELECT Accepted FROM Friends WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
+		$result = $data->request ($req);
+		if (mysql_num_rows ($result) == 0) {
+			$req = "INSERT INTO Friends (EmailA, EmailB, Date, Accepted)";
+			$req .= " VALUES ('$this->email', '" . $user->get_email () . "', '$date', 0)";
+			$data->request ($req);
+		}
+		else {
+			$accepted = mysql_fetch_array ($result);
+			if ($accepted[0] == 0) {
+				$req = "UPDATE Friends SET Accepted = 1 WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
+				$data->request ($req);
+			}
+		}
+	}
+
 	public function remove_friend () {}
 }
 ?>

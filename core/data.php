@@ -11,7 +11,7 @@ class Data {
 									$config->get_mysql_srv_user (),
 									$config->get_mysql_srv_pass ());
 		if ($this->link == false)
-			throw new Exception ("Mysql connection failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
+			throw new Exception ("Mysql connection failed! : " . mysql_error (), mysql_errno ());
 		if (mysql_select_db ($config->get_mysql_db_name (), $this->link) == false)
 			throw new Exception ("Mysql database selection failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 	}

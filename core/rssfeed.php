@@ -23,7 +23,7 @@ class RSSFeed {
 		if (mysql_num_rows ($result) == 0) {
 			$this->dom = new DOMDocument ();
 			if ($this->dom->load ($this->url) == false)
-				throw new Exception ("RSSFeed : url cannot be fetched !");
+				throw new Exception ("RSSFeed : url cannot be fetched ! : $this->url");
 			$channel = $this->dom->getElementsByTagName ("channel");
 			$channel = $channel->item (0);
 			foreach ($channel->childNodes as $child) {

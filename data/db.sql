@@ -4,6 +4,17 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 
+CREATE TABLE `Comments` (
+  `Email` varchar(50) NOT NULL,
+  `Text` text NOT NULL,
+  `URLFeed` varchar(200) NOT NULL,
+  `URLItem` varchar(200) NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`Email`,`URLFeed`,`URLItem`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
 CREATE TABLE `FeedItems` (
   `URLFeed` varchar(200) NOT NULL,
   `URLItem` varchar(200) NOT NULL,
@@ -53,9 +64,10 @@ CREATE TABLE `Items` (
 
 CREATE TABLE `ItemsReaded` (
   `Email` varchar(50) NOT NULL,
-  `URL` varchar(200) NOT NULL,
+  `URLItem` varchar(200) NOT NULL,
+  `URLFeed` varchar(200) NOT NULL,
   `Date` datetime NOT NULL,
-  PRIMARY KEY (`Email`,`URL`)
+  PRIMARY KEY (`Email`,`URLItem`,`URLFeed`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 
