@@ -12,8 +12,10 @@ try {
 		$action = "home";
 	else
 		$action = $_GET['action'];
-	if ($action == "logout")
+	if ($action == "logout") {
 		$auth->disconnect ();
+		$action = "home";
+	}
 	if ($auth->is_anonymous ()) {
 		if ($action == "register" && isset ($_POST['email'])) {
 			extract ($_POST, EXTR_PREFIX_ALL, "reg");
@@ -28,6 +30,8 @@ try {
 		}
 	}
 	else {
+		if ($action == "login")
+			$action == "home";
 		$user = $auth->get_user ();
 		if ($action == "read") {
 			$item = new RSSItem ($_GET['item']);
