@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<title>Welcome to <? echo $config->get_site_name (); ?></title>
-		<link rel="stylesheet" href="<? echo $config->get_site_theme_folder (); ?>/css/styles.css" type="text/css" />
+		<title>Welcome to <?php echo $config->get_site_name (); ?></title>
+		<link rel="stylesheet" href="<?php echo $config->get_site_theme_folder (); ?>/css/styles.css" type="text/css" />
 	</head>
 	<body>
 		<div id="wrap">
@@ -18,18 +18,18 @@
 				<div id="innernav">
 					<ul>
 						<li class="navleft"><a href=".">Home</a></li>
-<?
+<?php
 if ($auth->is_anonymous ())
 	echo "<li><a href=\"?action=login\">Login</a></li>";
 else
 	echo "<li><a href=\"?action=logout\">Logout</a></li>";
 ?>
 						<li><a href="?action=help">Help</a></li>
-<?
+<?php
 if ($auth->is_anonymous ()) {
 ?>
 						<li><a href="?action=register">Register</a></li>
-<?
+<?php
 }
 ?>
 						<li><a href="?action=about">About</a></li>
@@ -40,14 +40,14 @@ if ($auth->is_anonymous ()) {
 			</div>
 			<div id="content">
 				<div id="page">
-<?
+<?php
 include_once ($config->get_site_theme_folder () . "/" . $action . ".inc");
 ?>
 				</div>
 				<div id="sidebar">
 					<h3><span>feeds</span></h3>
 					<ul>
-<?
+<?php
 if (!$auth->is_anonymous ()) {
 	$feeds = $user->get_feeds ();
 	foreach ($feeds as $feed)
@@ -57,7 +57,7 @@ if (!$auth->is_anonymous ()) {
 					</ul>
 					<h3><span>friends</span></h3>
 					<ul>
-<?
+<?php
 if (!$auth->is_anonymous ()) {
 	$friends = $user->get_friends ();
 	foreach ($friends as $friend)
