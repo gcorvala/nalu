@@ -1,7 +1,7 @@
 <?php
 require_once ("core/config.php");
-require_once ("core/rssfeed.php");
-require_once ("core/rssitem.php");
+require_once ("core/feed.php");
+require_once ("core/item.php");
 require_once ("core/user.php");
 
 class Importer {
@@ -153,8 +153,8 @@ class Importer {
 			}
 			try {
 				$user = new User ($email);
-				$feed = new RSSFeed ($feed);
-				$item = new RSSItem ($item);
+				$feed = new Feed ($feed);
+				$item = new Item ($item);
 				$user->add_comment ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {
@@ -197,8 +197,8 @@ class Importer {
 			echo $string;
 			try {
 				$user = new User ($email);
-				$feed = new RSSFeed ($feed);
-				$item = new RSSItem ($item);
+				$feed = new Feed ($feed);
+				$item = new Item ($item);
 				$user->share ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {

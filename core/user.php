@@ -1,7 +1,7 @@
 <?php
 require_once ("core/data.php");
-require_once ("core/rssfeed.php");
-require_once ("core/rssitem.php");
+require_once ("core/feed.php");
+require_once ("core/item.php");
 
 class User {
 	private $email;
@@ -77,17 +77,17 @@ class User {
 		$req = "SELECT URL FROM FeedSubscriptions WHERE Email LIKE '$this->email'";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result))
-			$feeds[] = new RSSFeed ($line['URL']);
+			$feeds[] = new Feed ($line['URL']);
 		return $feeds;
 	}
 
 	public function get_own_feed () {
-		return new RSSFeed ("user://" . $this->email);
+		return new Feed ("user://" . $this->email);
 	}
 
 	public function subscribe_to_feed ($url, $date) {
 		$data = Data::create ();
-		$feed = new RSSFeed ($url);
+		$feed = new Feed ($url);
 		if (!isset ($date))
 			$subscribe_date = date_format (date_create (), "c");
 		else

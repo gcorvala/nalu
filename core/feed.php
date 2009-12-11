@@ -1,8 +1,8 @@
 <?php
 require_once ("core/data.php");
-require_once ("core/rssitem.php");
+require_once ("core/item.php");
 
-class RSSFeed {
+class Feed {
 	private $url;
 	private $name;
 	private $description;
@@ -12,7 +12,7 @@ class RSSFeed {
 
 	public function __construct ($url) {
 		if (empty ($url))
-			throw new Exception ("RSSFeed : url are not defined !");
+			throw new Exception ("Feed : url are not defined !");
 		$this->url = $url;
 		// TODO : si user_feed et pas dans la db -> Exception
 		if (ereg("^user://", $this->url))
@@ -23,7 +23,7 @@ class RSSFeed {
 		if (mysql_num_rows ($result) == 0) {
 			$this->dom = new DOMDocument ();
 			if ($this->dom->load ($this->url) == false)
-				throw new Exception ("RSSFeed : url cannot be fetched ! : $this->url");
+				throw new Exception ("Feed : url cannot be fetched ! : $this->url");
 			$channel = $this->dom->getElementsByTagName ("channel");
 			$channel = $channel->item (0);
 			foreach ($channel->childNodes as $child) {
@@ -56,7 +56,7 @@ class RSSFeed {
 		$req = "SELECT * FROM FeedItems WHERE URLFeed LIKE '$this->url'";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
-			$items[] = new RSSItem ($line['URLItem']);
+			$items[] = new Item ($line['URLItem']);
 		}
 		return $items;
 	}
@@ -68,7 +68,7 @@ class RSSFeed {
 		if (!isset ($this->dom)) {
 			$this->dom = new DOMDocument ();
 			if ($this->dom->load ($this->url) == false)
-				throw new Exception ("RSSFeed : url cannot be fetched !");
+				throw new Exception ("Feed : url cannot be fetched !");
 		}
 		$items = array ();
 		$xml_items = $this->dom->getElementsByTagName ("item");
@@ -81,7 +81,7 @@ class RSSFeed {
 			$req = "SELECT * FROM Items WHERE URL LIKE '$link'";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0) {
-				$items[] = new RSSItem ($link, $title, $pubDate, $description);
+				$items[] = new Item ($link, $title, $pubDate, $description);
 				$req = "INSERT INTO FeedItems (URLFeed, URLItem)";
 				$req .= " VALUES ('$this->url', '$link')";
 				$data->request ($req);
