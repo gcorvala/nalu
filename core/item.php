@@ -1,7 +1,7 @@
 <?php
 require_once ("core/data.php");
 
-class RSSItem {
+class Item {
 	private $url;
 	private $title;
 	private $date;

@@ -1,8 +1,8 @@
 <?php
 require_once ("core/config.php");
 require_once ("core/auth.php");
-require_once ("core/rssfeed.php");
-require_once ("core/rssitem.php");
+require_once ("core/feed.php");
+require_once ("core/item.php");
 require_once ("core/user.php");
 
 try {
@@ -38,7 +38,7 @@ try {
 		if ($action == "login")
 			$action == "home";
 		if ($action == "read") {
-			$item = new RSSItem ($_GET['item']);
+			$item = new Item ($_GET['item']);
 			$user->read ($item);
 			header ('Location: ' . $item->get_url ());
 		}
