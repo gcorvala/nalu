@@ -17,13 +17,12 @@ class Importer {
 		$this->parse_friends ($friends);
 		$subscriptions = $doc->getElementsByTagName ("subscription");
 		$this->parse_subscriptions ($subscriptions);
-		$reads = $doc->getElementsByTagName ("read");
-		$this->parse_reads ($reads);
+		/*$reads = $doc->getElementsByTagName ("read");
+		$this->parse_reads ($reads);*/
 		$comments = $doc->getElementsByTagName ("comment");
 		$this->parse_comments ($comments);
-		/*$shares = $doc->getElementsByTagName ("share");
+		$shares = $doc->getElementsByTagName ("share");
 		$this->parse_shares ($shares);
-		*/
 	}
 
 	private function parse_users ($users) {
@@ -101,6 +100,8 @@ class Importer {
 			}
 			try {
 				$user = new User ($email);
+				$feed = new Feed ($feed);
+				$item = new Item ($item);
 				$user->set_item_readed ($feed, $item, $date);
 			}
 			catch (Exception $e) {
@@ -159,7 +160,7 @@ class Importer {
 				$user->add_comment ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {
-				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";
+				echo "PARSE_COMMENTS Exception catched : ". $e->getMessage (). "<br>";
 			}
 		}
 	}
@@ -181,21 +182,6 @@ class Importer {
 						break;
 				}
 			}
-			
-			$mysql_req = "INSERT INTO shares (feed, item, email, text, date)";
-			$mysql_req .= " VALUES ('$feed', '$item', '$email', '$text', '$date')";
-			
-			$string = "<p><tt>";
-			$string .= "+-New Share-------------------------------<br>";
-			$string .= "| feed  : $feed<br>";
-			$string .= "| item  : $item<br>";
-			$string .= "| email : $email<br>";
-			$string .= "| text  : $text<br>";
-			$string .= "| date  : $date<br>";
-			$string .= "| MYSQL : $mysql_req<br>";
-			$string .= "</tt></p>";
-			$string = str_replace (" ", "&nbsp;", $string);
-			echo $string;
 			try {
 				$user = new User ($email);
 				$feed = new Feed ($feed);
@@ -203,12 +189,34 @@ class Importer {
 				$user->share ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {
-				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";
+				echo "PARSE_SHARES Exception catched : ". $e->getMessage (). "<br>";
 			}
 		}
 	}
 }
 echo "start<br>";
-new Importer ("data/bdd_projet_0910_data.xml");
+try {
+	$feed = new Feed ("http://www.lesoir.be/services/rss/la_une/index.xml", "data/lesoir.xml");
+	$feed->update ();
+	$feed = new Feed ("http://www.lalibre.be/rss/index.xml", "data/lalibre.xml");
+	$feed->update ();
+	$feed = new Feed ("http://valves.bepolytech.be/valves_ba3.rss", "data/valves_ba3.xml");
+	$feed->update ();
+	$feed = new Feed ("http://xkcd.com/rss.xml", "data/xkcd.xml");
+	$feed->update ();
+	$feed = new Feed ("http://failblog.wordpress.com/feed/", "data/failblog.xml");
+	$feed->update ();
+	$feed = new Feed ("http://syndication.thedailywtf.com/TheDailyWtf", "data/TheDailyWtf.xml");
+	$feed->update ();
+	// FIXME : Atom ? RSS ?
+	//$feed = new Feed ("http://sboucher.blogspot.com/feeds/posts/default?alt=rss", "data/sergeblog.xml");
+	//$feed->update ();
+	$feed = new Feed ("http://www.ulb.ac.be/actulb/rss/lastnews.rss", "data/ACT'ULB.xml");
+	$feed->update ();
+	new Importer ("data/bdd_projet_0910_data.xml");
+}
+catch (Exception $e) {
+	echo $e->getMessage () . "<br>";
+}
 echo "end<br>";
 ?>
