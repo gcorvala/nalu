@@ -362,6 +362,10 @@ div.footer p a {
 /*	font-size: 1.25em;*/
 }
 
+.comment-link {
+	font-size: 0.75em;
+}
+
 form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
   font:100% verdana,arial,sans-serif;
   margin: 0;
