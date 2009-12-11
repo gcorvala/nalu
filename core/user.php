@@ -31,8 +31,8 @@ class User {
 			$this->subscribeDate = $line['SubscribeDate'];
 		}
 		else {
-			$this->email = $email;
-			$this->password = $password;
+			$this->email = utf8_decode ($email);
+			$this->password = utf8_decode ($password);
 			$this->nickname = utf8_decode ($nickname);
 			$this->city = utf8_decode ($city);
 			$this->country = utf8_decode ($country);
@@ -76,7 +76,7 @@ class User {
 	public function get_feeds () {
 		$feeds = array ();
 		$data = Data::create ();
-		$req = "SELECT URL FROM FeedSubscriptions WHERE Email LIKE '$this->email'";
+		$req = "SELECT URL FROM FeedSubscriptions WHERE (Email LIKE '$this->email' AND URL NOT LIKE 'user://$this->email')";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result))
 			$feeds[] = new Feed ($line['URL']);
