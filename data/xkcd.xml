@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+      <channel>
+            <title>xkcd.com</title>
+            <link>http://xkcd.com/</link>
+            <description>xkcd.com:A webcomic of romance and mathhumor.</description>
+            <language>en</language>
+            <item>
+                  <title>Movie NarrativeCharts</title>
+                  <link>http://xkcd.com/657/</link>
+                  <description>&lt;imgsrc="http://imgs.xkcd.com/comics/movie_narrative_charts.png" title="In the LotRmap, up and down correspond LOOSELY to northwest and southeast respectively."alt="In the LotR map, up and down correspond LOOSELY to northwest and southeastrespectively." /&gt;</description>
+                  <pubDate>Mon, 02 Nov 2009 05:00:00 -0000</pubDate>
+                  <guid>http://xkcd.com/657/</guid>
+            </item>
+            <item>
+                  <title>October30th</title>
+                  <link>http://xkcd.com/656/</link>
+                  <description>&lt;imgsrc="http://imgs.xkcd.com/comics/october_30th.png" title="Not enough houses onyour block? Just hit them at 30-year intervals from here to 2300 and get 10x thecandy." alt="Not enough houses on your block? Just hit them at 30-year intervalsfrom here to 2300 and get 10x the candy." /&gt;</description>
+                  <pubDate>Fri, 30Oct 2009 04:00:00 -0000</pubDate>
+                  <guid>http://xkcd.com/656/</guid>
+            </item>
+            <item>
+                  <title>Climbing</title>
+                  <link>http://xkcd.com/655/</link>
+                  <description>&lt;imgsrc="http://imgs.xkcd.com/comics/climbing.png" title="Where did you even getthis wall? Return it there and stand it back up right now." alt="Where did youeven get this wall? Return it there and stand it back up right now."/&gt;</description>
+                  <pubDate>Wed, 28 Oct 2009 04:00:00 -0000</pubDate>
+                  <guid>http://xkcd.com/655/</guid>
+            </item>
+            <item>
+                  <title>Nachos</title>
+                  <link>http://xkcd.com/654/</link>
+                  <description>&lt;imgsrc="http://imgs.xkcd.com/comics/nachos.png" title="'Cheater!' 'Hey, gaming onwifi? You have only yourself to blame.'" alt="'Cheater!' 'Hey, gaming on wifi?You have only yourself to blame.'" /&gt;</description>
+                  <pubDate>Mon, 26 Oct 2009 04:00:00 -0000</pubDate>
+                  <guid>http://xkcd.com/654/</guid>
+            </item>
+      </channel>
+</rss>

@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://syndication.thedailywtf.com/~d/styles/itemcontent.css"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" version="2.0">
+	<channel>
+		<title>The Daily WTF</title> 
+		<link>http://thedailywtf.com/</link> 
+		<description>Curious Perversions in Information Technology</description> 
+
+		<geo:lat>41.36995</geo:lat><geo:long>-81.862591</geo:long><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://syndication.thedailywtf.com/TheDailyWtf" type="application/rss+xml" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com" /><item>
+			<author>Mark Bowytz</author> 
+			<title>Tales from the Interview: The Shoe-In</title> 
+			<link>http://thedailywtf.com/Articles/The-ShoeIn.aspx</link> 
+			<category>Tales from the Interview</category>
+			<pubDate>Tue, 03 Nov 2009 14:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6710</guid> 
+			<description>&lt;p&gt;Once word hit that certain departments within South England Financial were going to be outsourced, employees naturally started to get a bit nervious. Being a contractor &amp;mdash; and therefore exempt from any kind of nice severance package &amp;mdash; &lt;strong&gt;Jon Kipper &lt;/strong&gt;was determined to find a new job before the axe fell.&lt;/p&gt;
+&lt;p&gt;After about a month of tossing his resum&amp;eacute; out into the world, Jon received a call from a very perky recuriter regarding a position that was almost a dead ringer to what he was doing. Although the position was in London &amp;mdash; a good two hours from his flat by train &amp;mdash; Jon liked the idea of working in the big city with all the glitz and glare.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I tweaked your resum&amp;eacute; a bit to make it look a little more professional, and the guys at PoshBank were &lt;em&gt;very&lt;/em&gt; impressed and are keen to meet you&amp;quot; he joyfully exclaimed. &amp;quot;Just between you and me, I think you're a shoe-in for the job.&amp;quot; He went on to explain that the folks at PoshBank had been searching for months for just the right candidate and, of all the applicants submitted, only Jon was considered worthy of an interview. All he really had to do was just show up.&lt;/p&gt;
+&lt;p&gt;Unable to resist a sure thing, Jon gathered up his best suit, requested a day off at his current job (unpaid, obviously) and booked the extortionate train tickets to London.&lt;/p&gt;
+&lt;p&gt;When the day of the interview arrived, Jon was pumped up and ready to go. Just to make sure that he was well prepared, Jon took along a manilla envelope containing a copy of the Job Description, a few extra copies of his resum&amp;eacute;, and an article about the 20 most-asked interview questions at mega-sized financial institutions. The latter would be perfect for the time sitting on the train to rehearse a few questions and then hopefully win the hearts of the big bad London boys.&lt;/p&gt;
+&lt;p&gt;Jon arrived in good time and was quickly introduced to the friendly interviewers: the Head of IT. After a few straightforward questions on Active Directory, Jon's nerves were under control and the interviewer moved on to address one of the points on his resum&amp;eacute;.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Lotus Notes...&amp;quot; he began.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;This is going to be a walk in the park!&lt;/i&gt; Jon thought, &lt;i&gt;After using Outlook for so long, how much different can Notes be for reading email?&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;...Tell me. How you would go about configuring the security of a new Domino server and adding it to the current cluster&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Jon froze.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Um, actually, that's not something I can do&amp;quot;, he eventually stuttered, &amp;quot;After all, my mail security expertise was with Microsoft Exchange. I've never touched a Domino Server, but I'd be eager though to learn&amp;mdash;&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Then why have you listed '3 years of Lotus Notes Server configuration and administration' as one of your key skills?&amp;quot;&lt;/p&gt;
+&lt;p&gt;Jon swallowed hard. &amp;quot;Ummm...may I take a look at that?&amp;quot;&lt;/p&gt;
+&lt;p&gt;Jon leaned over and couldn't believe what he saw. Rather than the resum&amp;eacute; he had posted, it was a hideously formatted bastardisation that was looked like the most hideous Word template ever. As if that wasn't bad enough, it included line after line of exaggeration in every single skill listed. Jon figured that to be able to attain the experience listed, he would have needed to start in I.T. sometime after turning 15.&lt;/p&gt;
+&lt;p&gt;Jon quickly produced the real McCoy from my manilla envelope and placed it next to the offending article.&lt;/p&gt;
+&lt;p&gt;The Head of IT looked as though he was going to explode.&lt;/p&gt;
+&lt;p&gt;After a deep breath, and through clenched teeth, he stood up slowly, and thanked Jon for his time. He then swung open the door and headed back to the lobby where he commanded one of the receptionists to &amp;quot;please show Mr. Kipper to the exit&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Jon felt swindled. Not only had he annoyed a potential employer through no fault of his own, but he had lost a day's pay doing so. And as if that wasn't bad enough, the expensive British Rail ticket for the ride home added a nice little insult to his injury.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Maybe the bright lights of London aren't for a simple lad like me&lt;/em&gt;, he thought to himself as he walked back to the train station. But just then, the phone rang. He picked it up with his stardard greeting, &amp;quot;Hello this is Jon Kipper speaking.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Hey Jon! My name is Darren. I found your resum&amp;eacute; and I think you'd be perfect for a permanent position at a fantastic financial institution. How soon can you get to London for an interview?&amp;quot;&lt;/p&gt;
+&lt;p&gt;Maybe things were looking up after all.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I'm actually in London at the moment. I could do it later this afternoon if that's not too short notice.&amp;quot; Jon figured that he might finally be able to justify the overpriced train tickets.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Fantastic! I'll call the guys back and see if we can set something up for this afternoon. I just need to reformat your resum&amp;eacute; and send it over,&amp;quot; he paused for a moment and added, &amp;quot;but from what I've told them, they seemed pretty impressed. They're a great outfit called 'PoshBank' right in the heart of the city.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Jon was at a loss for words.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Between you and me,&amp;quot; the recruiter jumped in, filling the moment of silence, &amp;quot;I think you're a shoe-in for the job. They've only interviewed one other guy, and apparently he was a complete loser&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/LfMd13h_i4XcAvSZGa-izqyyIB8/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LfMd13h_i4XcAvSZGa-izqyyIB8/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/LfMd13h_i4XcAvSZGa-izqyyIB8/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/LfMd13h_i4XcAvSZGa-izqyyIB8/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=BGGde-_TUO4:6y6qWEwXxMs:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/BGGde-_TUO4" height="1" width="1"/&gt;</description> 
+			<slash:comments>42</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/The-ShoeIn.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>CodeSOD: The Utility Package </title> 
+			<link>http://thedailywtf.com/Articles/The-Utility-Package-.aspx</link> 
+			<category>CodeSOD</category>
+			<pubDate>Mon, 02 Nov 2009 14:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6711</guid> 
+			<description>&lt;p&gt;&amp;quot;It took months of low quality, late delivered code,&amp;quot; &lt;b&gt;Scott C&lt;/b&gt; writes, &amp;quot;but a certain coder on our team was &lt;em&gt;finally&lt;/em&gt; let go.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;I was the lucky one assigned to clean up some of his old code and noticed that several classes of his made reference to a particular utility package. I opened the package and found a single class with 24 methods filled with sad code.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+public static boolean isNull(String val) {
+    boolean error=false;
+    if(val==null) {
+        error=true;
+        }
+    return error ;
+    }
+
+
+public static boolean isNotNull(String val) {
+    boolean error=false;
+    if(val==null) {
+        error=true; ;
+        }
+    return error;
+
+    }
+
+
+public static String isEmpty(String ss, String evt){
+    String red = &amp;quot;&amp;quot;;
+    String s = ss.trim();
+    
+    if (s.equals(&amp;quot;&amp;quot;) &amp;amp;&amp;amp; (!evt.equals(&amp;quot;&amp;quot;))) {
+        red = &amp;quot;#ff0000&amp;quot;;
+        }
+
+    return red;
+    }&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Scott continues, &amp;quot;those were the 1st, 2nd, and 3rd methods in the utility class. The other 24 methods weren't much better.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Methods 16 and 17 were particularly interesting, but mostly because of their signature.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+public static boolean isIntentegerInRange(String integer, int min, int max)
+public static boolean isIntegerInRange(String integer, int min, int max)&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;Except for the additional 'nte' in the name, the methods were identical, character for character. And both were used about equally throughout the code.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/pQv21GETAjHkvhgL2u9PvZhiyBw/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pQv21GETAjHkvhgL2u9PvZhiyBw/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/pQv21GETAjHkvhgL2u9PvZhiyBw/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/pQv21GETAjHkvhgL2u9PvZhiyBw/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=6uhTvgYbdmw:vEdqoJlegdI:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/6uhTvgYbdmw" height="1" width="1"/&gt;</description> 
+			<slash:comments>102</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/The-Utility-Package-.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>Error'd: Sewing with Calculus</title> 
+			<link>http://thedailywtf.com/Articles/Sewing-with-Calculus.aspx</link> 
+			<category>Error'd</category>
+			<pubDate>Fri, 30 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6709</guid> 
+			<description>&lt;p&gt;&lt;a name="PPic1"&gt;&lt;/a&gt;&amp;quot;My girlfriend offered to sew me curtains for my house,&amp;quot; &lt;b&gt;Scott&lt;/b&gt; wrote, &amp;quot;I've never sewn before, but I didn't think calculus and electrical resistance would be involved.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/pattern%20chart.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic2"&gt;&lt;/a&gt;&amp;quot;I feel very safe knowing that Rite Aid not only values my privacy, but also their stores' privacy,&amp;quot; notes &lt;b&gt;Robert&lt;/b&gt;. &amp;quot;I can only immagine what would happen if Rite Aid were to just tell people their address or phone number.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/riteaid.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic1"&gt;&lt;/a&gt;&amp;quot;Good idea,&amp;quot; comments &lt;b&gt;Adam Koch&lt;/b&gt;, &amp;quot;I think I'll click Continue Anyway. Hey! Wait a sec...&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/errord.gif" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic2"&gt;&lt;/a&gt;&amp;quot;I was camping in Maine and ordered up a bag of firewood,&amp;quot; &lt;b&gt;Dan&lt;/b&gt; wrote, &amp;quot;shouldn't they provide some more information if that's the net weight?&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/firewood.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic3"&gt;&lt;/a&gt;&amp;quot;Things are not looking very good if you are an employee in Georgia,&amp;quot; notes &lt;b&gt;Darin&lt;/b&gt;, &amp;quot;I hope the 6% who do have a job can foot the bill for the rest of us.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/img023.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic4"&gt;&lt;/a&gt;&lt;b&gt;Chuck&lt;/b&gt; wrote, &amp;quot;guess I am I am going to wait a while for EZPass Service.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/IMG_0007.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic5"&gt;&lt;/a&gt;&amp;quot;It took me a moment to realize that I should have bought this indivually,&amp;quot; notes &lt;b&gt;David Daniel&lt;/b&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/mps.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic3"&gt;&lt;/a&gt;&amp;quot;I'm &lt;em&gt;ready&lt;/em&gt; to obey,&amp;quot; wrote &lt;b&gt;David Aronchick&lt;/b&gt;, &amp;quot;I &lt;em&gt;want&lt;/em&gt; to obey. Help me, help you!&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/UI_fail.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic4"&gt;&lt;/a&gt;&amp;quot;A while back, I started a Sudoku puzzle on my laptop and then promptly gave up and forgot about it,&amp;quot; writes &lt;b&gt;Jos&amp;eacute; Alejandro Carrillo Neira&lt;/b&gt;, &amp;quot;I got bored one day and decided to finish it. Gee, how time flies when you're not solving Sodoku.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/winnar.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic5"&gt;&lt;/a&gt;&amp;quot;I received &lt;a href="http://www.ne16.com/t/9537354/436053143/52818713/0/"&gt;this email&lt;/a&gt; recently,&amp;quot; &lt;b&gt;Scott Bauer&lt;/b&gt;, &amp;quot;I guess it was kinda interesting to know all that.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/words_go_here.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/fGnpY22cOfIizUK7jsO67SwKzO4/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/fGnpY22cOfIizUK7jsO67SwKzO4/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/fGnpY22cOfIizUK7jsO67SwKzO4/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/fGnpY22cOfIizUK7jsO67SwKzO4/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=0PEY2X-Ytck:xVApRu0j68U:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/0PEY2X-Ytck" height="1" width="1"/&gt;</description> 
+			<slash:comments>88</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Sewing-with-Calculus.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Mark Bowytz</author> 
+			<title>Choose Your Own IP</title> 
+			<link>http://thedailywtf.com/Articles/Choose-Your-Own-IP.aspx</link> 
+			<category>Feature Articles</category>
+			<pubDate>Thu, 29 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6705</guid> 
+			<description>&lt;p&gt;&lt;img style="margin: 5px; float: right" class="wtf_floatright" alt="external ftw!" src="http://img.thedailywtf.com/images/mark/mfd_was_an_inside_job/usrmodem.JPG" /&gt;SuperbNet was by no means a bad ISP. Opening during the 90&amp;rsquo;s, they offered a nice alternative to the 15 hours of &amp;quot;free&amp;quot; disks that arrived in the mailboxes of local residents. Their prices were competitive and service was very reliable. That is until one day, out of the blue, &lt;b&gt;Jonathan&amp;rsquo;s&lt;/b&gt; Linux box would not connect to the Internet.&lt;/p&gt;
+&lt;p&gt;After firing up a terminal session, some troubleshooting revealed the culprit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+ppp0  Link encap:Point-Point Protocol
+      inet addr:10.0.0.1  
+         P-t-P:XXX.XXX.XXX.
+         XXX Mask:255.255.255.0&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For whatever reason, the ISP was giving him a local IP address of 10.0.0.1. Oddly enough, that was the same address of the Ethernet adaptor on Jonathan&amp;rsquo;s computer.&lt;/p&gt;
+&lt;p&gt;After adding the &amp;lsquo;noipdefault&amp;rsquo; option to pppd-config (the dial-up networking configuration file), his network card and dial-up no longer butted heads, and everything was hunky dory again.&lt;/p&gt;
+&lt;p&gt;However, once connected, Jonathan&amp;rsquo;s mind was swirling with questions &amp;ndash; &lt;i&gt;Why was he suddenly allowed to change his IP address? Isn&amp;rsquo;t this a BIG security risk? What would happen if a computer's IP address was the set to the same as someone else's? Even worse, what if&amp;hellip; &lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Jonathan froze for a second. Wouldn&amp;rsquo;t the ISP&amp;rsquo;s DNS server constitute &amp;ldquo;any&amp;rdquo; IP address?&lt;/p&gt;
+&lt;p&gt;He knew then that he just had to try out his theory and then got to work.&lt;/p&gt;
+&lt;p&gt;After some time, Jonathan managed to hack up a copy of a POP3 server so that it would log all connection attempts (and a SMTP proxy so that any outgoing mail would get forwarded on at a later time). Then, after cloning a copy of the ISP&amp;rsquo;s home page, his set up things so that all web requests would serve up the ISP&amp;rsquo;s homepage from his local Apache server.&lt;/p&gt;
+&lt;p&gt;Jonathan then updated his dial-up networking configuration and then &amp;ldquo;threw the switch&amp;rdquo; by connecting to his ISP. Suddenly, his poor 28.8kbps modem was flashing in &amp;ldquo;rave mode&amp;rdquo; trying to serve the needs of anybody connected to the ISP. Jonathan was floored when he noticed that after only 5 minutes, he had dozens of usernames and passwords.&lt;/p&gt;
+&lt;p&gt;Jonathan quickly disconnected his computer from the ISP and dialed up SuperbNet&amp;rsquo;s support line to report his findings.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Hey, I think you have a problem with your service &amp;ndash; I was able to spoof your DNS server by simply changing my dial-up settings!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Jonathan heard the technician click-clack on his keyboard &amp;ldquo;Yup, DNS server looks to be working. You should be fine &amp;ndash; Are you on Windows 3.1 or 95?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Tell you what,&amp;quot; Jonathan sighed, &amp;quot;let me just reconnect, and then call you back.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;After freeing up the phone line, Jonathan connected to the ISP and then walked to the local gas station to use their pay phone to call SuperbNet&amp;rsquo;s support line.&lt;/p&gt;
+&lt;p&gt;After 15 minutes of &amp;ldquo;Hmmm&amp;rdquo; and &amp;ldquo;That&amp;rsquo;s strange&amp;rdquo; from the other end of the phone, the support tech finally said &amp;ldquo;I think this is going to take a while &amp;ndash; could you disconnect and well, just not do that thing you&amp;rsquo;re doing anymore? We&amp;rsquo;ll continue to investigate though &amp;ndash; thanks for the tip!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Jonathan agreed and, as he hung up, he wondered if he could find a way to get the service from the &amp;quot;15 FREE hours&amp;quot; company to work in Linux.&lt;/p&gt;
+&lt;p&gt;Years later, and long after switching ISPs and mostly forgetting about &amp;quot;the incident&amp;quot;, Jonathan was at a friend's house and needed to access the Internet. While dialing up, he noticed that his friend was using SuperbNet so, out of curiosity, he edited the properties of the Windows 98 dialup connection to use a static IP address. And lo and behold, SuperbNet dutifully assigned him the requested IP address.&lt;/p&gt;
+&lt;p&gt;Fortunately, SuperbNet never quite made it past dial-up, and as a result, their customers were acquired by a national conglomerate and eventually converted to DSL.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/IotMn_Bsxf2Hwc72U5Eqx8bbU8A/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/IotMn_Bsxf2Hwc72U5Eqx8bbU8A/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/IotMn_Bsxf2Hwc72U5Eqx8bbU8A/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/IotMn_Bsxf2Hwc72U5Eqx8bbU8A/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=b0k45zrQ1TE:LJAYEmJBliA:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/b0k45zrQ1TE" height="1" width="1"/&gt;</description> 
+			<slash:comments>111</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Choose-Your-Own-IP.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>Representative Line: letter_array</title> 
+			<link>http://thedailywtf.com/Articles/letter_array.aspx</link> 
+			<category>Representative Line</category>
+			<pubDate>Wed, 28 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6708</guid> 
+			<description>&lt;p&gt;&amp;quot;My company sells access to a &lt;em&gt;massive&lt;/em&gt; PHP application that was built a few years ago by The Originals,&amp;quot; writes &lt;b&gt;Magnus Bergmark&lt;/b&gt;. &amp;quot;The application has everything: slow interface, quirks-mode invalid HTML4, hidden POST forms for every link, you name it.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;The code consists of a few files arranged in a proper &lt;a href="http://thedailywtf.com/Articles/The_Developmestuction_Environment.aspx"&gt;developmestuction&lt;/a&gt; environment, with thousands of lines in each file. Comments are mostly devoid, but I found a line with a comment about one-and-a-half thousand lines down.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+$letter_array = array(&lt;span style="color: #990000"&gt;
+   &amp;quot;A&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;B&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;C&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;D&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;E&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;F&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;G&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;H&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;I&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;J&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;K&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;L&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;M&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; 
+   &amp;quot;N&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;O&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;P&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;Q&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;R&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;S&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;T&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;U&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;V&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;W&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;X&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;Y&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;Z&amp;quot;&lt;/span&gt;,&lt;span style="color: #990000"&gt; &amp;quot;!&amp;quot;&lt;/span&gt;); 
+   &lt;span style="color: #009900"&gt;// A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !&lt;/span&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Magnus adds, &amp;quot;at least the comment is accurate. That's more than I can say about the others.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/yrGLskIipnMgh3ntQHKHpeRYW54/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/yrGLskIipnMgh3ntQHKHpeRYW54/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/yrGLskIipnMgh3ntQHKHpeRYW54/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/yrGLskIipnMgh3ntQHKHpeRYW54/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=nIps_rNVWyM:Ffg6_JVablo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/nIps_rNVWyM" height="1" width="1"/&gt;</description> 
+			<slash:comments>76</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/letter_array.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>The Automated Curse Generator</title> 
+			<link>http://thedailywtf.com/Articles/The-Automated-Curse-Generator.aspx</link> 
+			<category>Feature Articles</category>
+			<pubDate>Tue, 27 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6707</guid> 
+			<description>&lt;p&gt;&lt;img style="margin: 5px; float: right" class="wtf_imgfloatright" alt="" src="http://img.thedailywtf.com/images/200910/iStock_000006068829XSmall.jpg" /&gt;It was 1999, and &lt;b&gt;Brian's&lt;/b&gt; company's new online marketing venture was finally off the ground &lt;em&gt;and&lt;/em&gt; making a profit using an off-the-shelf conglomeration of bits and pieces of various content management, affiliate program, and ad servers. Brian's team had hit all of the goals for the first funding tranche, and the next step was to use those millions of dollars to grow the staff from twelve to fifty, half of whom would be software developers working directly for Brian.&lt;/p&gt;
+&lt;p&gt;The project was an $8 million, nine-month development effort to build, from the ground up, the best 21st-century marketing/e-commerce/community/ad network/reporting system mousetrap possible. Leading a team of twenty people was a big step up for Brian, so he buckled down, read management theory books, re-read &lt;em&gt;The Mythical Man Month&lt;/em&gt;, learned the ins-and-outs of project management software, invested in UML and process training, and carefully pored over resumes to find the best candidates.&lt;/p&gt;
+&lt;p&gt;Having assembled, trained, and indoctrinated his team in best practices, they went to work. They held stakeholder interviews, pored over requirements, developed use-case models, charted process flow, designed domain entity models, and built their development plan. They developed cleanly separated business logic, persistence, and user experience tiers. They followed formal test-driven development. They held weekly group code reviews. They did just about everything right, so much so that Brian had never before been on a project which ran so smoothly.&lt;/p&gt;
+&lt;p&gt;Until the last week before release.&lt;/p&gt;
+&lt;p&gt;One of the key components was the custom-built ad server. It used a single unique ID for each ad placement and handled the switching of creatives on the backend. At the time, that was still uncommon, with many affiliate programs and ad servers hardcoding the creative images directly into the HTML ad serving code. Being able to manage updates of creatives, optimize banner rotation, and take down unwanted ads on the back end was one of the major advantages as seen by the business users.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Hey Brian, quick question.&amp;quot; It was Barry, VP of Marketing. The entire company was his brainchild, and he was CEO in all but name. &amp;quot;Some clients are complaining that these IDs are kind of ugly, always 'F0DB57A3C10EE7D28277' or some other unpronounceable jumble.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Now, the IDs were uniquely generated each time a new ad placement was created. With dozens of client and hundreds of affiliates signed up representing thousands of web sites and tens of thousands of pages, they needed to generate them automatically. Also, to avoid possible fraud, the IDs needed to be non-sequential but unique. Plus, they were purely used on the backend &amp;mdash; nobody &lt;em&gt;needed&lt;/em&gt; to pronounce them.&lt;/p&gt;
+&lt;p&gt;&amp;quot;These are only shown to users as URL parameters, no different than the session ID,&amp;quot; Brian protested. More diplomatically, he asked, &amp;quot;What's the reason to for making them pronounceable?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Well,&amp;quot; he admitted, &amp;quot;one of our biggest advertisers has this legacy accounting system which their IS department won't integrate with our online reports. When talking by phone with people in different offices, they have to read the IDs to each other to be able to identify which accounts they are talking about.&amp;quot;&lt;/p&gt;
+&lt;p&gt;After thinking a moment, Brian realized that this was the perfect place to apply an algorithm he had learned about recently. &amp;quot;Markov chains!&amp;quot; he blurted. &amp;quot;We can use statistical textual analysis to generate random words built up from natural phonemic combinations. They won't be real words, but they will match expected English patterns, and people will be able to pronounce and read them completely naturally.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Intrigued and satisfied, Barry assented, reminding him that the release at the end of the week still had to be met.&lt;/p&gt;
+&lt;p&gt;The deadline wasn't an issue. Barry was already off, thinking through the design in his head. Over the next two days he developed a corpus analyzer to build the necessary statistical models, and created a generator to randomly string them together and output the &amp;quot;pronounceable IDs&amp;quot;. It was a great success. Everyone crowded around to see the server spitting out fake words like &amp;quot;enspattle&amp;quot;, &amp;quot;flargleblum&amp;quot;, &amp;quot;unclorifical&amp;quot;, and &amp;quot;macrodestic&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Barry was ecstatic too, &amp;quot;This is great! That client has been threatening to drop us because reading off those codes is slowing down their operations. They're our most well-known anchor client, so if they go, others will drop with them. This is exactly what I we need to keep them. Let's demo it right away.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The two of them drove up to the client's offices in the city, and Barry proudly told them that he brought along the genius who came up with a way to make readable codes and increase their workers' productivity. Barry opened up a browser to the demo word generator page and clicked &amp;quot;New random word&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&amp;quot;garglepussy&amp;quot; immediately popped up on the screen.&lt;/p&gt;
+&lt;p&gt;After a silent five seconds while the client stared in horror, Barry said &amp;quot;Well, it is random after all. Brian, you can filter that, right?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Sure, I'll put a bad-word list together,&amp;quot; Brian said, groaning that he hadn't thought of it before. They ran through it a few more times, getting nice normal-sounding words like &amp;quot;blutterful&amp;quot;, &amp;quot;trimbolid&amp;quot;, &amp;quot;anavastic&amp;quot;, and finally left the client happily and contented in their offices.&lt;/p&gt;
+&lt;p&gt;During the drive back, Barry said, &amp;quot;I've been thinking about it and it's too dangerous to just have a bad-word filter. We'll never be able to think up every possible offensive-sounding combination. Can you make them sound like a foreign language instead of English?&amp;quot;&lt;/p&gt;
+&lt;p&gt;It was a good idea &amp;mdash; he already had a corpus analyzer and could plug in just about any text he felt like. &amp;quot;Sure, I'll show you some samples this afternoon,&amp;quot; Brian told him.&lt;/p&gt;
+&lt;p&gt;Brian spent the next few hours running the corpus on just about any foreign text he could find. He plugged in &amp;quot;Lorem ipsum dolor&amp;quot; to get some fake Latin, the German libretto of &lt;em&gt;Die Zauberfl&amp;ouml;te&lt;/em&gt;, some Balzac novels cribbed off of the French Gutenberg Project, the text from some Italian airplane manufacturer's web site, and &lt;em&gt;Don Quijote&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Barry stopped by and they tried the samples out, one by one.&lt;/p&gt;
+&lt;p&gt;Latin: &amp;quot;Everybody pronounces it wrong, differently.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Hindi: &amp;quot;Too many weird vowels, and it makes me want to slip into an Apu accent.&amp;quot;&lt;/p&gt;
+&lt;p&gt;German: &amp;quot;All those consonants and throaty sounds are too hard.&amp;quot;&lt;/p&gt;
+&lt;p&gt;French: &amp;quot;Are you kidding? Most of the letters at the end of words are silent.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Italian: &amp;quot;Better, but it look me two years to learn to say 'gnocchi' right.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Spanish: &amp;quot;Easy vowels, simple sounds, best yet! But some of their staff are Hispanic.&amp;quot;&lt;/p&gt;
+&lt;p&gt;They sat there for a few minutes trying to think of something else when Barry cried out, &amp;quot;I've got it!&amp;quot; And ran out of the room. He came back with a Japanese study book. &amp;quot;I'm planning to expand overseas after this release, and bought this to study since everything is written in the English alphabet. It's perfect &amp;mdash; there are simple vowels, only a few consonants, and no funny sounds to trip you up. Even if people pronounce a little differently it's still easy to figure out. And nobody knows what it means so it can't be offensive!&amp;quot;&lt;/p&gt;
+&lt;p&gt;The next day, one day before release, Brian had finished typing in page after page of meaningless Japanese and they were off once more to demo to the client. Barry carefully clicked &amp;quot;New random word.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;koremachiko&amp;quot;, &amp;quot;sabashimasu&amp;quot;, &amp;quot;tobetokaga&amp;quot;, &amp;quot;mitsukaremo&amp;quot;. The client carefully read each example, and after a few minutes leaned back, chuckling, &amp;quot;That's perfect, Barry. Anyone can read these, and no chance of offense. Thanks for doing this for us, we're onboard for the launch.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Barry was ecstatic.&lt;/p&gt;
+&lt;p&gt;By the next morning, everyone in the office was in a great mood, too. The launch had gone smoothly, and their realtime reporting showed all of website activity, ad serving, and commerce transactions ramping up. Everything was working perfectly.&lt;/p&gt;
+&lt;p&gt;Everyone was in the middle of a celebratory all-hands wine &amp;amp; cheese party in the conference room when Barry got a call and stepped out of the room. Several minutes later he came storming back into the room, waving an email he had printed out and yelling, &amp;quot;Brian, Brian, you useless screwup! What the hell is wrong with you? How do you explain this? Read it, OUT LOUD!&amp;quot; He shoved the paper at Brian, who took it apprehensively.&lt;/p&gt;
+&lt;p&gt;&amp;quot;fukushita&amp;quot;, &amp;quot;kakashite&amp;quot;, &amp;quot;fukumihado&amp;quot;, &amp;quot;diefatsu&amp;quot;, &amp;quot;tokaduki&amp;quot;, and &amp;quot;fukusuka&amp;quot;, he read, collapsing inwardly and visibly shaking as he read down the list.&lt;/p&gt;
+&lt;p&gt;&amp;quot;They dropped our contract!&amp;quot; Brian shrieked, &amp;quot;Half our revenue is gone! You've killed our company!&amp;quot;&lt;/p&gt;
+&lt;p&gt;Brian protested that dropping the bad-word filter and using Japanese were both Barry's idea, but he could see that this would do nothing to abate his fury. The next day he asked for, and was happily granted a two week vacation which he used to start looking for a new job.&lt;/p&gt;
+&lt;p&gt;Five years later at an industry mixer, Brian exchanged cards with a developer and saw that he worked in Barry's department at his old company. He told him that he had worked there years before and was glad to see the company had recovered and was going strong.&lt;/p&gt;
+&lt;p&gt;&amp;quot;You worked there too?&amp;quot; he asked, looking at Brian's name tag. He suddenly got a strange look on his face. &amp;quot;Wait, are you &lt;em&gt;that&lt;/em&gt; Brian, who first developed the business platform?&amp;quot;&lt;/p&gt;
+&lt;p&gt;Cautiously, Brian replied in the affirmative.&lt;/p&gt;
+&lt;p&gt;He broke out into a huge smile. &amp;quot;You're famous. You know, we're still using it. We call it The Automated Curse Generator.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/jo0yl3hM3l_U7aP9NXGD-c2fYGE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jo0yl3hM3l_U7aP9NXGD-c2fYGE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/jo0yl3hM3l_U7aP9NXGD-c2fYGE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/jo0yl3hM3l_U7aP9NXGD-c2fYGE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=UAZHnGXGaKs:m7uxGUXtwfU:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/UAZHnGXGaKs" height="1" width="1"/&gt;</description> 
+			<slash:comments>163</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/The-Automated-Curse-Generator.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>CodeSOD: "PHP has an eval function like perl"</title> 
+			<link>http://thedailywtf.com/Articles/PHP-has-an-eval-function-like-perl.aspx</link> 
+			<category>CodeSOD</category>
+			<pubDate>Mon, 26 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6706</guid> 
+			<description>&lt;p&gt;One of the sysadmins at &lt;b&gt;Stuart Caie's&lt;/b&gt; company &amp;mdash; Jim, as we'll call him &amp;mdash; wanted to scratch his itch. Because he spent a whole lot of time logging into different systems just to gather operational data, he figured that a simple web application could automate the data collection process. &amp;quot;This way,&amp;quot; he persuadingly said to management, &amp;quot;I can be much more efficient when doing my job.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The brass agreed and allowed him to dedicate some time to building a monitoring application. Jim was excited and ready to overcome his first obstacle: he didn't know anything about programming. Fortunately, &lt;em&gt;Learn Perl in 21 Days&lt;/em&gt; and &lt;em&gt;Learn PHP in 21 Days&lt;/em&gt; showed him the way and, in no time, Jim had a nice little web app built. His co-workers congratulated him on it and asked him to build in some more features. Management was also pleased with the tool and allowed him to spend some more time in development. And so Jim kept adding to it and adding to it. Again and again.&lt;/p&gt;
+&lt;p&gt;Fast forward two years later, and the application had become a cesspool of barely functioning copy-n-paste code. With hundreds of data feeds, each freely writing to one central database that was already buckling under strain, Jim spent his entire day firefighting problems with his web application. This, obviously, didn't leave him much time to do his &lt;em&gt;actual&lt;/em&gt; sysadmin job and management wasn't all too thrilled about that. Jim aggressively fought off all attempts at transitioning the application the development team so, during a round of cost cutting, Jim was made redundant.&lt;/p&gt;
+&lt;p&gt;When the web app was picked up by the development team, it was quickly brought into source control, refactored, monitored, and fully documented. Since it would have been wasteful to rewrite it from scratch, there are still vestiges of Jim in there and, from time to time, the dev team enjoys discovering how Jim thought. On one page, for example, he needed to go through all our servers and count up &amp;quot;install types&amp;quot;. Sometimes servers don't have an install type, so that gets counted as &amp;quot;null&amp;quot;. It would be easiest to do that as an SQL statement, but in PHP it would look like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+foreach ($aservers as $x) {
+   $type = $ainstall[&amp;quot;$x[hostid].$x[hostname]&amp;quot;];
+   if (! isset($type)) $type = 'null';
+   $avalues[$type]++;
+}&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Jim, however, didn't write code like that. He wrote this, which does the same thing in a more roundabout way.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+ $akeys = array_keys($ainstall);
+ for ($i=0; $i &amp;lt; count($aservers); $i++) {
+   $hostid    = $aservers[$i][hostid];
+   $hostname  = $aservers[$i][hostname];
+   $systemkey = $hostid . &amp;quot;.&amp;quot; . $hostname;
+   for ($j=0; $j &amp;lt; count($akeys); $j++) {
+     if ($systemkey == $akeys[$j]) {
+       $ainstall_values[$i] = $ainstall[$systemkey];
+     }
+   }
+ }
+ $aunique = array_values(array_unique($ainstall_values));
+
+ // PHP has an eval function like perl.
+ // Building up a switch statement  to run later.
+ $switch  = &amp;quot;switch (\$ainstall[\$systemkey]) {&amp;quot;;
+ $avalues[count($aunique)];
+
+ // add entry for null values
+ $avalues[&amp;quot;null&amp;quot;] = 0;
+ for ($i=0; $i &amp;lt; count($aunique); $i++) {
+   $avalues[$aunique[$i]] = 0;
+   $switch .= &amp;quot;  case \&amp;quot;\$aunique[$i]\&amp;quot; : &amp;quot;;
+   $switch .= &amp;quot;  \$avalues[\$aunique[$i]]++; &amp;quot;;
+   $switch .= &amp;quot;  break; &amp;quot;;
+ }
+ $switch .= &amp;quot;  case \&amp;quot;\&amp;quot; : &amp;quot;;
+ $switch .= &amp;quot;  \$avalues[\&amp;quot;null\&amp;quot;]++; &amp;quot;;
+ $switch .= &amp;quot;}&amp;quot;;
+ for ($i=0; $i &amp;lt; count($aservers); $i++) {
+   $hostid    = $aservers[$i][hostid];
+   $hostname  = $aservers[$i][hostname];
+   $systemkey = $hostid . &amp;quot;.&amp;quot; . $hostname;
+   eval ($switch);
+ }&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/StBb6nnKQTKZjH850f7rr6w0MaU/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/StBb6nnKQTKZjH850f7rr6w0MaU/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/StBb6nnKQTKZjH850f7rr6w0MaU/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/StBb6nnKQTKZjH850f7rr6w0MaU/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=o2Zaq1vv8pk:wbz7D-FNYeo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/o2Zaq1vv8pk" height="1" width="1"/&gt;</description> 
+			<slash:comments>100</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/PHP-has-an-eval-function-like-perl.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>Error'd: Misconstrued</title> 
+			<link>http://thedailywtf.com/Articles/Misconstrued.aspx</link> 
+			<category>Error'd</category>
+			<pubDate>Fri, 23 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6704</guid> 
+			<description>&lt;p&gt;&lt;a name="Pic4"&gt;&lt;/a&gt;&amp;quot;What, precisely, is being misconstrued here?&amp;quot; writes &lt;b&gt;Seth H.&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/errd-misconstrue.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic1"&gt;&lt;/a&gt;&amp;quot;That &lt;em&gt;is&lt;/em&gt; an Xtreme value buy!&amp;quot; notes &lt;b&gt;Troy Payne&lt;/b&gt;, &amp;quot;but I think I'll just take the normal value buy, please.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/850A0210.JPG" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;quot;This popped out while I was filling out a new phone for AT&amp;amp;T,&amp;quot; wrote &lt;b&gt;Mike Barber&lt;/b&gt;, &amp;quot;Now I am a programmer... but I'm not sure what they wan't me to do.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/ATT%20Survey%20Programmer%20Alert.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic3"&gt;&lt;/a&gt;&amp;quot;I signed up for the Microsoft Hohm Energy site, and imagine my surprise to see what I'm paying for energy for my humble abode,&amp;quot; &lt;b&gt;David Canfield &lt;/b&gt;writes, &amp;quot;No wonder I'm having trouble making ends meet.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/energy_costs.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic5"&gt;&lt;/a&gt;&lt;a name="Pic2"&gt;&lt;/a&gt;&amp;quot;Apparently,&amp;quot; wrote &lt;b&gt;Ian&lt;/b&gt;, &amp;quot;my school thinks in order to get perfect on a grammar test, you must at least have a basic understanding of HTML. I'm a CS major, I should realized that was the answer.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/grammar%20rules.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic1"&gt;&lt;/a&gt;&amp;quot;While searching around for a shelf system for my speakers, I found one was the right size and right price,&amp;quot; &lt;b&gt;Henry Pham&lt;/b&gt; writes, &amp;quot;but I'm not sure if it can hold the load of my speakers... or really, anything.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/maxload.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic2"&gt;&lt;/a&gt;&amp;quot;I got this helpful message after re-installing software for my HP scanner,&amp;quot; &lt;b&gt;Tom&lt;/b&gt; notes, &amp;quot;it still didn't work.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/scanfix.JPG" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic3"&gt;&lt;/a&gt;&amp;quot;I received this when opening a SQLite DB with SQLiteSpy,&amp;quot; &lt;b&gt;Matthew&lt;/b&gt; notes, &amp;quot;apparently I was mistaken when I thought there was a problem. My bad.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/sqllitespy.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic4"&gt;&lt;/a&gt;&amp;quot;I got this window while resizing a picture in Word,&amp;quot; &lt;b&gt;Kyle&lt;/b&gt; writes, &amp;quot;it's better than 1% and NULL, I suppose.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/wordwtf.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic5"&gt;&lt;/a&gt;&amp;quot;The relative humidity in Quebec City was so off the charts that even Wolfram Alpha's weather applet couldn't resolve it,&amp;quot; writes &lt;b&gt;Erik Kretschmer&lt;/b&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/wtf_walpha_weather.gif" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/Zk0HLWTfINyNMbqyfDLFrIc0OTs/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/Zk0HLWTfINyNMbqyfDLFrIc0OTs/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/Zk0HLWTfINyNMbqyfDLFrIc0OTs/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/Zk0HLWTfINyNMbqyfDLFrIc0OTs/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=a6-rOb-sVJ8:Ee7DDzfJ9ds:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/a6-rOb-sVJ8" height="1" width="1"/&gt;</description> 
+			<slash:comments>80</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Misconstrued.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>Classic WTF: The Fully Automated Manual System</title> 
+			<link>http://thedailywtf.com/Articles/Classic-WTF-The-Fully-Automated-Manual-System.aspx</link> 
+			<category>Feature Articles</category>
+			<pubDate>Thu, 22 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6701</guid> 
+			<description>&lt;p&gt;&lt;em&gt;The Fully Automated Manual System was originally published on September 22, 2006&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img style="margin: 5px; float: right" class="wtf_imgfloatright" alt="" width="245" height="293" src="http://img.thedailywtf.com/images/200609/payroll.jpg" /&gt;It was to be the perfect system: requested by an IT-friendly internal client, managed by a competent project manager, described by insightful business analysts, designed by an experienced architect, built by intelligent programmers, and perfected by thorough testers. Its goal was hefty but noble: replace the current manual billing system with a fully automated process that tracks jobs, hours, accounting, and payroll. It was to save employees across the organization a lot of time and save the company a lot of money by bringing payroll processing in-house. But alas, it was confronted by an obstacle it just could not overcome: the Chief Technology Officer.&lt;/p&gt;
+&lt;p&gt;At &lt;strong&gt;D. Travis North's &lt;/strong&gt;company, the CTO prides himself on being a &amp;quot;developer friendly&amp;quot; type of guy. He even manages to keep up with his prided developer certifications. At least, so he believes. A quick trip to his office would show his latest pride and joy: a Microsoft-Certified Visual Basic 4.0 Expert certificate from a little more than a decade ago.&lt;/p&gt;
+&lt;p&gt;No one's really sure how the (mostly implemented) technical details of the new payroll system managed to reach the CTO, but to an expert like himself, they were completely unacceptable. He immediately suspended the project due to &amp;quot;serious security problems.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The main concern the CTO had was the fact that programmers would have to access the vendor's direct deposit system in order to implement direct deposit. It was explained to the CTO that, technically, the programmers wouldn't access the &lt;em&gt;production&lt;/em&gt; system, only the vendor's test system. It was also explained that the communication channel was through a VPN tunnel that programmers could not access directly. And it was also explained that the direct deposit interface was limited to transactions against pre-determined bank accounts. But none of that mattered -- it was still too big of a security risk. Fortunately, the CTO was ready with a better, more secure solution.&lt;/p&gt;
+&lt;p&gt;The CTO called for the system to be changed so that each department and branch manager would print up a &amp;quot;direct deposit&amp;quot; report. The manager would then fax the report (because it's more secure than email) to the corporate offices. The reports would then be entered, line by line, into the direct deposit vendor's web application by any one of the six data entry clerks hired for this process.&lt;/p&gt;
+&lt;p&gt;The system is still in use to this day. Every once in a while, a clerk will make a typo and someone will notice a digit or two transposed on their direct deposit receipt. D. has just come to accept that as a sign that the fully automated manual system is alive and well.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/T_dNCd3es60KcjHaI93fV0i6Rjo/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/T_dNCd3es60KcjHaI93fV0i6Rjo/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/T_dNCd3es60KcjHaI93fV0i6Rjo/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/T_dNCd3es60KcjHaI93fV0i6Rjo/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=foS4JkpLXP0:OI-LOsl5zxI:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/foS4JkpLXP0" height="1" width="1"/&gt;</description> 
+			<slash:comments>69</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Classic-WTF-The-Fully-Automated-Manual-System.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Mark Bowytz</author> 
+			<title>CodeSOD: Is the Mainframe On?</title> 
+			<link>http://thedailywtf.com/Articles/Is-the-Mainframe-On.aspx</link> 
+			<category>CodeSOD</category>
+			<pubDate>Wed, 21 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6697</guid> 
+			<description>&lt;p&gt;The asset management application used &lt;strong&gt;Alex R.'s&lt;/strong&gt; company isn't exactly bad, but sometimes it can be a little bit of a pain.&lt;/p&gt;
+&lt;p&gt;For example, some time ago, some deveoper implemented a feature that would check if the mainframe was up and running. This was done by simply querying a column in some database table. But shortly thereafter, users noticed that there was a brief pause after entering their password. Nothing earth shattering, it was just annoying.&lt;/p&gt;
+&lt;p&gt;When Alex heard someone mention the delay in passing, Alex figured it was probably some poorly implemented SQL to blame and volunteered to investigate what would likely amount to a quick fix. Alex tracked down the logic that checked if the mainframe was up and running. While the SQL wasn't fully to blame for the slowness, it certainly didn't help...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;span style="color: #999999"&gt;' Add column just in case it's not there&lt;/span&gt;
+Try
+    Dim sql &lt;span style="color: #000099"&gt;As String&lt;/span&gt; = &lt;span style="color: #990000"&gt;&amp;quot;ALTER TABLE [Mainframe] ADD MainframeOn Bit&amp;quot;&lt;/span&gt;
+    &lt;span style="color: #000099"&gt;If&lt;/span&gt; ExecuteNonQuery(sql) &amp;lt; 0 &lt;span style="color: #000099"&gt;Then Exit Try&lt;/span&gt;
+
+    &lt;span style="color: #000099"&gt;Dim&lt;/span&gt; t &lt;span style="color: #000099"&gt;As String&lt;/span&gt; = &lt;span style="color: #990000"&gt;&amp;quot;0&amp;quot;&lt;/span&gt;
+    &lt;span style="color: #000099"&gt;If&lt;/span&gt; _Settings.GetSetting(&amp;quot;General&amp;quot;, &amp;quot;MainframeOn&amp;quot;, False) &lt;span style="color: #000099"&gt;Then&lt;/span&gt; t = &lt;span style="color: #990000"&gt;&amp;quot;1&amp;quot;&lt;/span&gt;
+
+    ExecuteNonQuery(&lt;span style="color: #990000"&gt;&amp;quot;UPDATE [dbo].[Mainframe] SET MainframeOn = &amp;quot;&lt;/span&gt; &amp;amp; t)
+&lt;span style="color: #000099"&gt;Catch&lt;/span&gt;
+    &lt;span style="color: #999999"&gt;' Already run&lt;/span&gt;
+&lt;span style="color: #000099"&gt;End Try&lt;/span&gt;
+
+MainframeOn = Utils.ConvertDBValue(Of Boolean) _
+   (ExecuteScalar(&lt;span style="color: #990000"&gt;&amp;quot;SELECT TOP 1 [MainframeOn] FROM [dbo].[Mainframe]&amp;quot;)&lt;/span&gt;, &lt;span style="color: #000099"&gt;False&lt;/span&gt;)&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/ouoOKXHW_cScAhsLNHQHczWUnFQ/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ouoOKXHW_cScAhsLNHQHczWUnFQ/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/ouoOKXHW_cScAhsLNHQHczWUnFQ/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/ouoOKXHW_cScAhsLNHQHczWUnFQ/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=5W5Pe9kB6Bw:sJGo1rUQtcY:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/5W5Pe9kB6Bw" height="1" width="1"/&gt;</description> 
+			<slash:comments>109</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Is-the-Mainframe-On.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>CompuMart Support, Part 1: Windows 96½ &amp; More</title> 
+			<link>http://thedailywtf.com/Articles/CompuMart-Support,-Part-1-Windows-96½--More.aspx</link> 
+			<category>Feature Articles</category>
+			<pubDate>Tue, 20 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6700</guid> 
+			<description>&lt;p&gt;Back in the late 1990's, &lt;b&gt;Lyfe R&lt;/b&gt; worked as a tech support manager for CompuMart (as I'll call them), which was &lt;em&gt;the&lt;/em&gt; largest retailer of consumer PC's in the region. They had a store in almost every town and used world-class marketing along with an extremely aggressive sales team to sell at extremely low prices. I mean, surprisingly low; as in, lowest-bidder low. Because the salespeople were rather &amp;quot;generous&amp;quot; with claims of what their low-end computers could do, the cost of support eventually became greater than the sales margin, and the whole company collapsed. But it sure was fun while it lasted.&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;The Windows 96&amp;frac12; Upgrade&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;A customer was having a problem with some recent software he purchased: it required Windows 98, yet he only had Windows 95. The first-line technicians started out with a simple reboot, then a reboot with a &amp;quot;two minute wait&amp;quot; before turning on. The tech then moved on to a complete factor-state restore using the restore CD. The logic behind that was apparently to &amp;quot;refresh the installer executable&amp;quot;. When that didn't work, the first-line tech suggested that the customer buy a Windows 98 upgrade at his local CompuMart store.&lt;/p&gt;
+&lt;p&gt;A few days later, the customer called back talking about &amp;quot;the half version of Windows,&amp;quot; which obviously confused the first-line tech. Eventually, the call was patched to Lyfe, who listed to the irate customer complain the thirty-minute wait times and how no one knew what he was talking about. After calming down a bit, he explained that the sales guy had told him CompuMart didn't sell Windows 98 as an upgrade, and that he'd have to buy a brand new machine. As much as he wanted one, he couldn't afford a new computer.&lt;/p&gt;
+&lt;p&gt;Because the sales team so desperately wanted to &amp;quot;help&amp;quot; the customer, they said that CompuMart would charge him half the price of a new computer and upgrade his current machine to Windows 96&amp;frac12;, which would run half of the new software. When Lyfe called the store to find out what he had actually been told, the salesman responded &amp;quot;yeah, can't you just upgrade his RAM or something... he'll never know the difference.&amp;quot; Lyfe apologized to the customer and said there was nothing they could do with his new software.&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;The Unwanted Pet&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;While training a new tech, Lyfe was listening in on a call. The customer was an old lady who had just received delivery of her new Computer Machine.&lt;/p&gt;
+&lt;p&gt;Grandma wanted to get it setup in time for the grandkids, Sarah and Graham. Those were Marcy's children, and other grandchildren lived across the country. They didn't visit too often, but she talked to them on the phone whenever she could. Of course, Marcy's husband would normally set up the computer, but he was away on a business trip. He was a very successful business man, you know, and Marcy did really well for herself.&lt;/p&gt;
+&lt;p&gt;After the new tech finally managed to steer the lovely old lady back on topic, she mentioned that she was very pleased that the computer hadn't been delivered with a mouse. Mice are adorable, and Graham would just love seeing one run around, but they live little doo-doos around the house and tend to spread. She had told the salesman, who was a very lovely young gentlemen, that she definitely didn't want a mouse.&lt;/p&gt;
+&lt;p&gt;Reining her in, the tech managed to get some more details from her that didn't revolve around her grandchildren or Marcy. Just as the tech was certain that the issue was a missing mouse, the grandmother revealed the true problem. She had broken the foot pedal as it was made of plastic and didn't look very strong.&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;The Disappearing Icons&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;Although Lyfe has seen the tale of the disappearing icons appear on the 'net a few times over the past decade, he's confident that it occurred in the cubicle next to his.&lt;/p&gt;
+&lt;p&gt;A user called in with disappearing icons on her desktop, but the tech quickly ran out of ideas on why icons would apparently randomly disappear. The only clue was that the problem happened more often when she moved the mouse to the left, but the obvious user issues &amp;mdash; deleting icons, drag-dropping selections off the screen, etc &amp;mdash; had been discounted, together with technical ones like display driver or active desktop problems.&lt;/p&gt;
+&lt;p&gt;Eventually, they discovered that the further the cursor was moved to the left, the more icons disappeared. Unable to come up with a solution, CompuMart dispatched a return-shipping box and arranged for a courier to pick up the package. When the customer's computer arrived back at the office, they couldn't reproduce the issue, even with the customer on the phone, describing exactly what she did. Because the techs couldn't replicate the problem, they sent the unit back and, lo-and-behold, the issue reoccurred on the first try.&lt;/p&gt;
+&lt;p&gt;Eventually, some bright (or incredibly lucky) tech asked her what she could see instead of the icons. She said &amp;quot;nothing&amp;quot; &amp;mdash; which is generally user-speak for a blank screen, the desktop, wallpaper, Word, IE or a huge variety of other stuff &amp;mdash; and the tech took &amp;quot;nothing&amp;quot; at face value and finally got the answer: it was the mouse. And her hand.&lt;/p&gt;
+&lt;p&gt;The customer was putting the mouse &lt;em&gt;on&lt;/em&gt; the screen in order to move the cursor, and sometimes, her hand and mouse covered the icons on the left-hand side of the screen. The icons &amp;quot;disappeared&amp;quot; under it.&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;Matching Serial Numbers&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;One day, Lyfe was passed an angry customer who &lt;em&gt;demanded&lt;/em&gt; to speak to a manager. This customer had been on hold for twenty minutes before a tech even answered, and then had to wait another twenty minutes while the &amp;quot;idiot tech&amp;quot; tried to identify his computer.&lt;/p&gt;
+&lt;p&gt;Lyfe employed the standard customer management tactics to calm him down, and then sympathetically asked him to be patient and give him the serial number... one more time. The customer gruffed, &amp;quot;A-7-8-1-V-8-2-1-2-4-1-2-4&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I'm sorry sir,&amp;quot; Lyfe responded, &amp;quot;that doesn't match any of our conventions. Perhaps you're reading off the wrong number? It's a large metalic label on the back of the computer.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Annoyed, the customer put the phone down, went back under his desk, and looked at the back of his computer. The serial number was still A781V82124124. Then Lyfe had a crazy idea: he asked the customer to describe what his computer looked like.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I don't know,&amp;quot; the peeved customer said, &amp;quot;it's beige, has a door, a big power button, a key. Below that it has a MaxPuter logo.&amp;quot;&lt;/p&gt;
+&lt;p&gt;MaxPuter was a brand sold by one of CompuMart's competitors. Lyfe pointed out that CompuMart couldn't support someone else's computer, both for the customer's benefit and for CompuMart. The customer wasn't very happy to hear that, since he only had a &amp;quot;simple question&amp;quot; that he couldn't see why no one would answer. Halfway through the second explanation, the customer gave up and just slammed the phone down.&lt;/p&gt;
+&lt;p&gt;A week later, Lyfe received a written complaint about his performance. It read, &amp;quot;CompuMart shouldn't advertise Computer Support lines in their shops or catalogues, as the description is just too vague. It needs to be CompuMart-only Computer Support. This cost me $4.90 in long distance (bill attached), I expect a refund on my call costs.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/5qmQwDEPwRTYO5-FzY6stx2drWM/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/5qmQwDEPwRTYO5-FzY6stx2drWM/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/5qmQwDEPwRTYO5-FzY6stx2drWM/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/5qmQwDEPwRTYO5-FzY6stx2drWM/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=clZb-Fey_5o:IW8Te2V8eJg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/clZb-Fey_5o" height="1" width="1"/&gt;</description> 
+			<slash:comments>166</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/CompuMart-Support,-Part-1-Windows-96½--More.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>CodeSOD: Ask Rumen</title> 
+			<link>http://thedailywtf.com/Articles/Ask-Rumen.aspx</link> 
+			<category>CodeSOD</category>
+			<pubDate>Mon, 19 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6699</guid> 
+			<description>&lt;p&gt;&amp;quot;We recently inherited an ancient ASP.NET application,&amp;quot; &lt;b&gt;Misho D&lt;/b&gt; writes, &amp;quot;well, ancient as in .NET. The development started around 2002 and the maintenance never seems to end.&amp;quot; &amp;quot;Given that it was probably the original team's first .NET (or one of the first) .NET applications, the WTF-to-line ratio is pretty high. But there's one recurring theme throughout the code that is baffling: some guy named Rumen. His name and comments are all throughout the code.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+protected PostControlMode GetMode()
+    // this is set from code because of 
+    // mehtod call flow - binding is before loading 
+    // and problem appear - ask Rumen for details
+    return PostControlMode.Blurb;
+}&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;Granted, the code above isn't so bad. But Rumen's method for determining a particular image's height, well...&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+int imgHeight = 0;
+int imgHeight = 0;
+try
+{
+    WebRequest r = WebRequest.Create(SystemData.AbsoluteApplicationHost + imageUrl);
+    Cache.HttpRequestCachePolicy noCachePolicy = 
+          new Cache.HttpRequestCachePolicy(Cache.HttpRequestCacheLevel.NoCacheNoStore);
+    r.CachePolicy = noCachePolicy;
+    using (WebResponse rp = r.GetResponse())
+    {
+        System.IO.Stream stream = rp.GetResponseStream();
+        imgHeight = System.Drawing.Image.FromStream(stream).Height;
+        rp.Close();
+    }
+}
+catch
+{
+    imgHeight = 85;
+}&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Misho continues, &amp;quot;and in case you were wondering, yes. The image is on the hard drive of the web server, right in the application root. Plus, this code is placed in the header control, so it is run for each and every page. Now the real funny part is that there are only two lines of code where imgHeight is referenced:&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+// commented for design has change - ask Rumen for info
+// srchOutContainer.Style.Add(&amp;quot;height&amp;quot;, imgHeight + &amp;quot;px&amp;quot;);
+// srchInnerContainer.Style.Add(&amp;quot;top&amp;quot;, (imgHeight / 2) + &amp;quot;px&amp;quot;);&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;And naturally,&amp;quot; Misho adds, &amp;quot;those two lines have been commented out. But not the part that makes the web request and the calculations.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/SBhkAUoJ2y-WihBNe_LlUlPDc9U/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/SBhkAUoJ2y-WihBNe_LlUlPDc9U/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/SBhkAUoJ2y-WihBNe_LlUlPDc9U/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/SBhkAUoJ2y-WihBNe_LlUlPDc9U/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=wdTunmyWOg4:CkC6O_jVVhU:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/wdTunmyWOg4" height="1" width="1"/&gt;</description> 
+			<slash:comments>97</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Ask-Rumen.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Alex Papadimoulis</author> 
+			<title>Error'd: REGISTER_NOT_FOUND</title> 
+			<link>http://thedailywtf.com/Articles/REGISTER_NOT_FOUND.aspx</link> 
+			<category>Error'd</category>
+			<pubDate>Fri, 16 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6698</guid> 
+			<description>&lt;p&gt;&lt;a name="Pic4"&gt;&lt;/a&gt;&amp;quot;It's a wonder I was able to pay for this drink after looking high and low for the register,&amp;quot; notes &lt;b&gt;Jon Baker&lt;/b&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/IMG_1688.JPG" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic1"&gt;&lt;/a&gt;&amp;quot;All I wanted to do was fill out a vacation request,&amp;quot; &lt;b&gt;Jason&lt;/b&gt; notes, &amp;quot;the program suggested creating a CSN... but that's not an acronym I'm familiar with... or can even find. I just cancled and tryied agian.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/cancle_plesae.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic2"&gt;&lt;/a&gt;&amp;quot;My satellite recorder got a bit confused,&amp;quot; notes &lt;b&gt;David Harvey&lt;/b&gt;, &amp;quot;but the new description of &lt;em&gt;The Daily Show&lt;/em&gt; seems rather apt, though.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/daily%20show.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic3"&gt;&lt;/a&gt;&lt;b&gt;Tai&lt;/b&gt; writes, &amp;quot;I can't imagine what a purple monkey dishwasher has to do with the database.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/Error-MonkeyNotFound.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="Pic5"&gt;&lt;/a&gt;&amp;quot;Wow,&amp;quot; &lt;b&gt;Jamie D&lt;/b&gt; writes, &amp;quot;I can maximise my income by allowing people to advertise on my site for $0!&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#Pic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/lol.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic1"&gt;&lt;/a&gt;&amp;quot;I really must stop typing emails that are several words long,&amp;quot; &lt;b&gt;Dave Cartwright&lt;/b&gt; commented, &amp;quot;clearly, these break Notes 7.0 so badly that it causes the error message to error.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic1"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/Notes%20Error.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic2"&gt;&lt;/a&gt;&amp;quot;While taking a survey that seemed to be about Italian cuisine, I came across a conundrum regarding coffee.&amp;quot; notes &lt;b&gt;Stephen Gazard&lt;/b&gt;, &amp;quot;I don't drink it, but I've eaten pasta. Which do I choose?&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic2"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/Picture%206.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic3"&gt;&lt;/a&gt;&amp;quot;I installed Windows Vista. Then I installed the first Service Pack. Then I installed the Service Pack that comes after that,&amp;quot; writes &lt;b&gt;Dave Cartwright&lt;/b&gt;, &amp;quot;but the result of this latter activity doesn't reassure me that I've gained anything.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic3"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/Service%20Pack%200.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic4"&gt;&lt;/a&gt;&amp;quot;I wanted to send a package via TNT express mail,&amp;quot; writes &lt;b&gt;Chris Martin&lt;/b&gt;, &amp;quot;but it seems they no longer do next-day delivery. But they can deliver packages into the distant past, though.&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic4"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/tnt.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a name="PPic5"&gt;&lt;/a&gt;&amp;quot;Fortunately, this junk mail sent to Łąkami made it to my mailbox,&amp;quot; writes &lt;b&gt;Krzysztof&lt;/b&gt;, &amp;quot;I'm lucky the postman remembered the UTF-8 codes!&amp;quot;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="#PPic5"&gt;&lt;img border="0" alt="" src="http://img.thedailywtf.com/images/200910/err1/wired2go2.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/-xQD30GQ_vnuqqOIOtZ6juuOOzE/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-xQD30GQ_vnuqqOIOtZ6juuOOzE/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/-xQD30GQ_vnuqqOIOtZ6juuOOzE/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/-xQD30GQ_vnuqqOIOtZ6juuOOzE/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=SjOMC5NXyh0:gz9dUm0q3BM:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/SjOMC5NXyh0" height="1" width="1"/&gt;</description> 
+			<slash:comments>157</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/REGISTER_NOT_FOUND.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Mark Bowytz</author> 
+			<title>Security Index out of Bounds</title> 
+			<link>http://thedailywtf.com/Articles/Security-Index-out-of-Bounds.aspx</link> 
+			<category>Feature Articles</category>
+			<pubDate>Thu, 15 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6692</guid> 
+			<description>&lt;p&gt;&lt;img class="wtf_floatright" style="float: right; margin: 5px" alt="Knock Knock." src="http://img.thedailywtf.com/images/mark/Mr_Magenta_Personal_Folder/office-door.jpg" /&gt;It was nearly impossible to find an available &lt;em&gt;and&lt;/em&gt; fully-functioning PC in the large campus labs at West Thomson-Friedman University. It's not like the student lab administrators were lazy. Oh no, in fact the &lt;i&gt;clueless-users-who-were-far-too-dangerous-for-their-own-good &lt;/i&gt;and the &lt;i&gt;malicious-users-who-were-far-too-bored-for-their-own-good &lt;/i&gt;made the student admins really &lt;i&gt;earn&lt;/i&gt; their minimum wage.&lt;/p&gt;
+&lt;p&gt;This dog's breakfast was tough to swallow for any serious users of the labs, and even more so for the poor CompSci students who just wanted to test their programming assignment before it was due. So in response to their students' pleas, the powers-that-be set up special labs in the CompSci building. These machines were configured with more RAM, more hard drive space, and bigger monitors than their utilitarian counterparts in the large labs. Since the computers had special software installed just for the CompSci students, getting access to the labs was controlled by a key card. If a CompSci student needed a card, all he needed to do was go down to the &lt;s&gt;dungeon&lt;/s&gt; basement in the main admin buildings and pay a $10 deposit to get a card.&lt;/p&gt;
+&lt;p&gt;The card system worked very well, but it was powerless against the sneak-in. Sensing that non-CompSci students (or those who refused to pony up $10) would gain access to the room, the CompSci administrators responded by doing what they did best: they enacted some strictly enforced, over-the-top guidelines.&lt;/p&gt;
+&lt;p&gt;Enter &lt;b&gt;Murray M.&lt;/b&gt;, a CompSci student and a frequent user of the CompSci department's mini-lab. He was well aware of the restrictions on gaining access, as he once witnessed the consequences for another student who snuck in a few buddies. The CompSci student had propped open the lab door with a folding chair which, in turn, caused an &amp;quot;ajar for too long&amp;quot; message to be sent straight to the System Admins&amp;rsquo; on-call beeper. The punishment was swift and harsh &amp;mdash; three-day suspension from logging into &lt;em&gt;any&lt;/em&gt; campus computers &amp;mdash; but Murray figured &lt;i&gt;Hey, do the crime and you do the time!&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;After putting in good thirty-six hours over the weekend to catch up on his Rational Rose midterm project, Murray was ready to hit the CompSci labs on Monday morning to get his project done. That is, until he went to log-in to the system and received the &amp;quot;Your account has been suspended, please see the system administrator&amp;quot; message. And that meant one thing: he was going to have to butt heads with Eric.&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;&lt;b&gt;The System Curmudgeon&lt;/b&gt;&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;Many system administrators are stubborn out of nature. But it's not like they're rude people. After all, keeping things up and running (while trying to maintain sanity) is &lt;em&gt;very&lt;/em&gt; serious business. However, Eric the CompSci department's system administrator was unique among system admins. While he exhibited the hallmark stubbornness, he also had a tendency of being a total douchebag toward any of the students - a fact that Murray sorely knew and dreaded now that &lt;em&gt;he&lt;/em&gt; needed Eric's assistance.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Um, hey there, Eric,&amp;quot; Murray asked as he popped his head in Eric's office, &amp;quot;I just tried logging in and got a message saying that my account, you see&amp;mdash;&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Yes&amp;quot;, Eric snapped before Murray could finish, &amp;quot;you propped a door open on the weekend which earned your suspension.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;No I didn't,&amp;quot; Murray responded, &amp;quot;why would you think that?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;We have pictures,&amp;quot; replied Eric with narrowed eyes.&lt;/p&gt;
+&lt;p&gt;Murray was shocked. He had been in the labs all weekend working with other classmates on their project, all of which could corroborate that he didn&amp;rsquo;t let anybody in and that he certainly didn't prop open the door. Eric was not impressed.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I'm telling you,&amp;quot; Murray said, getting frusterated, &amp;quot;I need to finish my assignment and I did not prop open the door. Can you just show me the pictures you have?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;NO!&amp;quot; Eric shouted as he stood up from this desk and turned towards the door, &amp;quot;No, no, no! You propped the door, you lost your access. That's that. Now, good day!&amp;quot;&lt;/p&gt;
+&lt;p&gt;As Eric tried to slam the door Murray&amp;rsquo;s response was to jam his foot in to block it. Eric responded with a shove and then came bursting out of his office into the hall within inches of Murray&amp;rsquo;s face. Locking in on Eric&amp;rsquo;s eyes, Murray was bracing for a fight... but fortunately no blows where traded.&lt;/p&gt;
+&lt;p&gt;Moments later, Murray stormed down the hall and, as any sleep-deprived hot-head would do, told Eric exactly what he thought of him. Eric's response wasn't much nicer, but ended with &amp;quot;you will &lt;em&gt;never&lt;/em&gt; get your lab access back, now.&amp;quot;&lt;/p&gt;
+&lt;h3 style="margin-bottom: 0px"&gt;Taking it to the Dean&lt;/h3&gt;
+&lt;p style="margin-top: 0px"&gt;Still shaking at the prospect of a fist fight with the system administrator, Murray made his way to the CompSci dean&amp;rsquo;s office and relayed his side of the story. With a calming, Ben Stien-esque voice, the dean assured Murray that he'd look into the situation. And that he did: within the hour, Murray, Eric, and the dean were sitting in Eric's office, talking about the suspension.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I don't care &lt;em&gt;what&lt;/em&gt; he says,&amp;quot; Eric smarmily told the dean, &amp;quot;the video doesn't lie and we don't make exceptions. What are we even here for?&amp;quot;&lt;/p&gt;
+&lt;p&gt;The dean agreed that there were no exceptions, but wanted to have the three of them review the video.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Fine,&amp;quot; Eric gruffed. He navigated to folder and loaded up MAR-211415.mov. &amp;quot;See? March 21st at 14:15... there's the 'suspect' entering the lab. Now he's propping open the door. Oh, and what's that? Our 'suspect' sat down and is logging in to Station 7. Hmmm... now guess what time &lt;em&gt;Murray&lt;/em&gt; logged in to Station 7?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;What?!&amp;quot; Murray objected, &amp;quot;that doesn't even look like me! Is this even the right file!?&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Uhh,&amp;quot; Eric furled his lip, &amp;quot;yeah. See M-A-R? That's March. Twenty-one? That's March 21st. Fourteen and fifteen? The time. Easy!&amp;quot;&lt;/p&gt;
+&lt;p&gt;The dean shrugged and Murray was truly baffled. Did he somehow create his own Tyler Durden personality who went around propping lab doors open? But then he noticed something strange.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Hey Eric,&amp;quot; he said, clearing his throat, &amp;quot;what's with the MAR-00 files? And how come there's no FEB-28 files? I'm pretty sure there's not a March 0th. And I know it's not a leap year, but there should be a Febuary Twenty&amp;mdash;&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;What?&amp;quot; Eric was stunned. As he scrolled through the large directory of video files, his face turned whiter and whiter. &amp;quot;Okay... umm... yeah. So, let me, uh... I'll get back to you both on this.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The meeting wrapped up shortly after that and, within fifteen minutes, Murray's lab suspension was reversed. As were all other students' suspensions. Though there was never any official explanation given, Murray already knew the reason: since the video files were named with a zero-indexed day of month, Eric was always looking at the previous day's workstation log-ins to determine the guilty party on the video.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/b72K0AqpXR7Eg_HIOPcG5i4k1tI/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/b72K0AqpXR7Eg_HIOPcG5i4k1tI/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/b72K0AqpXR7Eg_HIOPcG5i4k1tI/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/b72K0AqpXR7Eg_HIOPcG5i4k1tI/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=LmOA9tuzdrM:qFrjGTwAt10:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/LmOA9tuzdrM" height="1" width="1"/&gt;</description> 
+			<slash:comments>104</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Security-Index-out-of-Bounds.aspx</comments>
+		</item>
+	
+		<item>
+			<author>Mark Bowytz</author> 
+			<title>CodeSOD: Encryption Misinformation</title> 
+			<link>http://thedailywtf.com/Articles/Encryption-Misinformation.aspx</link> 
+			<category>CodeSOD</category>
+			<pubDate>Wed, 14 Oct 2009 13:00:00 GMT</pubDate> 
+			<guid isPermaLink="false">6695</guid> 
+			<description>&lt;p&gt;Ages ago, one of the business units at the corporation that &lt;strong&gt;Rick P. &lt;/strong&gt;works at contracted a 3rd party vendor (in truth it was some guy in the UK) to write an inventory management system.&amp;nbsp; It was written in VB6 and talked to an Access database in the back end and it worked.&lt;/p&gt;
+&lt;p&gt;Skip ahead to recently when an edict has come down from the powers-that-be declared that any VB6 apps should be brought up to date in VB.NET.&amp;nbsp; The 3rd party dev was happy to make the updates and rollout the now conforming application.&amp;nbsp; Unfortunately, the availability and quality of support had gone downhill as of late and in order to save on costs, the application's source code was recalled to be maintained in-house.&lt;/p&gt;
+&lt;p&gt;As it turned out, the developer was an expert VB programmer, however was absolutely awful when it came to .NET development. The class diagrams provided were beyond inaccurate and&amp;nbsp;the documentation&amp;nbsp;out-and-out &lt;i&gt;lied&lt;/i&gt; in order to give the appearance that it conformed to the corporate standards.&amp;nbsp; Anti-patterns and WTFs-a-plenty, it was hard to pick out just one example, but the following jumped out.&lt;/p&gt;
+&lt;p&gt;In the &amp;quot;Utilities&amp;quot; file there are two functions for obfuscating text, one was a simple ROT13 function and the other was a perfectly viable implementation of an AES encryption function pulled from a programming site.&lt;/p&gt;
+&lt;p&gt;However, after seeing how the application authorizes a user's login information, Rick can't fathom why the original developer went through the trouble.&amp;nbsp;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;
+Private Sub btnOK_Click(ByVal sender As Object, ByVal e As EventArgs)
+   If String.IsNullOrEmpty(_Password) Then
+      Using dsUser As DataSet = MDI.GetDataSet(_
+              &amp;quot;SELECT * FROM [dbo].[Password] WHERE [Password] = &amp;quot; &amp;amp; _
+              Utils.ConvertToDBString(txtPassword.Text))
+         If dsUser IsNot Nothing Then
+            Me.DialogResult = Windows.Forms.DialogResult.OK
+         Else
+             TransMsgBox(&amp;quot;Invalid Password&amp;quot;, MessageBoxIcon.Exclamation)
+             txtPassword.Clear()
+             txtPassword.Focus()
+         End If
+      End Using
+   Else
+      If txtPassword.Text = _Password Then
+         Me.DialogResult = Windows.Forms.DialogResult.OK
+      Else
+         TransMsgBox(&amp;quot;Invalid Password&amp;quot;, MessageBoxIcon.Exclamation)
+         txtPassword.Clear()
+         txtPassword.Focus()
+      End If
+   End If
+End Sub
+&lt;/pre&gt;
+&lt;/blockquote&gt;&lt;!--
+
+&lt;div style="font-family: monospace; color: #006" class="vbnet"&gt;&lt;span style="color: #ff8000"&gt;Private&lt;/span&gt; &lt;span style="color: #0600ff"&gt;Sub&lt;/span&gt; btnOK_Click&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #ff8000"&gt;ByVal&lt;/span&gt; sender &lt;span style="color: #ff8000"&gt;As&lt;/span&gt; System.&lt;span style="color: #ff0000"&gt;Object&lt;/span&gt;, &lt;span style="color: #ff8000"&gt;ByVal&lt;/span&gt; e &lt;span style="color: #ff8000"&gt;As&lt;/span&gt; System.&lt;span style="color: #0000ff"&gt;EventArgs&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt; &lt;span style="color: #ff8000"&gt;Handles&lt;/span&gt; btnOK.&lt;span style="color: #0000ff"&gt;Click&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt; &lt;span style="color: #ff8000"&gt;String&lt;/span&gt;.&lt;span style="color: #0000ff"&gt;IsNullOrEmpty&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;_Password&lt;span style="color: #000000"&gt;)&lt;/span&gt; &lt;span style="color: #ff8000"&gt;Then&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Using dsUser &lt;span style="color: #ff8000"&gt;As&lt;/span&gt; DataSet &lt;span style="color: #008000"&gt;=&lt;/span&gt; MDI.&lt;span style="color: #0000ff"&gt;GetDataSet&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #808080"&gt;&amp;quot;SELECT * FROM [dbo].[Password] WHERE [Password] = &amp;quot;&lt;/span&gt; &lt;span style="color: #008000"&gt;&amp;amp;&lt;/span&gt; Utils.&lt;span style="color: #0000ff"&gt;ConvertToDBString&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;txtPassword.&lt;span style="color: #0000ff"&gt;Text&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt; dsUser &lt;span style="color: #ff8000"&gt;IsNot&lt;/span&gt; &lt;span style="color: #ff8000"&gt;Nothing&lt;/span&gt; &lt;span style="color: #ff8000"&gt;Then&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #ff8000"&gt;Me&lt;/span&gt;.&lt;span style="color: #0000ff"&gt;DialogResult&lt;/span&gt; &lt;span style="color: #008000"&gt;=&lt;/span&gt; Windows.&lt;span style="color: #0000ff"&gt;Forms&lt;/span&gt;.&lt;span style="color: #0000ff"&gt;DialogResult&lt;/span&gt;.&lt;span style="color: #0600ff"&gt;OK&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #ff8000"&gt;Else&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; TransMsgBox&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #808080"&gt;&amp;quot;Invalid Password&amp;quot;&lt;/span&gt;, MessageBoxIcon.&lt;span style="color: #0600ff"&gt;Exclamation&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; txtPassword.&lt;span style="color: #0000ff"&gt;Clear&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; txtPassword.&lt;span style="color: #0000ff"&gt;Focus&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;End&lt;/span&gt; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;End&lt;/span&gt; Using&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #ff8000"&gt;Else&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt; txtPassword.&lt;span style="color: #0000ff"&gt;Text&lt;/span&gt; &lt;span style="color: #008000"&gt;=&lt;/span&gt; _Password &lt;span style="color: #ff8000"&gt;Then&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #ff8000"&gt;Me&lt;/span&gt;.&lt;span style="color: #0000ff"&gt;DialogResult&lt;/span&gt; &lt;span style="color: #008000"&gt;=&lt;/span&gt; Windows.&lt;span style="color: #0000ff"&gt;Forms&lt;/span&gt;.&lt;span style="color: #0000ff"&gt;DialogResult&lt;/span&gt;.&lt;span style="color: #0600ff"&gt;OK&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #ff8000"&gt;Else&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; TransMsgBox&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #808080"&gt;&amp;quot;Invalid Password&amp;quot;&lt;/span&gt;, MessageBoxIcon.&lt;span style="color: #0600ff"&gt;Exclamation&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; txtPassword.&lt;span style="color: #0000ff"&gt;Clear&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; txtPassword.&lt;span style="color: #0000ff"&gt;Focus&lt;/span&gt;&lt;span style="color: #000000"&gt;(&lt;/span&gt;&lt;span style="color: #000000"&gt;)&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;End&lt;/span&gt; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;End&lt;/span&gt; &lt;span style="color: #0600ff"&gt;If&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #0600ff"&gt;End&lt;/span&gt; &lt;span style="color: #0600ff"&gt;Sub&lt;/span&gt;&lt;/div&gt;
+--&gt;
+&lt;p&gt;&lt;a href="http://feedads.g.doubleclick.net/~a/FLvQJ8enxG0rUDVROMJ0YrQKDO4/0/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/FLvQJ8enxG0rUDVROMJ0YrQKDO4/0/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://feedads.g.doubleclick.net/~a/FLvQJ8enxG0rUDVROMJ0YrQKDO4/1/da"&gt;&lt;img src="http://feedads.g.doubleclick.net/~a/FLvQJ8enxG0rUDVROMJ0YrQKDO4/1/di" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://syndication.thedailywtf.com/~ff/TheDailyWtf?a=lQYw5G8sVS4:mWyNfq5Q1jY:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/TheDailyWtf?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/TheDailyWtf/~4/lQYw5G8sVS4" height="1" width="1"/&gt;</description> 
+			<slash:comments>110</slash:comments> 
+			<comments>http://thedailywtf.com/Comments/Encryption-Misinformation.aspx</comments>
+		</item>
+		
+	</channel>
+</rss>
