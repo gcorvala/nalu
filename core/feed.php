@@ -16,12 +16,12 @@ class Feed {
 		$this->url = $url;
 		// FIXME : what should we insert for user_feed name, description and link ?
 		if (ereg("^user://", $this->url))
-			$user_feed = true;
+			$this->user_feed = true;
 		$data = Data::create ();
 		$req = "SELECT * FROM Feeds WHERE URL LIKE '$this->url'";
 		$result = $data->request ($req);
 		if (mysql_num_rows ($result) == 0) {
-			if ($user_feed == true) {
+			if ($this->user_feed == true) {
 				$req = "INSERT INTO Feeds (URL)";
 				$req .= " VALUES ('$this->url')";
 				$data->request ($req);
@@ -76,12 +76,12 @@ class Feed {
 	}
 
 	public function update () {
-		if ($user_feed == true)
+		if ($this->user_feed == true)
 			return;
 		if (!isset ($this->dom)) {
 			$this->dom = new DOMDocument ();
 			if ($this->dom->load ($this->url) == false)
-				throw new Exception ("Feed : url cannot be fetched !");
+				throw new Exception ("Feed : url cannot be fetched ! : $this->url");
 		}
 		$xml_items = $this->dom->getElementsByTagName ("item");
 		$data = Data::create ();
