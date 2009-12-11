@@ -105,7 +105,7 @@ class User {
 		else
 			$read_date = $date;
 		$req = "INSERT INTO Reads (Email, URLFeed, URLItem, Date)";
-		$req .= " VALUES ('$this->email', '$feed', '$item', '$read_date')";
+		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '" . $item->get_url () . "', '$read_date')";
 		$data->request ($req);
 	}
 
@@ -141,7 +141,12 @@ class User {
 	public function set_item_not_readed () {}
 	public function get_items_readed () {}
 	public function get_items_not_readed () {}
-	public function share ($feed, $item, $text, $date) {}
+	public function share ($feed, $item, $note, $date) {
+		$data = Data::create ();
+		$req = "INSERT INTO Shares (URLFeed, URLItem, Email, Note, Date)";
+		$req .= " VALUES ('" . $feed->get_url () . "', '" . $item->get_url () . "', '$this->email' ,'$note', '$date')";
+		$data->request ($req);
+	}
 	public function unshare ($feed, $item) {}
 	public function remove_comment () {}
 
