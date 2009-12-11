@@ -6,7 +6,6 @@ class Item {
 	private $title;
 	private $date;
 	private $description;
-	private $note;
 	
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
