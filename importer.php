@@ -126,6 +126,7 @@ class Importer {
 			}
 			try {
 				$user = new User ($email);
+				$feed = new Feed ($feed);
 				$user->subscribe_to_feed ($feed, $date);
 			}
 			catch (Exception $e) {
