@@ -70,6 +70,7 @@ CREATE TABLE `Shares` (
   `URLItem` varchar(200) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Note` text NOT NULL,
+  `Date` datetime NOT NULL,
   PRIMARY KEY (`URLFeed`,`URLItem`,`Email`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
