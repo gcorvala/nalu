@@ -10,13 +10,32 @@ class Feed {
 	private $dom;
 	private $user_feed = false;
 
-	public function __construct ($url) {
+	public function __construct ($url, $file_url) {
 		if (empty ($url))
 			throw new Exception ("Feed : url are not defined !");
 		$this->url = $url;
-		// FIXME : what should we insert for user_feed name, description and link ?
+		if (isset ($file_url)) {
+			$data = Data::create ();
+			$this->dom = new DOMDocument ();
+			if ($this->dom->load ($file_url) == false)
+				throw new Exception ("Feed : file cannot be fetched ! : $file_url");
+			$channel = $this->dom->getElementsByTagName ("channel");
+			$channel = $channel->item (0);
+			foreach ($channel->childNodes as $child) {
+				$node = $child->nodeName;
+				$$node = $child->nodeValue;
+			}
+			$this->name = utf8_decode (addslashes ($title));
+			$this->description = utf8_decode (addslashes ($description));
+			$this->link = utf8_decode (addslashes ($link));
+			$req = "INSERT INTO Feeds (URL, Name, Description, Link)";
+			$req .= " VALUES ('$this->url', '$this->name', '$this->description', '$this->link')";
+			$data->request ($req);
+			return;
+		}
 		if (ereg("^user://", $this->url))
 			$this->user_feed = true;
+		// FIXME : what should we insert for user_feed name, description and link ?
 		$data = Data::create ();
 		$req = "SELECT * FROM Feeds WHERE URL LIKE '$this->url'";
 		$result = $data->request ($req);
