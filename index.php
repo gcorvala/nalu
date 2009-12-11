@@ -35,7 +35,7 @@ try {
 			$action == "home";
 		if ($action == "read") {
 			$item = new Item ($_GET['item']);
-			$user->read ($item);
+			//$user->read ($item);
 			header ('Location: ' . $item->get_url ());
 		}
 	}
