@@ -1,6 +1,8 @@
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
+CREATE DATABASE `db_projet` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `db_projet`;
 
 
 
@@ -33,15 +35,6 @@ CREATE TABLE `Feeds` (
 
 
 
-CREATE TABLE `FeedSubscriptions` (
-  `Email` varchar(50) NOT NULL,
-  `URL` varchar(200) NOT NULL,
-  `Date` datetime NOT NULL,
-  PRIMARY KEY (`Email`,`URL`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
-
-
 CREATE TABLE `Friends` (
   `EmailA` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `EmailB` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -62,12 +55,31 @@ CREATE TABLE `Items` (
 
 
 
-CREATE TABLE `ItemsReaded` (
+CREATE TABLE `Reads` (
   `Email` varchar(50) NOT NULL,
   `URLItem` varchar(200) NOT NULL,
   `URLFeed` varchar(200) NOT NULL,
   `Date` datetime NOT NULL,
   PRIMARY KEY (`Email`,`URLItem`,`URLFeed`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `Shares` (
+  `URLFeed` varchar(200) NOT NULL,
+  `URLItem` varchar(200) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Note` text NOT NULL,
+  PRIMARY KEY (`URLFeed`,`URLItem`,`Email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE `Subscriptions` (
+  `Email` varchar(50) NOT NULL,
+  `URL` varchar(200) NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`Email`,`URL`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 

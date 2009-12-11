@@ -76,7 +76,7 @@ class User {
 	public function get_feeds () {
 		$feeds = array ();
 		$data = Data::create ();
-		$req = "SELECT URL FROM FeedSubscriptions WHERE (Email LIKE '$this->email' AND URL NOT LIKE 'user://$this->email')";
+		$req = "SELECT URL FROM Subscriptions WHERE (Email LIKE '$this->email' AND URL NOT LIKE 'user://$this->email')";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result))
 			$feeds[] = new Feed ($line['URL']);
@@ -93,7 +93,7 @@ class User {
 			$subscribe_date = date_format (date_create (), "c");
 		else
 			$subscribe_date = $date;
-		$req = "INSERT INTO FeedSubscriptions (Email, URL, Date)";
+		$req = "INSERT INTO Subscriptions (Email, URL, Date)";
 		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '$subscribe_date')";
 		$result = $data->request ($req);
 	}
@@ -104,7 +104,7 @@ class User {
 			$read_date = date_format (date_create (), "c");
 		else
 			$read_date = $date;
-		$req = "INSERT INTO ItemsReaded (Email, URLFeed, URLItem, Date)";
+		$req = "INSERT INTO Reads (Email, URLFeed, URLItem, Date)";
 		$req .= " VALUES ('$this->email', '$feed', '$item', '$read_date')";
 		$data->request ($req);
 	}
@@ -123,9 +123,9 @@ class User {
 
 	public function unsubscribe_to_feed ($feed) {
 		$data = Data::create ();
-		$req = "DELETE FROM FeedSubscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
+		$req = "DELETE FROM Subscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
 		$data->request ($req);
-		$req = "SELECT COUNT(*) FROM FeedSubscriptions WHERE URL = '" . $feed->get_url () . "'";
+		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
 		$result = mysql_fetch_array ($data->request ($req));
 		echo $result[0] . "<br>";
 		if ($result[0] == 0) {
@@ -141,9 +141,8 @@ class User {
 	public function set_item_not_readed () {}
 	public function get_items_readed () {}
 	public function get_items_not_readed () {}
-	public function set_item_shared ($feed, $item, $text, $date) {}
 	public function share ($feed, $item, $text, $date) {}
-	public function unset_item_shared () {}
+	public function unshare ($feed, $item) {}
 	public function remove_comment () {}
 
 	public function add_friend ($user, $date) {
