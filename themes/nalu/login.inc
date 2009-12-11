@@ -1,4 +1,4 @@
-<!-- <h3>Please login :</h3>
+<!--<h3>Please login :</h3>
 <form method="post" action=".">
 	<input type="hidden" name="action" value="login"/>
 	<p>
@@ -12,18 +12,18 @@
 </form>
 -->
 
-<form action="." method="post" name="f">
+<form method="post" action=".">
 <fieldset>
 <legend><h3>Log into NaluRSS</h3></legend>
+	<input type="hidden" name="action" value="login"/>
 	<label for="email" class="required" accesskey="m">Mail address : </label>
 		<input type="text" id="email" name="email" tabindex="1" value="" title="email"><br>
 	<label for="password" class="required" accesskey="p">Password : </label>
 		<input type="password" id="password" name="password" tabindex="2" value="" title="password"><br>
 </fieldset>
 <label for="submit"></label>
-	<input type="submit" value="Send" id="submit" tabindex="3"> <INPUT type="reset" id="reset" tabindex="4">
+	<input type="submit" /> <INPUT type="reset" id="reset" tabindex="4" />
 </form>
-
 
 
 

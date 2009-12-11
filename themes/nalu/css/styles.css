@@ -355,9 +355,11 @@ div.footer p a {
 /* /var */
 .question {
 	font-weight: bold;
+	/*font-size: 1.25em;*/
 }
 .answer {
 	font-style: italic;
+/*	font-size: 1.25em;*/
 }
 
 form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */

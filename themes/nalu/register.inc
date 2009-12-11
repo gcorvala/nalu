@@ -2,6 +2,7 @@
 <fieldset>
 <legend><h3>NaluRSS Registration</h3></legend>
 <p><b>Bold</b> fields are required. <u>U</u>nderlined letters are accesskeys.</p>
+	<input type="hidden" name="action" value="register"/>
 	<label for="login" class="required" accesskey="l">Login : </label>
 		<input type="text" id="login" name="login" tabindex="1" value="" title="login"><br>
 	<label for="passwd" class="required" accesskey="p">Password : </label>
