@@ -6,6 +6,7 @@ class Item {
 	private $title;
 	private $date;
 	private $description;
+	private $note;
 	
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
@@ -38,10 +39,5 @@ class Item {
 	public function get_title () { return $this->title; }
 	public function get_date () { return $this->date; }
 	public function get_description () { return $this->description; }
-
-	public function is_readed ($user) {
-		$data = Data::create ();
-		//$req = "SELECT "
-	}
 }
 ?>
