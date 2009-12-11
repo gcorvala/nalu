@@ -32,7 +32,7 @@ else {
 				<input type="submit" value="Send" id="submit" tabindex="4">
 		</fieldset>
 		</form>
-		TODO demander 2 fois le pass et le vérifier, demander l'ancien pass et le vérifier.
+		<!-- TODO demander 2 fois le pass et le vérifier, demander l'ancien pass et le vérifier. -->
 	</p>
 	<p>
 		<h4>Change your city</h4>

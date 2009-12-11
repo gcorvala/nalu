@@ -51,7 +51,8 @@ include_once ($config->get_site_theme_folder () . "/" . $action . ".inc");
 if (!$auth->is_anonymous ()) {
 	$feeds = $user->get_feeds ();
 	foreach ($feeds as $feed)
-		echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
+//		echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
+		echo "<li><a href=?action=feedpage&feedurl=" . $feed->get_url() . ">" . $feed->get_name() . "</a>";
 }
 ?>
 					</ul>
@@ -61,7 +62,7 @@ if (!$auth->is_anonymous ()) {
 if (!$auth->is_anonymous ()) {
 	$friends = $user->get_friends ();
 	foreach ($friends as $friend)
-		echo "<li>" . $friend->get_nickname () . "</li>";
+		echo "<li><a href=?action=friendprofile&friendemail=" . $friend->get_email() . ">" . $friend->get_nickname () . "</a></li>";
 }
 ?>
 					</ul>
