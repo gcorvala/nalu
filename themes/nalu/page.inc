@@ -9,7 +9,7 @@
 		<div id="wrap">
 			<div id="header">
 				<div id="header-text">
-					<h1><a href="#">Nalu<span>RSS</span></a></h1>
+					<h1><a href="?action=home">Nalu<span>RSS</span></a></h1>
 					<h2>A refreshing rss reader.</h2>
 					<div class="clear"></div>
 				</div>

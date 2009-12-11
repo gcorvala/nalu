@@ -8,26 +8,13 @@ if ($auth->is_anonymous ()) {
 else {
 	$user = $auth->get_user();
 	$nickname = $user->get_nickname(); 
-	echo "<legend><h3>Welcome $nickname </h3></legend>"; 
+	echo "<h3>Welcome $nickname </h3>"; 
 ?>
-
-	<p>
-		<h4>You are curently following :</h4>
-<?php
-		$feeds = $user->get_feeds ();
-		echo "bite";
-		foreach ($feeds as $feed)
-			echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
-?>
-	</p>
-	<p>
-		<h4>Add a feed to follow : </h4>
-		TODO
-	</p>
-	<p>
-		<h4>Stop following a feed : </h4>
-		TODO
-	</p>
+	<ul>
+		<li><a href="?action=youraccount">Manage your account</a></li>
+		<li><a href="?action=managefeeds">Manage your feeds</a></li>
+		<li><a href="?action=managefriends">Manage your friends</a></li>
+	</ul>
 	
 <?php
 }
