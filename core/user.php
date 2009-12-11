@@ -45,6 +45,8 @@ class User {
 			$req = "INSERT INTO Users (Email, Password, Nickname, City, Country, Avatar, Biography, SubscribeDate)";
 			$req .= " VALUES ('$this->email', '$this->password', '$this->nickname', '$this->city', '$this->country', '$this->avatar', '$this->biography', '$this->subscribeDate')";
 			$data->request ($req);
+			$feed = new Feed ("user://" . $this->email);
+			$this->subscribe_to_feed ($feed, $this->subscribeDate);
 		}
 	}
 	
@@ -85,9 +87,8 @@ class User {
 		return new Feed ("user://" . $this->email);
 	}
 
-	public function subscribe_to_feed ($url, $date) {
+	public function subscribe_to_feed ($feed, $date) {
 		$data = Data::create ();
-		$feed = new Feed ($url);
 		if (!isset ($date))
 			$subscribe_date = date_format (date_create (), "c");
 		else
@@ -140,9 +141,8 @@ class User {
 	public function set_item_not_readed () {}
 	public function get_items_readed () {}
 	public function get_items_not_readed () {}
-	public function set_item_shared ($feed, $item, $text, $date) {
-		
-	}
+	public function set_item_shared ($feed, $item, $text, $date) {}
+	public function share ($feed, $item, $text, $date) {}
 	public function unset_item_shared () {}
 	public function remove_comment () {}
 
