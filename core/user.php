@@ -98,6 +98,49 @@ class User {
 		$result = $data->request ($req);
 	}
 
+	public function unsubscribe_to_feed ($feed) {
+		$data = Data::create ();
+		$req = "DELETE FROM Subscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
+		$data->request ($req);
+		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
+		$result = mysql_fetch_array ($data->request ($req));
+		echo $result[0] . "<br>";
+		if ($result[0] == 0) {
+			$req = "DELETE FROM Items WHERE URL = '" . $feed->get_url () . "'";
+			$data->request ($req);
+			$req = "DELETE FROM FeedItems WHERE URLFeed = '" . $feed->get_url () . "'";
+			$data->request ($req);
+			$req = "DELETE FROM Feeds WHERE URL = '" . $feed->get_url () . "'";
+			$data->request ($req);
+		}
+	}
+
+	public function add_friend ($user, $date) {
+		$data = Data::create ();
+		$req = "SELECT Accepted FROM Friends WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
+		$result = $data->request ($req);
+		if (mysql_num_rows ($result) == 0) {
+			$req = "INSERT INTO Friends (EmailA, EmailB, Date, Accepted)";
+			$req .= " VALUES ('$this->email', '" . $user->get_email () . "', '$date', 0)";
+			$data->request ($req);
+		}
+		else {
+			$accepted = mysql_fetch_array ($result);
+			if ($accepted[0] == 0) {
+				$req = "UPDATE Friends SET Accepted = 1 WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
+				$data->request ($req);
+			}
+		}
+	}
+
+	public function remove_friend ($friend) {
+		$data = Data::create ();
+		$friend_email = $friend->get_email ();
+		$req = "DELETE FROM Friends WHERE (EmailA = '$this->email' AND EmailB = '$friend_email') OR (EmailB = '$this->email' AND EmailA = '$friend_email')";
+		$data->request ($req);
+		$this->unsubscribe_to_feed ($friend->get_own_feed ());
+	}
+
 	public function set_item_readed ($feed, $item, $date) {
 		$data = Data::create ();
 		if (!isset ($date))
@@ -121,23 +164,6 @@ class User {
 		$data->request ($req);
 	}
 
-	public function unsubscribe_to_feed ($feed) {
-		$data = Data::create ();
-		$req = "DELETE FROM Subscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
-		$data->request ($req);
-		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
-		$result = mysql_fetch_array ($data->request ($req));
-		echo $result[0] . "<br>";
-		if ($result[0] == 0) {
-			$req = "DELETE FROM Items WHERE URL = '" . $feed->get_url () . "'";
-			$data->request ($req);
-			$req = "DELETE FROM FeedItems WHERE URLFeed = '" . $feed->get_url () . "'";
-			$data->request ($req);
-			$req = "DELETE FROM Feeds WHERE URL = '" . $feed->get_url () . "'";
-			$data->request ($req);
-		}
-	}
-
 	public function set_item_not_readed () {}
 	public function get_items_readed () {}
 	public function get_items_not_readed () {}
@@ -149,25 +175,5 @@ class User {
 	}
 	public function unshare ($feed, $item) {}
 	public function remove_comment () {}
-
-	public function add_friend ($user, $date) {
-		$data = Data::create ();
-		$req = "SELECT Accepted FROM Friends WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
-		$result = $data->request ($req);
-		if (mysql_num_rows ($result) == 0) {
-			$req = "INSERT INTO Friends (EmailA, EmailB, Date, Accepted)";
-			$req .= " VALUES ('$this->email', '" . $user->get_email () . "', '$date', 0)";
-			$data->request ($req);
-		}
-		else {
-			$accepted = mysql_fetch_array ($result);
-			if ($accepted[0] == 0) {
-				$req = "UPDATE Friends SET Accepted = 1 WHERE (EmailA = '" . $user->get_email () . "' AND EmailB = '$this->email')";
-				$data->request ($req);
-			}
-		}
-	}
-
-	public function remove_friend () {}
 }
 ?>
