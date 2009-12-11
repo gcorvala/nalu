@@ -26,7 +26,7 @@ class Data {
 	
 	public function request ($req) {
 		$result = mysql_query ($req, $this->link);
-		if ($result == false)
+		if ($result == false && mysql_errno ($this->link) != 1062)
 			throw new Exception ("Mysql request failed! : " . mysql_error ($this->link), mysql_errno ($this->link));
 		return $result;
 	}
