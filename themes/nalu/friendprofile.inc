@@ -10,10 +10,11 @@ else {
 	echo "<h3> " . $friend->get_nickname() . "</h3>";
 
 	echo "<ul>";
-		echo "<li> Mail address : " . $friend->get_email() . "</li>";
+		echo "<li> Mail address : <a href=mailto:" . $friend->get_email() . ">" . $friend->get_email() . "</a></li>";
 		echo "<li> City : " . $friend->get_city() . "</li>";
 		echo "<li> Country : " . $friend->get_country() . "</li>";
 		echo "<li> Biography : " . $friend->get_biography() . "</li>";
+	// TODO : city et country en links vers une recherche d'utilisateurs habitant là ou vers une carte googlemaps.
 	echo "</ul>";
 	echo "<a href=?action=feedpage&feedurl=" . $friend->get_own_feed()->get_url() . "> View " . $friend->get_nickname() . " feed </a>";
 }

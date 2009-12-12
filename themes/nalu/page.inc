@@ -52,7 +52,10 @@ if (!$auth->is_anonymous ()) {
 	$feeds = $user->get_feeds ();
 	foreach ($feeds as $feed)
 //		echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
-		echo "<li><a href=?action=feedpage&feedurl=" . $feed->get_url() . ">" . $feed->get_name() . "</a>";
+		echo "<li><a href=?action=feedpage&feedurl=" . $feed->get_url() . ">" . $feed->get_name() . "</a> - <a class=\"comment-link\" href=?action=fullfeedpage&feedurl=" . $feed->get_url() . ">View full</a></li>";
+}
+else {
+	echo "Please login to see your feeds.";
 }
 ?>
 					</ul>
@@ -62,7 +65,10 @@ if (!$auth->is_anonymous ()) {
 if (!$auth->is_anonymous ()) {
 	$friends = $user->get_friends ();
 	foreach ($friends as $friend)
-		echo "<li><a href=?action=friendprofile&friendemail=" . $friend->get_email() . ">" . $friend->get_nickname () . "</a></li>";
+		echo "<li><a href=?action=friendprofile&friendemail=" . $friend->get_email() . ">" . $friend->get_nickname () . "</a> - <a class=\"comment-link\"href=?action=feedpage&feedurl=" . $friend->get_own_feed()->get_url() . ">View feed</a></li>";
+}
+else {
+	echo "Please login to see your friends.";
 }
 ?>
 					</ul>
