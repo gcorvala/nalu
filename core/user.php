@@ -147,7 +147,7 @@ class User {
 			$read_date = date_format (date_create (), "c");
 		else
 			$read_date = $date;
-		$req = "INSERT INTO Reads (Email, URLFeed, URLItem, Date)";
+		$req = "INSERT INTO db_projet.Reads (Email, URLFeed, URLItem, Date)";
 		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '" . $item->get_url () . "', '$read_date')";
 		$data->request ($req);
 	}

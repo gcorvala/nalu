@@ -17,8 +17,8 @@ class Importer {
 		$this->parse_friends ($friends);
 		$subscriptions = $doc->getElementsByTagName ("subscription");
 		$this->parse_subscriptions ($subscriptions);
-		/*$reads = $doc->getElementsByTagName ("read");
-		$this->parse_reads ($reads);*/
+		$reads = $doc->getElementsByTagName ("read");
+		$this->parse_reads ($reads);
 		$comments = $doc->getElementsByTagName ("comment");
 		$this->parse_comments ($comments);
 		$shares = $doc->getElementsByTagName ("share");

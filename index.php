@@ -58,8 +58,9 @@ try {
 				$user->read ($item);
 				break;
 			case "read":
+				$feed = new Feed ($_GET['feed']);
 				$item = new Item ($_GET['item']);
-				$user->add_read ($item);
+				$user->set_item_readed ($feed, $item);
 				header ('Location: ' . $item->get_url ());
 				break;
 			case "remove_read":
