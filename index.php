@@ -54,30 +54,54 @@ try {
 				break;
 			case "add_read":
 				$item = new Item ($_GET['item']);
-				//$user->read ($item);
+				$user->read ($item);
 				break;
 			case "read":
 				$item = new Item ($_GET['item']);
-				//$user->add_read ($item);
+				$user->add_read ($item);
 				header ('Location: ' . $item->get_url ());
 				break;
 			case "remove_read":
 				$item = new Item ($_GET['item']);
-				//$user->remove_read ($item);
+				$user->remove_read ($item);
 				break;
 			case "remove_comment":
-				//$user->remove_comment ()
+				$user->remove_comment ();
 				break;
 			case "remove_friend":
 				$friend = new User ($_GET['friend']);
 				$user->remove_friend ($friend);
 				break;
 			case "remove_share":
-				//$user->remove_share ()
+				$user->remove_share ();
 				break;
 			case "remove_subscription":
 				$feed = new Feed ($_GET['feed']);
 				$user->unsubscribe_to_feed ($feed);
+				break;
+			case "set_nickname":
+				$nickname = $_GET['nickname'];
+				$user->set_nickname ($nickname);
+				break;
+			case "set_password":
+				$password = $_GET['password'];
+				$user->set_password ($password);
+				break;
+			case "set_city":
+				$city = $_GET['city'];
+				$user->set_city ($city);
+				break;
+			case "set_country":
+				$country = $_GET['country'];
+				$user->set_country ($country);
+				break;
+			case "set_avatar":
+				$avatar = $_GET['avatar'];
+				$user->set_avatar ($avatar);
+				break;
+			case "set_biography":
+				$biography = $_GET['biography'];
+				$user->set_biography ($biography);
 				break;
 		}
 	}
