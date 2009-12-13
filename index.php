@@ -8,10 +8,7 @@ require_once ("core/user.php");
 try {
 	$auth = new Auth ();
 	$config = new Config ();
-	if (!isset ($_GET['action']))
-		$action = "home";
-	else
-		$action = $_GET['action'];
+	$action = isset ($_GET['action']) ? $_GET['action'] : "home";
 	if ($action == "logout") {
 		$auth->disconnect ();
 		$action = "home";

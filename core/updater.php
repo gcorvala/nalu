@@ -14,12 +14,4 @@ class Updater {
 		}
 	}
 }
-echo "UPDATE START<br>";
-try {
-	new Updater ();
-}
-catch (Exception $e) {
-	echo $e->getMessage () . "<br>";
-}
-echo "UPDATE END<br>";
 ?>
