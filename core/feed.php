@@ -85,7 +85,10 @@ class Feed {
 			$req = "SELECT * FROM FeedItems WHERE URLFeed LIKE '$this->url'";
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
-			$items[] = new Item ($line['URLItem']);
+			$i = new Item ($line['URLItem']);
+			if ($this->user_feed == true)
+				$i->set_note ($line['Note']);
+			$items[] = $i;
 		}
 		return $items;
 	}

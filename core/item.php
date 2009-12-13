@@ -6,6 +6,7 @@ class Item {
 	private $title;
 	private $date;
 	private $description;
+	private $note;
 
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
@@ -38,5 +39,7 @@ class Item {
 	public function get_title () { return $this->title; }
 	public function get_date () { return $this->date; }
 	public function get_description () { return $this->description; }
+	public function set_note ($note) { $this->note = $note; }
+	public function get_note () { return $this->note; }
 }
 ?>
