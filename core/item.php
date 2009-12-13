@@ -7,6 +7,8 @@ class Item {
 	private $date;
 	private $description;
 	private $note;
+	private $share_date;
+	private $comments;
 
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
@@ -41,5 +43,9 @@ class Item {
 	public function get_description () { return $this->description; }
 	public function set_note ($note) { $this->note = $note; }
 	public function get_note () { return $this->note; }
+	public function set_share_date ($date) { $this->share_date = $date; }
+	public function get_share_date () { return $this->share_date; }
+	public function set_comments ($comments) { $this->comments = $comments; }
+	public function get_comments () { return $this->comments; }
 }
 ?>
