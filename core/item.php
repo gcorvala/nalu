@@ -6,7 +6,7 @@ class Item {
 	private $title;
 	private $date;
 	private $description;
-	
+
 	public function __construct ($url, $title, $date, $description) {
 		$data = Data::create ();
 		if (!isset ($title)) {
