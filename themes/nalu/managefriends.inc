@@ -10,17 +10,17 @@ else {
 ?>
 
 	<p>
-		<h4>You are curently following :</h4>
+		<h4>You are curently friend with :</h4>
 		<ul>
 <?php
 		$friends = $user->get_friends ();
 		foreach ($friends as $friend)
-			echo "<li>$friend->get_nickname ()</li>";
+			echo "<li>" . $friend->get_nickname() . "</li>";
 ?>
 		</ul>
 	</p>
 	<p>
-		<h4>Add a friend</h4>
+		<h4>Add a friendship</h4>
 		<form action="." method="post" name="f">
 		<fieldset>
 			<input type="hidden" name="action" value="addfriend"/>
@@ -33,7 +33,7 @@ else {
 		</form>
 	</p>
 	<p>
-		<h4>Stop following a feed : </h4>
+		<h4>Remove a friendship : </h4>
 		<form action="." method="post" name="f">
 		<fieldset>
 			<input type="hidden" name="action" value="deletefriend"/>
