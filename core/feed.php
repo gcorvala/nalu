@@ -79,7 +79,12 @@ class Feed {
 	public function get_items () {
 		$data = Data::create ();
 		$items = array ();
-		$req = "SELECT * FROM FeedItems WHERE URLFeed LIKE '$this->url'";
+		if ($this->user_feed == true) {
+			$req = "SELECT * FROM Shares WHERE Email LIKE '" . substr ($this->url, 7) . "'";
+		}
+		else {
+			$req = "SELECT * FROM FeedItems WHERE URLFeed LIKE '$this->url'";
+		}
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
 			$items[] = new Item ($line['URLItem']);
