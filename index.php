@@ -40,11 +40,11 @@ try {
 				$feed = new Feed ($_GET['feed']);
 				$item = new Item ($_GET['item']);
 				$note = $_GET['note'];
-				$user->share ($feed, $item, $note);
+				$user->add_share ($feed, $item, $note);
 				break;
 			case "add_subscription":
 				$feed = new Feed ($_GET['feed']);
-				$user->subscribe_to_feed ($feed);
+				$user->add_subscription ($feed);
 				break;
 			case "login":
 				$action = "home";
@@ -54,13 +54,14 @@ try {
 				$action = "home";
 				break;
 			case "add_read":
-				$item = new Item ($_GET['item']);
-				$user->read ($item);
-				break;
-			case "read":
 				$feed = new Feed ($_GET['feed']);
 				$item = new Item ($_GET['item']);
-				$user->set_item_readed ($feed, $item);
+				$user->add_read ($feed, $item);
+				break;
+			case "read": // READ + REDIRECTION
+				$feed = new Feed ($_GET['feed']);
+				$item = new Item ($_GET['item']);
+				$user->add_read ($feed, $item);
 				header ('Location: ' . $item->get_url ());
 				break;
 			case "remove_read":
@@ -79,13 +80,13 @@ try {
 				break;
 			case "remove_subscription":
 				$feed = new Feed ($_GET['feed']);
-				$user->unsubscribe_to_feed ($feed);
+				$user->remove_subscription ($feed);
 				break;
 			case "remove_subscriptions":
 				$feeds = $_GET['feeds'];
 				foreach ($feeds as $feed) {
 					$feed = new Feed ($feed);
-					$user->unsubscribe_to_feed ($feed);
+					$user->remove_subscription ($feed);
 				}
 				break;
 			case "set_nickname":

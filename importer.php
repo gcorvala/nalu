@@ -102,7 +102,7 @@ class Importer {
 				$user = new User ($email);
 				$feed = new Feed ($feed);
 				$item = new Item ($item);
-				$user->set_item_readed ($feed, $item, $date);
+				$user->add_read ($feed, $item, $date);
 			}
 			catch (Exception $e) {
 				echo "PARSE_READS Exception catched : ". $e->getMessage (). "<br>";
@@ -128,7 +128,7 @@ class Importer {
 			try {
 				$user = new User ($email);
 				$feed = new Feed ($feed);
-				$user->subscribe_to_feed ($feed, $date);
+				$user->add_subscription ($feed, $date);
 			}
 			catch (Exception $e) {
 				echo "PARSE_SUBSCRIPTIONS Exception catched : ". $e->getMessage (). "<br>";
@@ -186,7 +186,7 @@ class Importer {
 				$user = new User ($email);
 				$feed = new Feed ($feed);
 				$item = new Item ($item);
-				$user->share ($feed, $item, $text, $date);
+				$user->add_share ($feed, $item, $text, $date);
 			}
 			catch (Exception $e) {
 				echo "PARSE_SHARES Exception catched : ". $e->getMessage (). "<br>";

@@ -3,3 +3,29 @@ Rename $user->is_anonymous to is_connected
 Fix $user->read !!!! bug : need to put db_projet before Reads into the mysql request
 Write Auth as singleton
 Rename some User methods
+get_items 10 items ?
+
+// Methods
+case "add_comment": OK
+case "add_friend": OK
+case "add_share": OK
+case "add_subscription": OK
+case "login": OK
+case "logout": OK
+
+case "add_read":
+case "read": OK
+case "remove_read":
+
+case "remove_comment": OK
+case "remove_friend": OK
+case "remove_share": OK
+case "remove_subscription": OK
+case "remove_subscriptions": OK
+case "set_nickname":
+case "set_password":
+case "set_city":
+case "set_country":
+case "set_avatar":
+case "set_biography":
+case "update":

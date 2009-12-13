@@ -46,7 +46,7 @@ class User {
 			$req .= " VALUES ('$this->email', '$this->password', '$this->nickname', '$this->city', '$this->country', '$this->avatar', '$this->biography', '$this->subscribeDate')";
 			$data->request ($req);
 			$feed = new Feed ("user://" . $this->email);
-			$this->subscribe_to_feed ($feed, $this->subscribeDate);
+			$this->add_subscription ($feed, $this->subscribeDate);
 		}
 	}
 	
@@ -87,32 +87,22 @@ class User {
 		return new Feed ("user://" . $this->email);
 	}
 
-	public function subscribe_to_feed ($feed, $date) {
+	public function get_items_readed () {}
+	public function get_items_not_readed () {}
+
+	/**
+	 * ACTIONS !
+	 **/
+
+	public function add_comment ($feed, $item, $text, $date) {
 		$data = Data::create ();
 		if (!isset ($date))
-			$subscribe_date = date_format (date_create (), "c");
+			$comment_date = date_format (date_create (), "c");
 		else
-			$subscribe_date = $date;
-		$req = "INSERT INTO Subscriptions (Email, URL, Date)";
-		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '$subscribe_date')";
-		$result = $data->request ($req);
-	}
-
-	public function unsubscribe_to_feed ($feed) {
-		$data = Data::create ();
-		$req = "DELETE FROM Subscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
+			$comment_date = $date;
+		$req = "INSERT INTO Comments (Email, Text, URLFeed, URLItem, Date)";
+		$req .= " VALUES ('$this->email', '$text', '" . $feed->get_url () . "', '" . $item->get_url () . "', '$comment_date')";
 		$data->request ($req);
-		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
-		$result = mysql_fetch_array ($data->request ($req));
-		//echo $result[0] . "<br>";
-		if ($result[0] == 0) {
-			$req = "DELETE FROM Items WHERE URL = '" . $feed->get_url () . "'";
-			$data->request ($req);
-			$req = "DELETE FROM FeedItems WHERE URLFeed = '" . $feed->get_url () . "'";
-			$data->request ($req);
-			$req = "DELETE FROM Feeds WHERE URL = '" . $feed->get_url () . "'";
-			$data->request ($req);
-		}
 	}
 
 	public function add_friend ($user, $date) {
@@ -133,15 +123,25 @@ class User {
 		}
 	}
 
-	public function remove_friend ($friend) {
+	public function add_share ($feed, $item, $note, $date) {
 		$data = Data::create ();
-		$friend_email = $friend->get_email ();
-		$req = "DELETE FROM Friends WHERE (EmailA = '$this->email' AND EmailB = '$friend_email') OR (EmailB = '$this->email' AND EmailA = '$friend_email')";
+		$req = "INSERT INTO Shares (URLFeed, URLItem, Email, Note, Date)";
+		$req .= " VALUES ('" . $feed->get_url () . "', '" . $item->get_url () . "', '$this->email' ,'$note', '$date')";
 		$data->request ($req);
-		$this->unsubscribe_to_feed ($friend->get_own_feed ());
 	}
 
-	public function set_item_readed ($feed, $item, $date) {
+	public function add_subscription ($feed, $date) {
+		$data = Data::create ();
+		if (!isset ($date))
+			$subscribe_date = date_format (date_create (), "c");
+		else
+			$subscribe_date = $date;
+		$req = "INSERT INTO Subscriptions (Email, URL, Date)";
+		$req .= " VALUES ('$this->email', '" . $feed->get_url () . "', '$subscribe_date')";
+		$result = $data->request ($req);
+	}
+
+	public function add_read ($feed, $item, $date) {
 		$data = Data::create ();
 		if (!isset ($date))
 			$read_date = date_format (date_create (), "c");
@@ -152,27 +152,46 @@ class User {
 		$data->request ($req);
 	}
 
-	public function add_comment ($feed, $item, $text, $date) {
+	public function remove_comment ($feed, $item) {
 		$data = Data::create ();
-		if (!isset ($date))
-			$comment_date = date_format (date_create (), "c");
-		else
-			$comment_date = $date;
-		$req = "INSERT INTO Comments (Email, Text, URLFeed, URLItem, Date)";
-		$req .= " VALUES ('$this->email', '$text', '" . $feed->get_url () . "', '" . $item->get_url () . "', '$comment_date')";
+		$req = "DELETE FROM Comments WHERE Email = '$this->email' AND URLFeed = '" . $feed->get_url () . "' AND URLItem = '" . $item->get_url () . "'";
 		$data->request ($req);
 	}
 
-	public function set_item_not_readed () {}
-	public function get_items_readed () {}
-	public function get_items_not_readed () {}
-	public function share ($feed, $item, $note, $date) {
+	public function remove_friend ($friend) {
 		$data = Data::create ();
-		$req = "INSERT INTO Shares (URLFeed, URLItem, Email, Note, Date)";
-		$req .= " VALUES ('" . $feed->get_url () . "', '" . $item->get_url () . "', '$this->email' ,'$note', '$date')";
+		$friend_email = $friend->get_email ();
+		$req = "DELETE FROM Friends WHERE (EmailA = '$this->email' AND EmailB = '$friend_email') OR (EmailB = '$this->email' AND EmailA = '$friend_email')";
+		$data->request ($req);
+		$this->remove_subscription ($friend->get_own_feed ());
+	}
+
+	public function remove_share ($feed, $item) {
+		$data = Data::create ();
+		$req = "DELETE FROM Shares WHERE URLFeed = '" . $feed->get_url () . "' AND URLItem = '" . $item->get_url () . "'";
 		$data->request ($req);
 	}
-	public function unshare ($feed, $item) {}
-	public function remove_comment () {}
+
+	public function remove_subscription ($feed) {
+		$data = Data::create ();
+		$req = "DELETE FROM Subscriptions WHERE Email = '$this->email' AND URL = '" . $feed->get_url () . "'";
+		$data->request ($req);
+		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
+		$result = mysql_fetch_array ($data->request ($req));
+		if ($result[0] == 0) {
+			$req = "DELETE FROM Items WHERE URL = '" . $feed->get_url () . "'";
+			$data->request ($req);
+			$req = "DELETE FROM FeedItems WHERE URLFeed = '" . $feed->get_url () . "'";
+			$data->request ($req);
+			$req = "DELETE FROM Feeds WHERE URL = '" . $feed->get_url () . "'";
+			$data->request ($req);
+		}
+	}
+
+	public function remove_read ($feed, $item) {
+		$data = Data::create ();
+		$req = "DELETE FROM db_projet.Reads WHERE Email = '$this->email' AND URLFeed = '" . $feed->get_url () . "' AND URLItem = '" . $item->get_url () . "'";
+		$data->request ($req);
+	}
 }
 ?>
