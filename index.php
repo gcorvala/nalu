@@ -4,6 +4,7 @@ require_once ("core/auth.php");
 require_once ("core/feed.php");
 require_once ("core/item.php");
 require_once ("core/user.php");
+require_once ("core/updater.php");
 
 try {
 	$auth = new Auth ();
@@ -79,6 +80,13 @@ try {
 				$feed = new Feed ($_GET['feed']);
 				$user->unsubscribe_to_feed ($feed);
 				break;
+			case "remove_subscriptions":
+				$feeds = $_GET['feeds'];
+				foreach ($feeds as $feed) {
+					$feed = new Feed ($feed);
+					$user->unsubscribe_to_feed ($feed);
+				}
+				break;
 			case "set_nickname":
 				$nickname = $_GET['nickname'];
 				$user->set_nickname ($nickname);
@@ -102,6 +110,9 @@ try {
 			case "set_biography":
 				$biography = $_GET['biography'];
 				$user->set_biography ($biography);
+				break;
+			case "update":
+				$updater = new Updater ();
 				break;
 		}
 	}

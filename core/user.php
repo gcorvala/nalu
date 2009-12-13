@@ -104,7 +104,7 @@ class User {
 		$data->request ($req);
 		$req = "SELECT COUNT(*) FROM Subscriptions WHERE URL = '" . $feed->get_url () . "'";
 		$result = mysql_fetch_array ($data->request ($req));
-		echo $result[0] . "<br>";
+		//echo $result[0] . "<br>";
 		if ($result[0] == 0) {
 			$req = "DELETE FROM Items WHERE URL = '" . $feed->get_url () . "'";
 			$data->request ($req);
@@ -153,7 +153,6 @@ class User {
 	}
 
 	public function add_comment ($feed, $item, $text, $date) {
-		echo "comm";
 		$data = Data::create ();
 		if (!isset ($date))
 			$comment_date = date_format (date_create (), "c");
