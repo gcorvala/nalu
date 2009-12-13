@@ -13,7 +13,7 @@ else {
 		$items = $feed->get_items();
 		foreach ($items as $item) {
 			//echo "<li><a target=\"blank\" href=?action=read&item="  . urlencode($item->get_url()) . ">" . $item->get_title() . "</a> - <a class=\"comment-link\" href=?action=comment&feed=" . $item->get_url() . "> Add a comment </a></li>";
-			echo "<li><a href=?action=itempage&itemurl="  . urlencode($item->get_url()) . ">" . $item->get_title() . "</a> - <a class=\"comment-link\" href=?action=comment&feed=" . $item->get_url() . "> Add a comment </a> " . $item->get_note () . "</li>";
+			echo "<li><a href=?action=itempage&itemurl="  . urlencode($item->get_url()) . ">" . $item->get_title() . "</a> - <a class=\"comment-link\" href=?action=comment&feed=" . $item->get_url() . "> Add a comment </a> " . $item->get_note () . " - <a href=\"?action=add_share&feed=" . urlencode ($feed->get_url ()) . "&item=" . urlencode ($item->get_url ()) . "&note=blablabla\">Share this article</a></li>";
 		}
 	echo "</ul>";
 }
