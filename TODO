@@ -1,0 +1,5 @@
+// TODO :
+Rename $user->is_anonymous to is_connected
+Fix $user->read !!!! bug : need to put db_projet before Reads into the mysql request
+Write Auth as singleton
+Rename some User methods
