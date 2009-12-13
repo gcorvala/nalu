@@ -21,7 +21,7 @@ else {
 			//echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
 ?>
 		</ul>
-		<input type="submit">
+		<input type="submit" value="Delete">
 		</form>
 	</p>
 	<p>
