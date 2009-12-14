@@ -31,15 +31,36 @@ Année Académique 2009-2010.
 \newpage
 
 \section{Introduction}
-Dans le cadre de ce projet du cours de bases de données nous avons du développer un agrégateur de flux rss.
+Dans le cadre de ce projet du cours de bases de données nous avons du développer un agrégateur de flux rss. Un flux rss est un fichier xml\footnote{eXtensible Markup Language} contenant des informations sur les dernières mises à jour d'un site internet. Une fois ce flux intégré dans un agrégateur l'utilisateur est automatiquement tenu au courant de ces mises à jour. Le grand intérêt de ceci est de pouvoir avoir les nouvelles ionformations de tous nos sites préférés en une fois dans une seule même interface plutot que de devoir aller sur chaque site un à un.
 \section{Présentation de NaluRSS}
-NaluRSS est un lecteur de flux rss entièrement écrit en xhtml\footnote{eXtendend HyperText Markup Language}/css\footnote{Cascading Style Sheet} et php\footnote{excellente question} et enregistre les informations dans une base de données MySQL. Il a été pensé pour être le plus simple d'utilisation possible pour l'utilisateur.
+NaluRSS est entièrement écrit en xhtml\footnote{eXtensible HyperText Markup Language}/css\footnote{Cascading Style Sheet} et php\footnote{PHP: HyperText Preprocessor} et enregistre les informations dans une base de données MySQL. Il a été pensé pour être le plus simple d'utilisation possible pour l'utilisateur. Ses principales fonctionnalités sont :
+\begin{itemize}
+\item{Un système multi-utilisateurs}
+\item{La possibilité d'être \og ami \fg avec un autre utilisateur}
+\item{La possibilité de partager une nouvelle d'un flux avec ses \og amis \fg, et ce avec un commentaire}
+\item{La possibilité d'ajouter ou supprimer des \og amis \fg}
+\item{L'ajout et la suppression de feeds}
+\item{L'affichage des flux en version condensée (juste les titres des articles) ou en version complète (les titres et descriptions des articles)}
+\item{L'affichage des flux des \og amis \fg (chaque élément partagé par une personne fait partie de son flux personnel)}*
+\item{L'affichage d'un unique article avec sa description}
+\item{La possibilité de s'inscrire sur le site}
+\item{Et bien d'autres}
+\end{itemize}
 \section{Script SQL DDL de création de la base de données}
 
 \section{Requêtes demandés}
 
 \section{Instructions d'installation}
-
+\subsection{Pré-requis}
+Afin d'installer NaluRSS il faut disposer d'un serveur sur lequel tournent un serveur web\footnote{Apache par exemple}, une base de données MySQL et un interpréteur PHP. Tout ceci se trouve facilement sur la plupart des hébergeurs ou s'installe très facilement en tant que serveur LAMP\footnote{Linux Apache Mysql Php}, WAMP\footnote{Windows Apache Mysql Php} ou encore MAMP\footnote{Mac Apache Mysql Php}. Le programme phpMyAdmin peut aussi être installé pour faciliter les interactions manuelles avec la base de données.
+\subsection{Installation}
+Une fois que nous avons un serveur *AMP fonctionnel en marche l'installation est extrèmement simple : il suffit de 
+\begin{itemize}
+\item{décompresser l'archive dans le répertoire fixé par la configuration du serveur Apache}
+\item{importer la structure de données}
+\item{???}
+\item{profit!}
+\end{itemize}
 \section{Fonctionnalités}
 
 \section{Scénario de démonstration}
@@ -47,5 +68,5 @@ NaluRSS est un lecteur de flux rss entièrement écrit en xhtml\footnote{eXtende
 \section{Explications diverses}
 
 \section{Conclusion}
-
+Nous avons donc ici un agrégateur de flux rss parfaitement utilisable en production si les fonctionnalités présentes suffisent, et facilement extensible à souhait sinon.
 \end{document}
