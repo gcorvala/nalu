@@ -75,7 +75,9 @@ class Feed {
 	public function get_name () { return $this->name; }
 	public function get_description () { return $this->description; }
 	public function get_link () { return $this->link; }
-	
+
+	public function from_user () { return $this->user_feed; }
+
 	public function get_items () {
 		$data = Data::create ();
 		$items = array ();
