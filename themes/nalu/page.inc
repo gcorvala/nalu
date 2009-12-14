@@ -52,6 +52,23 @@ include_once ($config->get_site_theme_folder () . "/" . $action . ".inc");
 ?>
 				</div>
 				<div id="sidebar">
+				
+<?php
+if (!$auth->is_anonymous()) {
+	if ($user->get_nb_waiting_friends() > 0) {
+		echo "<h3><span>friend requests</span></h3>";
+		echo "You have " . $user->get_nb_waiting_friends() . " friend requests waiting for approval : <br />";
+		$pendings = $user->get_waiting_friends();
+		echo "<ul>";
+		foreach ($pendings as $pending) {
+			$friend = new User($pending);
+			echo "<li><a class=\"feed-link\" href=\"" . $friend->get_url . "\">" . $friend->get_nickname() . "</a></li>";
+			
+		}
+		echo "</ul>";
+	}
+}
+?>
 					<h3><span>feeds</span></h3>
 					<ul>
 <?php
