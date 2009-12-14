@@ -4,7 +4,8 @@ Fix $user->read !!!! bug : need to put db_projet before Reads into the mysql req
 Write Auth as singleton
 Rename some User methods
 get_items 10 items ?
-add nb_not_read
+add nb_not_read ()
+add item_is_read ()
 add dates in gui
 remove "shares or comment" in gui
 add comment page
