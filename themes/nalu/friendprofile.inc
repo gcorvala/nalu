@@ -14,7 +14,6 @@ else {
 		echo "<li> City : " . $friend->get_city() . "</li>";
 		echo "<li> Country : " . $friend->get_country() . "</li>";
 		echo "<li> Biography : " . $friend->get_biography() . "</li>";
-	// TODO : city et country en links vers une recherche d'utilisateurs habitant là ou vers une carte googlemaps.
 	echo "</ul>";
 	echo "<a href=?action=feedpage&feedurl=" . $friend->get_own_feed()->get_url() . "> View " . $friend->get_nickname() . " feed </a>";
 }

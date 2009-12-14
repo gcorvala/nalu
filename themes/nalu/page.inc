@@ -75,7 +75,6 @@ if (!$auth->is_anonymous()) {
 if (!$auth->is_anonymous ()) {
 	$feeds = $user->get_feeds ();
 	foreach ($feeds as $feed)
-//		echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
 		echo "<li><a href=?action=feedpage&feedurl=" . $feed->get_url() . ">" . $feed->get_name() . "</a> - <a class=\"comment-link\" href=?action=fullfeedpage&feedurl=" . $feed->get_url() . ">View full</a></li>";
 }
 else {

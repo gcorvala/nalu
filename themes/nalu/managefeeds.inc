@@ -18,7 +18,6 @@ else {
 		$feeds = $user->get_feeds ();
 		foreach ($feeds as $feed)
 			echo "<input type=\"checkbox\" name=\"feeds[]\" value=\"" . $feed->get_url () ."\"> " . $feed->get_name () . "<br>";
-			//echo "<li><a class=\"feed-link\" href=\"" . $feed->get_url () ."\">" . $feed->get_name () . "</a></li>";
 ?>
 		</ul>
 		<input type="submit" value="Delete">
