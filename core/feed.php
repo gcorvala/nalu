@@ -1,6 +1,7 @@
 <?php
 require_once ("core/data.php");
 require_once ("core/item.php");
+require_once ("core/comment.php");
 
 class Feed {
 	private $url;
@@ -88,8 +89,16 @@ class Feed {
 		$result = $data->request ($req);
 		while ($line = mysql_fetch_array ($result)) {
 			$i = new Item ($line['URLItem']);
-			if ($this->user_feed == true)
+			if ($this->user_feed == true) {
 				$i->set_note ($line['Note']);
+				$r = "SELECT * FROM Comments WHERE URLFeed = '$this->url' AND URLItem = '" . $i->get_url () . "'";
+				$res = $data->request ($r);
+				$comm = array ();
+				while ($line = mysql_fetch_array ($res)) {
+					$com[] = new Comments ($line['Email'], $line['Text'], $line['Date']);
+				}
+				$i->set_comments ($comm);
+			}
 			$items[] = $i;
 		}
 		return $items;
