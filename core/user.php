@@ -86,6 +86,23 @@ class User {
 	public function get_own_feed () {
 		return new Feed ("user://" . $this->email);
 	}
+
+	public function get_waiting_friends () {
+		$data = Data::create ();
+		$req = "SELECT * FROM Friends WHERE EmailB = '$this->email' AND Accepted = 0";
+		$result = $data->request ($req);
+		$friends = array ();
+		while ($line = mysql_fetch_array ($result))
+			$friends[] = $line['EmailA'];
+		return $friends;
+	}
+
+	public function get_nb_waiting_friends () {
+		$data = Data::create ();
+		$req = "SELECT * FROM Friends WHERE EmailB = '$this->email' AND Accepted = 0";
+		$result = $data->request ($req);
+		return mysql_num_rows ($result);
+	}
 	/**
 	 * ACTIONS !
 	 **/
