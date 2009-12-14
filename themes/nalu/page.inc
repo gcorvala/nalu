@@ -34,6 +34,13 @@ if ($auth->is_anonymous ()) {
 ?>
 						<li><a href="?action=about">About</a></li>
 						<li><a href="?action=profile">My profile</a></li>
+<?php
+if (!$auth->is_anonymous()) {
+?>
+						<li><a href="?action=update">Update feeds</a></li>
+<?php
+}
+?>
 						<li class="navright"><a href="?action=contact">Contact</a></li>
 					</ul>
 				</div>
