@@ -2,7 +2,6 @@
 require_once ("core/user.php");
 
 class Auth {
-	// TODO : Rendre cette classe Singleton
 	private $user;
 	private $anonymous;
 

@@ -36,7 +36,6 @@ class Feed {
 		}
 		if (ereg("^user://", $this->url))
 			$this->user_feed = true;
-		// FIXME : what should we insert for user_feed name, description and link ?
 		$data = Data::create ();
 		$req = "SELECT * FROM Feeds WHERE URL LIKE '$this->url'";
 		$result = $data->request ($req);
@@ -126,7 +125,6 @@ class Feed {
 				$node = $child->nodeName;
 				$$node = $child->nodeValue;
 			}
-			// FIXME : Select is not needed (because checked into Item)
 			$req = "SELECT * FROM Items WHERE URL LIKE '$link'";
 			$result = $data->request ($req);
 			if (mysql_num_rows ($result) == 0) {
