@@ -1,4 +1,6 @@
 <?php
+require_once ("core/user.php");
+require_once ("core/feed.php");
 require_once ("core/data.php");
 
 class Item {
@@ -36,7 +38,17 @@ class Item {
 			$data->request ($req);
 		}
 	}
-	
+
+	public function is_read ($user) {
+		$data = Data::create ();
+		$req = "SELECT * FROM db_projet.Reads WHERE Email = '" . $user->get_email () . "' AND URLItem = '$this->url'";
+		$result = $data->request ($req);
+		if (mysql_num_rows ($result) == 1)
+			return true;
+		else
+			return false;
+	}
+
 	public function get_url () { return $this->url; }
 	public function get_title () { return $this->title; }
 	public function get_date () { return $this->date; }

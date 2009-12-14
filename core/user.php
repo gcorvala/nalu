@@ -86,10 +86,6 @@ class User {
 	public function get_own_feed () {
 		return new Feed ("user://" . $this->email);
 	}
-
-	public function get_items_readed () {}
-	public function get_items_not_readed () {}
-
 	/**
 	 * ACTIONS !
 	 **/
