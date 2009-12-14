@@ -62,7 +62,7 @@ if (!$auth->is_anonymous()) {
 		echo "<ul>";
 		foreach ($pendings as $pending) {
 			$friend = new User($pending);
-			echo "<li><a class=\"feed-link\" href=\"" . $friend->get_url . "\">" . $friend->get_nickname() . "</a></li>";
+			echo "<li><a class=\"feed-link\" href=\"?action=add_friend&friend=" . $friend->get_email () . "\">" . $friend->get_nickname() . "</a></li>";
 			
 		}
 		echo "</ul>";
