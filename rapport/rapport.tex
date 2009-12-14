@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{eurosym}
 \usepackage{textcomp}
+\usepackage{graphicx}
 \author{Contzen Laurent, Corvalan Gabriel}
 \title{NaluRSS}
 \date{14 Décembre 2009}
@@ -46,9 +47,59 @@ NaluRSS est entièrement écrit en xhtml\footnote{eXtensible HyperText Markup La
 \item{La possibilité de s'inscrire sur le site}
 \item{Et bien d'autres}
 \end{itemize}
+Voici une capture d'écran de la page d'accueil :
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=14cm]{home.png}
+\end{center}
+\caption{Page d'accueil de NaluRSS pour un utilisateur non enregistré}
+\label{home}
+\end{figure}
+\newline
+
 \section{Script SQL DDL de création de la base de données}
 
-\section{Requêtes demandés}
+\section{Requêtes demandés en algèbre relationnel}
+\subsection{R1}
+\noindent $AcceptedFriends \longleftarrow \pi_{EmailA, EmailB}(\sigma_{Accepted = 1}(Friends))$ \\
+$UsersMails \longleftarrow \pi_{Email}(Users)$ \\
+$temp \longleftarrow AcceptedFriends \ast \alpha_{EmailB : EmailC}(AcceptedFriends) \ast \alpha_{EmailB : EmailD}(AcceptedFriends) $ \\
+$temp2 \longleftarrow \alpha_{EmailA : Email}(\pi_{EmailA}(\sigma_{EmailB \neq EmailC \wedge EmailB \neq EmailD \wedge EmailC \neq EmailD}(temp))) $ \\
+$Result \longleftarrow UsersMails - temp2 $
+\subsection{R2}
+\noindent $FeedsX \longleftarrow \pi_{Email = X}(Subscriptions) $ \\
+
+\subsection{R3}
+\noindent $FeedsX \longleftarrow \pi_{Email = X}(Subscriptions) $ \\
+$SharesX \longleftarrow \pi_{Email}(\sigma_{Email = X}(Shares))$ \\
+$FriendsX \longleftarrow \alpha_{EmailA : Email}(\pi_{EmailA}(\sigma_{EmailA = X \wedge Accepted = 1}(Friends))) \cup \alpha_{EmailB : Email} (\pi_{EmailB}(\sigma_{EmailB = X \wedge Accepted = 1}(Friends)))$ \\
+$Result \longleftarrow FeedsX - FriendsX - SharesX$
+\subsection{R4}
+
+
+\section{Requêtes demandés en calcul relationnel tuple}
+\subsection{R1}
+
+\subsection{R2}
+
+\subsection{R3}
+
+\subsection{R4}
+
+\section{Requêtes demandés en SQL}
+\subsection{R1}
+
+\subsection{R2}
+
+\subsection{R3}
+
+\subsection{R4}
+
+\subsection{R5}
+
+\subsection{R6}
+
+
 
 \section{Instructions d'installation}
 \subsection{Pré-requis}
@@ -56,12 +107,9 @@ Afin d'installer NaluRSS il faut disposer d'un serveur sur lequel tournent un se
 \subsection{Installation}
 Une fois que nous avons un serveur *AMP fonctionnel en marche l'installation est extrèmement simple : il suffit de 
 \begin{itemize}
-\item{décompresser l'archive dans le répertoire fixé par la configuration du serveur Apache}
-\item{importer la structure de données}
-\item{???}
-\item{profit!}
+\item{Décompresser l'archive dans le répertoire fixé par la configuration du serveur Apache\footnote{~/public_html ou /srv/http}}
+\item{Importer la structure de données}
 \end{itemize}
-\section{Fonctionnalités}
 
 \section{Scénario de démonstration}
 

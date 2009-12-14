@@ -15,7 +15,7 @@
 	<label for="country" accesskey="o">Country : </label>
 		<input type="text" id="country" name="country" tabindex="5" value="" title="country"><br>
 	<label for="avatar" accesskey="a">Avatar : </label>
-		<input type="text" id="avatar" name="avatar" tabindex="6" title="avatar"><br>
+		<input type="file" id="avatar" name="avatar" tabindex="6" title="avatar"><br>
 	<label for="biography" accesskey="b">Biography : </label>
 		<input type="text" id="biography" name="biography" tabindex="7" title="biography"><br>
 </fieldset>
