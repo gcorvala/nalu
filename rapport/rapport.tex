@@ -108,13 +108,69 @@ Afin d'installer NaluRSS il faut disposer d'un serveur sur lequel tournent un se
 Une fois que nous avons un serveur *AMP fonctionnel en marche l'installation est extrèmement simple : il suffit de 
 \begin{itemize}
 \item{Décompresser l'archive dans le répertoire fixé par la configuration du serveur Apache}
+\item{Ajuster le fichier config.ini selon la configuration désirée}
 \item{Importer la structure de données}
 \end{itemize}
 
 \section{Scénario de démonstration}
 
 \section{Explications diverses}
+Le fichier \verb|config.ini| qui contient nottament le mot de passe d'accès à la base de données est protégé par un fichier \verb|.htaccess| afin d'éviter les accès depuis l'extérieur.
 
 \section{Conclusion}
 Nous avons donc ici un agrégateur de flux rss parfaitement utilisable en production si les fonctionnalités présentes suffisent, et facilement extensible à souhait sinon.
+
+\section{Rapport de la première partie corrigé}
+\subsection{Diagramme entité-association}
+TODO : INSERT GRAPH
+\begin{itemize}
+\item{La date d'inscription d'un utilisateur doit être strictement inférieure à celle de la publication d'un de ses articles ou d'un de ses commentaires, et également inférieure à la date d'un début d'amitié.
+Un utilisateur ne peut s'inscrire à son propre flux.}
+\item{Dans une relation d'amité, un utilisateur ne peut être ami avec lui même.}
+\item{Seul le champ Biography peut être vide car il est optionnel.}
+\end{itemize}
+
+\subsection{Traduction relationnelle}
+\noindent \textbf{User} (\underline{Email}, Nickname, Country, City, Avatar, Subscription date, Biography, Password, URL) \\
+ \newline
+\textbf{IsFriend} (\underline{EmailA, EmailB}, Date, Accepted) \\
+	IsFriend.EmailA référence User.Email \\
+	IsFriend.EmailB référence User.Email \\
+\newline
+\textbf{Feed} (\underline{URL}, Name, Description, Link) \\
+\newline
+\textbf{Subscribe} (\underline{Email, URL}, Date) \\
+	Subscribe.Email référence User.Email \\
+	Subscribe.URL référence Feed.URL \\
+\newline
+\textbf{Generate} (\underline{Email, URL}) \\
+	Generate.Email référence User.Email \\
+	Generate.URL référence Feed.URL \\
+\newline
+\textbf{Item} (\underline{URL}, Title, Link, Date, Description) \\
+\newline
+\textbf{Contains} (\underline{URLfeed, URLitem}) \\
+	Contains.URLfeed référence Feed.URL \\
+	Contains.URLitem référence Item.URL \\
+\newline
+\textbf{HasRead} (\underline{Email, URLfeed, URLitem}, Date) \\
+	HasRead.Email référence User.Email \\
+	HasRead.URLfeed référence Feed.URL \\
+	HasRead.URLitem référence Item.URL \\
+\newline
+\textbf{Comment} (\underline{EmailWriter, URLfeed, URLitem}, Text, Date) \\
+	Comment.EmailWriter référence User.Email \\
+	Comment.URLfeed référence Feed.URL \\
+	Comment.URLitem référence Item.URL \\
+\begin{itemize}
+\item{IsFriend.EmailA != IsFriend.EmailB}
+\item{User.SubscriptionDate <= IsFriend.Date}
+\item{User.SubscriptionDate <= Subscribe.Date}
+\item{User.SubscriptionDate <= HasRead.Date}
+\item{User.SubscriptionDate <= Comment.Date}
+\item{User.Biography peut être vide}
+\end{itemize}
+\subsection{Hypothèses et justifications}
+Nous considérons ici qu'un flux généré par un utilisateur n'est pas différent d'un autre flux, la seul exception sera l'URL, en effet ici l'url ne pourra pas ressembler à une URL http (http://...), nous pourrons définir un type de schéma URL propre à notre implémentation. Par exemple rss://User.Email. Sinon pour le reste, nous restons proche des spécification RSS, bien que nous ne tiendrons pas compte d'une série de champ optionnel pour des soucis de simplification.
+
 \end{document}
