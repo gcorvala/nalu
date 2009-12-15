@@ -58,7 +58,115 @@ Voici une capture d'écran de la page d'accueil :
 \newline
 
 \section{Script SQL DDL de création de la base de données}
+\begin{verbatim}
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
+CREATE DATABASE `db_projet` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `db_projet`;
+
+
+
+DROP TABLE IF EXISTS `Comments`;
+CREATE TABLE IF NOT EXISTS `Comments` (
+  `Email` varchar(200) NOT NULL,
+  `Text` text NOT NULL,
+  `URLFeed` varchar(400) NOT NULL,
+  `URLItem` varchar(400) NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`Email`,`URLFeed`,`URLItem`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `FeedItems`;
+CREATE TABLE IF NOT EXISTS `FeedItems` (
+  `URLFeed` varchar(400) NOT NULL,
+  `URLItem` varchar(400) NOT NULL,
+  PRIMARY KEY (`URLFeed`,`URLItem`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Feeds`;
+CREATE TABLE IF NOT EXISTS `Feeds` (
+  `URL` varchar(400) CHARACTER SET latin1 NOT NULL,
+  `Name` varchar(200) CHARACTER SET latin1 NOT NULL,
+  `Description` varchar(200) CHARACTER SET latin1 NOT NULL,
+  `Link` varchar(400) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`URL`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+DROP TABLE IF EXISTS `Friends`;
+CREATE TABLE IF NOT EXISTS `Friends` (
+  `EmailA` varchar(200) NOT NULL,
+  `EmailB` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Date` datetime NOT NULL,
+  `Accepted` tinyint(1) NOT NULL,
+  PRIMARY KEY (`EmailA`,`EmailB`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Items`;
+CREATE TABLE IF NOT EXISTS `Items` (
+  `URL` varchar(400) NOT NULL,
+  `Title` varchar(200) NOT NULL,
+  `Date` datetime NOT NULL,
+  `Description` text NOT NULL,
+  PRIMARY KEY (`URL`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Reads`;
+CREATE TABLE IF NOT EXISTS `Reads` (
+  `Email` varchar(200) NOT NULL,
+  `URLItem` varchar(400) NOT NULL,
+  `URLFeed` varchar(400) NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`Email`,`URLItem`,`URLFeed`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Shares`;
+CREATE TABLE IF NOT EXISTS `Shares` (
+  `URLFeed` varchar(400) NOT NULL,
+  `URLItem` varchar(400) NOT NULL,
+  `Email` varchar(200) NOT NULL,
+  `Note` text NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`URLFeed`,`URLItem`,`Email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Subscriptions`;
+CREATE TABLE IF NOT EXISTS `Subscriptions` (
+  `Email` varchar(200) NOT NULL,
+  `URL` varchar(400) NOT NULL,
+  `Date` datetime NOT NULL,
+  PRIMARY KEY (`Email`,`URL`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+
+DROP TABLE IF EXISTS `Users`;
+CREATE TABLE IF NOT EXISTS `Users` (
+  `Email` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Password` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Nickname` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `City` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Country` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Avatar` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Biography` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `SubscribeDate` datetime NOT NULL,
+  `FeedURL` varchar(400) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`Email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+\end{verbatim}
 \section{Requêtes demandés en algèbre relationnel}
 \subsection{R1}
 \noindent $AcceptedFriends \longleftarrow \pi_{EmailA, EmailB}(\sigma_{Accepted = 1}(Friends))$ \\
@@ -74,31 +182,19 @@ $Result \longleftarrow UsersMails - temp2 $
 $SharesX \longleftarrow \pi_{Email}(\sigma_{Email = X}(Shares))$ \\
 $FriendsX \longleftarrow \alpha_{EmailA : Email}(\pi_{EmailA}(\sigma_{EmailA = X \wedge Accepted = 1}(Friends))) \cup \alpha_{EmailB : Email} (\pi_{EmailB}(\sigma_{EmailB = X \wedge Accepted = 1}(Friends)))$ \\
 $Result \longleftarrow FeedsX - FriendsX - SharesX$
-\subsection{R4}
 
 
 \section{Requêtes demandés en calcul relationnel tuple}
 \subsection{R1}
-
-\subsection{R2}
-
-\subsection{R3}
-
-\subsection{R4}
+$\{ User.Email \mid Friend(f) \wedge (f.EmailA \vee f.EmailB) \wedge (\not\exists f1(Friend(f1)) \mid (EmailA = User.Email \vee EmailB = User.Email)) \vee ((\exists f1(Friend(f1)) \mid (EmailA = User.Email \vee EmailB = User.Email)) \wedge (\not\exists f2(Friend(f2)) \mid (EmailA = User.Email \vee EmailB = User.Email))) \vee ((\exists f1(Friend(f1)) \mid (EmailA = User.Email \vee EmailB = User.Email)) \wedge (\exists f2(Friend(f2)) \mid (EmailA = User.Email \vee EmailB = User.Email)) \wedge (\exists f3(Friend(f3)) \mid (EmailA = User.Email \vee EmailB = User.Email)))$
 
 \section{Requêtes demandés en SQL}
 \subsection{R1}
-
-\subsection{R2}
-
+SELECT * FROM Users WHERE (SELECT COUNT(*) FROM Friends WHERE (EmailA = Email AND Accepted = 0) OR (EmailB = Email AND Accepted = 0)) < 3
 \subsection{R3}
-
-\subsection{R4}
-
-\subsection{R5}
-
-\subsection{R6}
-
+SELECT URL FROM Subscriptions WHERE Email NOT IN ( \\
+SELECT Email FROM Users WHERE Email IN (SELECT EmailB FROM Friends WHERE EmailA = 'X' AND Accepted = 1) OR Email IN (SELECT EmailA FROM Friends WHERE EmailB = 'X' AND Accepted = 1)) \\
+AND URL NOT IN (SELECT URLFeed FROM Shares WHERE Email = 'X')
 
 
 \section{Instructions d'installation}
@@ -122,14 +218,24 @@ Nous avons donc ici un agrégateur de flux rss parfaitement utilisable en produc
 
 \section{Rapport de la première partie corrigé}
 \subsection{Diagramme entité-association}
-TODO : INSERT GRAPH
 \begin{itemize}
 \item{La date d'inscription d'un utilisateur doit être strictement inférieure à celle de la publication d'un de ses articles ou d'un de ses commentaires, et également inférieure à la date d'un début d'amitié.
 Un utilisateur ne peut s'inscrire à son propre flux.}
 \item{Dans une relation d'amité, un utilisateur ne peut être ami avec lui même.}
 \item{Seul le champ Biography peut être vide car il est optionnel.}
+\item{Le flux User est composé d'un ensemble de partages}
+\item{Un utilisateur ne peut commenter qu'une fois un Item}
+\item{Un Item ne peut être défini qu'une fois comme lu par un User}
+\item{Une Item peut appartenir à plusieurs flux}
+\item{Un utilisateur ne peut partager un Item que s'il a souscrit aux flux duquel provient l'Item}
 \end{itemize}
-
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=14cm]{diagram.png}
+\end{center}
+\caption{Diagramme entité-association}
+\label{giagram}
+\end{figure}
 \subsection{Traduction relationnelle}
 \noindent \textbf{User} (\underline{Email}, Nickname, Country, City, Avatar, Subscription date, Biography, Password, URL) \\
  \newline
@@ -142,10 +248,6 @@ Un utilisateur ne peut s'inscrire à son propre flux.}
 \textbf{Subscribe} (\underline{Email, URL}, Date) \\
 	Subscribe.Email référence User.Email \\
 	Subscribe.URL référence Feed.URL \\
-\newline
-\textbf{Generate} (\underline{Email, URL}) \\
-	Generate.Email référence User.Email \\
-	Generate.URL référence Feed.URL \\
 \newline
 \textbf{Item} (\underline{URL}, Title, Link, Date, Description) \\
 \newline
