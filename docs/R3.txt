@@ -1,0 +1,4 @@
+
+SELECT URL FROM Subscriptions WHERE Email NOT IN (
+SELECT Email FROM Users WHERE Email IN (SELECT EmailB FROM Friends WHERE EmailA = 'boris.verhaegen@gmail.com' AND Accepted = 1) OR Email IN (SELECT EmailA FROM Friends WHERE EmailB = 'boris.verhaegen@gmail.com' AND Accepted = 1))
+AND URL NOT IN (SELECT URLFeed FROM Shares WHERE Email = 'boris.verhaegen@gmail.com')
